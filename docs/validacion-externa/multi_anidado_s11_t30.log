@@ -1,0 +1,14 @@
+Esc. 1 (Neris): 71335 flujos, Botnet 57.4%
+Esc. 2 (Neris): 30052 flujos, Botnet 69.7%
+Esc. 3 (Rbot): 143553 flujos, Botnet 18.7%
+Esc. 4 (Rbot): 27837 flujos, Botnet 9.3%
+Esc. 5 (Virut): 5577 flujos, Botnet 16.2%
+Esc. 6 (Menti): 12119 flujos, Botnet 38.2%
+Esc. 7 (Sogou): 1739 flujos, Botnet 3.6%
+Esc. 8 (Murlo): 78903 flujos, Botnet 7.8%
+Esc. 9 (Neris): 214943 flujos, Botnet 86.1%
+Esc. 11 (Rbot): 10882 flujos, Botnet 75.0%
+Esc. 12 (NSIS.ay): 9793 flujos, Botnet 22.1%
+Esc. 13 (Virut): 71903 flujos, Botnet 55.6%
+s11 crudas esc 1 Neris    dummy         PR=0.574 ROC=0.500 0s
+s11 crudas esc 1 Neris    logreg        PR=0.938 ROC=0.916 318s

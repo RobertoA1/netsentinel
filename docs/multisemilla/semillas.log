@@ -1,0 +1,8 @@
+semilla 7 job 6
+  -> failed
+semilla 123 job 7
+  -> succeeded
+semilla 2024 job 8
+  -> failed
+semilla 31337 job 9
+  -> succeeded

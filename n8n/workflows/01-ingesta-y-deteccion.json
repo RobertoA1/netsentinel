@@ -1,0 +1,272 @@
+{
+  "id": "ns-ingesta-01",
+  "name": "NetSentinel 01 - Ingesta y detección",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## 01 · Ingesta y detección (cada 15 min)\n1. **Schedule Trigger** dispara el flujo cada 15 minutos.\n2. **POST /ingest/run** pide al backend que lea los archivos nuevos de `data/ingest/<source_id>/` y ejecute la detección determinista (beaconing, puertos inusuales, exfiltración, IDS) y el filtro de ruido LangChain/Ollama.\n3. **Resumir resultado** (Code) arma el resumen: logs insertados, hallazgos y ruido descartado.\n4. **¿Hay hallazgos?** Si hay, se lanza de inmediato el flujo 02 (despacho de alertas); si no, termina.\n\nRequiere las variables `NETSENTINEL_API_URL` y `N8N_API_KEY` (ver docker-compose.yml).",
+        "height": 250,
+        "width": 640,
+        "color": 4
+      },
+      "id": "36690130-46bc-559e-82b8-4ef16a15e9f0",
+      "name": "Nota flujo 01",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -60,
+        -140
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 15
+            }
+          ]
+        }
+      },
+      "id": "7061b354-78f2-5000-b873-f842817adea0",
+      "name": "Cada 15 minutos",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NETSENTINEL_API_URL }}/ingest/run",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "={{ $env.N8N_API_KEY }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={}",
+        "options": {
+          "timeout": 600000
+        }
+      },
+      "id": "f4d5c3f9-5fba-5e36-a956-e466380111ae",
+      "name": "POST /ingest/run",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        200
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Resume el resultado de POST /ingest/run (objeto IngestRun del contrato de API).\nconst r = $input.first().json || {};\nconst fallo = Boolean(r.error) && !r.status;            // error de red/HTTP del nodo anterior\nconst resumen = {\n  ejecutado_en: new Date().toISOString(),\n  estado: fallo ? 'error' : (r.status || 'desconocido'),\n  lineas_leidas: r.lines_read ?? 0,\n  logs_insertados: r.logs_inserted ?? 0,\n  errores_de_parseo: r.parse_errors ?? 0,\n  hallazgos_creados: r.findings_created ?? 0,\n  ruido_descartado: r.findings_noise ?? 0,\n  error: fallo ? (r.error.message || String(r.error)) : (r.error ?? null),\n};\nresumen.hay_hallazgos = resumen.hallazgos_creados > 0;\nresumen.texto = `Ingesta ${resumen.estado}: ${resumen.logs_insertados} logs nuevos, ` +\n  `${resumen.hallazgos_creados} hallazgos, ${resumen.ruido_descartado} descartados como ruido` +\n  (resumen.error ? ` | ERROR: ${resumen.error}` : '');\nconsole.log(resumen.texto);   // queda en los logs de n8n y en la ejecucion\nreturn [{ json: resumen }];\n"
+      },
+      "id": "d8d17b9c-0832-53d7-b41b-68f0b82c17f5",
+      "name": "Resumir resultado",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "71fd118c-6cf4-5c2b-8866-f955c6ff0675",
+              "leftValue": "={{ $json.hay_hallazgos }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "4d546399-42aa-5b31-90aa-702a8874342f",
+      "name": "¿Hay hallazgos?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        720,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "ns-despacho-02",
+          "mode": "id"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": null,
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {
+          "waitForSubWorkflow": false
+        }
+      },
+      "id": "8c11a4d9-bfc4-5e5e-a00f-f189c0dae8c2",
+      "name": "Despachar alertas ahora",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        960,
+        120
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "119a73ac-60d8-5b49-b98a-b1167a770950",
+      "name": "Sin hallazgos nuevos",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        960,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Rama ilustrativa (manual)\nReproduce en un nodo **Code** el cálculo del caso: *beaconing* por regularidad (coeficiente de variación de los intervalos entre conexiones, CV ≤ 0,25 con ≥ 10 conexiones) y *puertos inusuales*, sobre una muestra sintética.\n\n**Importante:** el cálculo AUTORITATIVO vive en el backend (detectores deterministas con umbrales configurables). Este nodo es solo didáctico y no escribe nada. Se ejecuta con «Execute workflow» manual.",
+        "height": 230,
+        "width": 640,
+        "color": 3
+      },
+      "id": "cc795946-52d7-523f-a7a9-d290a86e586b",
+      "name": "Nota rama ilustrativa",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -60,
+        420
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "7325bab3-2511-525e-b25f-00afedb68415",
+      "name": "Ejecución manual (ilustrativa)",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        700
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// ILUSTRATIVO: reproduce en n8n el calculo del caso (beaconing por regularidad + puertos inusuales)\n// sobre una MUESTRA sintetica. El calculo AUTORITATIVO vive en el backend (detectores deterministas).\nconst CV_MAX = 0.25;          // umbral de coeficiente de variacion (igual que beacon_max_cv)\nconst MIN_CONN = 10;          // minimo de conexiones (beacon_min_connections)\nconst COMMON_PORTS = new Set([22, 25, 53, 80, 123, 443, 587, 993, 995, 8080]);\nconst UNUSUAL_MIN_CONN = 3;   // unusual_port_min_connections\n\n// PRNG determinista para que la muestra sea reproducible\nlet seed = 42;\nconst rnd = () => (seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296;\n\nfunction serie(n, base, jitter) { let t = 0; const ts = []; for (let i = 0; i < n; i++) { ts.push(t); t += base + (rnd() * 2 - 1) * jitter; } return ts; }\nfunction irregular(n) { let t = 0; const ts = []; for (let i = 0; i < n; i++) { ts.push(t); t += 5 + rnd() * 600; } return ts; }\n\nconst muestra = [\n  { src: '10.0.0.5', dst: '185.1.2.3',   port: 443,  ts: serie(30, 60, 2) },   // latido cada ~60 s\n  { src: '10.0.0.7', dst: '151.101.1.1', port: 443,  ts: irregular(30) },        // navegacion humana\n  { src: '10.0.0.9', dst: '203.0.113.7', port: 4444, ts: irregular(6) },         // puerto inusual\n];\n\nconst mean = a => a.reduce((s, x) => s + x, 0) / a.length;\nconst stdev = a => { const m = mean(a); return Math.sqrt(mean(a.map(x => (x - m) ** 2))); };\n\nreturn muestra.map(c => {\n  const iv = c.ts.slice(1).map((t, i) => t - c.ts[i]);\n  const m = iv.length ? mean(iv) : 0;\n  const s = iv.length ? stdev(iv) : 0;\n  const cv = m > 0 ? s / m : null;\n  const esBeacon = c.ts.length >= MIN_CONN && cv !== null && cv <= CV_MAX;\n  const inusual = !COMMON_PORTS.has(c.port) && c.ts.length >= UNUSUAL_MIN_CONN;\n  return { json: {\n    src: c.src, dst: c.dst, puerto: c.port, conexiones: c.ts.length,\n    intervalo_medio_s: Number(m.toFixed(2)), desviacion_s: Number(s.toFixed(2)),\n    cv: cv === null ? null : Number(cv.toFixed(3)),\n    beaconing: esBeacon, puerto_inusual: inusual,\n    nota: 'Muestra ilustrativa; el veredicto real lo calcula el backend.',\n  } };\n});\n"
+      },
+      "id": "a949a352-5e7b-5cd6-af1d-e522ee8bb1f4",
+      "name": "Muestra: beaconing y puertos inusuales",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        300,
+        700
+      ]
+    }
+  ],
+  "connections": {
+    "Cada 15 minutos": {
+      "main": [
+        [
+          {
+            "node": "POST /ingest/run",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "POST /ingest/run": {
+      "main": [
+        [
+          {
+            "node": "Resumir resultado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resumir resultado": {
+      "main": [
+        [
+          {
+            "node": "¿Hay hallazgos?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Hay hallazgos?": {
+      "main": [
+        [
+          {
+            "node": "Despachar alertas ahora",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Sin hallazgos nuevos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ejecución manual (ilustrativa)": {
+      "main": [
+        [
+          {
+            "node": "Muestra: beaconing y puertos inusuales",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Lima"
+  },
+  "pinData": {},
+  "tags": [],
+  "meta": {
+    "templateCredsSetupCompleted": true
+  }
+}

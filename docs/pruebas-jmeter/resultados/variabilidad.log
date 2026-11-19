@@ -1,0 +1,17 @@
+{"prueba": "carga_0500", "usuarios": 500, "muestras": 8022, "error_pct": 0.0, "rps": 87.3, "media_ms": 3565, "p50": 3437, "p90": 5063, "p95": 6851, "p99": 9866, "max_ms": 11392, "errores": {}}
+{"prueba": "carga_0600", "usuarios": 600, "muestras": 8032, "error_pct": 0.0, "rps": 86.3, "media_ms": 4592, "p50": 4532, "p90": 6837, "p95": 7664, "p99": 8747, "max_ms": 9481, "errores": {}}
+{"prueba": "carga_0700", "usuarios": 700, "muestras": 6564, "error_pct": 10.66, "rps": 61.0, "media_ms": 8507, "p50": 5616, "p90": 30015, "p95": 30030, "p99": 30031, "max_ms": 30032, "errores": {"Non HTTP response code: java.net.SocketTimeoutException": 700}}
+BLOQUEO tras carga_700
+{"prueba": "carga_0900", "usuarios": 900, "muestras": 7568, "error_pct": 1.84, "rps": 63.6, "media_ms": 8840, "p50": 7370, "p90": 17279, "p95": 24742, "p99": 30030, "max_ms": 30045, "errores": {"Non HTTP response code: java.net.SocketTimeoutException": 139}}
+{"prueba": "carga_1000", "usuarios": 1000, "muestras": 6546, "error_pct": 33.87, "rps": 69.9, "media_ms": 10967, "p50": 5473, "p90": 27647, "p95": 30031, "p99": 30037, "max_ms": 30054, "errores": {"Non HTTP response code: java.net.SocketTimeoutException": 604, "401": 1613}}
+{"prueba": "carga_1100", "usuarios": 1100, "muestras": 9068, "error_pct": 49.91, "rps": 96.3, "media_ms": 8490, "p50": 5130, "p90": 28226, "p95": 30032, "p99": 30038, "max_ms": 30092, "errores": {"Non HTTP response code: java.net.SocketTimeoutException": 745, "401": 3781}}
+{"prueba": "db_0150", "usuarios": 150, "muestras": 5353, "error_pct": 0.0, "rps": 59.7, "media_ms": 736, "p50": 63, "p90": 2350, "p95": 3853, "p99": 8829, "max_ms": 11550, "errores": {}}
+{"prueba": "db_0300", "usuarios": 300, "muestras": 4971, "error_pct": 0.08, "rps": 52.7, "media_ms": 3407, "p50": 2537, "p90": 8303, "p95": 9659, "p99": 13483, "max_ms": 16732, "errores": {"null 0": 4}}
+{"prueba": "carga_0175_r2", "usuarios": 175, "muestras": 8373, "error_pct": 0.0, "rps": 94.3, "media_ms": 167, "p50": 137, "p90": 350, "p95": 414, "p99": 529, "max_ms": 2262, "errores": {}}
+{"prueba": "carga_0190_r2", "usuarios": 190, "muestras": 8376, "error_pct": 0.0, "rps": 94.3, "media_ms": 311, "p50": 322, "p90": 511, "p95": 567, "p99": 671, "max_ms": 821, "errores": {}}
+{"prueba": "carga_0200_r2", "usuarios": 200, "muestras": 8262, "error_pct": 0.0, "rps": 92.7, "media_ms": 432, "p50": 424, "p90": 697, "p95": 811, "p99": 1012, "max_ms": 1270, "errores": {}}
+{"prueba": "carga_0250_r2", "usuarios": 250, "muestras": 8219, "error_pct": 0.0, "rps": 92.0, "media_ms": 923, "p50": 932, "p90": 1359, "p95": 1435, "p99": 1543, "max_ms": 1696, "errores": {}}
+{"prueba": "carga_0175_r3", "usuarios": 175, "muestras": 7987, "error_pct": 0.0, "rps": 90.1, "media_ms": 241, "p50": 177, "p90": 570, "p95": 685, "p99": 847, "max_ms": 1028, "errores": {}}
+{"prueba": "carga_0190_r3", "usuarios": 190, "muestras": 8430, "error_pct": 0.0, "rps": 94.6, "media_ms": 293, "p50": 287, "p90": 508, "p95": 577, "p99": 757, "max_ms": 949, "errores": {}}
+{"prueba": "carga_0200_r3", "usuarios": 200, "muestras": 8578, "error_pct": 0.0, "rps": 96.3, "media_ms": 362, "p50": 367, "p90": 568, "p95": 634, "p99": 801, "max_ms": 962, "errores": {}}
+{"prueba": "carga_0250_r3", "usuarios": 250, "muestras": 8524, "error_pct": 0.0, "rps": 95.5, "media_ms": 836, "p50": 851, "p90": 1156, "p95": 1373, "p99": 1587, "max_ms": 1725, "errores": {}}

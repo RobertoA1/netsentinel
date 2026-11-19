@@ -1,0 +1,41 @@
+{
+ "muestras": 5448,
+ "error_pct": 0.0,
+ "rps": 60.6,
+ "media_ms": 1432,
+ "p50": 816,
+ "p90": 4044,
+ "p95": 5354,
+ "p99": 7515,
+ "max_ms": 9652,
+ "prueba": "db_0200",
+ "usuarios": 200,
+ "errores": {},
+ "sesion": {
+  "muestras": 544,
+  "error_pct": 0.0,
+  "rps": 6.9,
+  "media_ms": 11913,
+  "p50": 12160,
+  "p90": 14658,
+  "p95": 15235,
+  "p99": 16905,
+  "max_ms": 18152
+ },
+ "total_gui": {
+  "muestras": 5992,
+  "error_pct": 0.0,
+  "rps": 65.6,
+  "media_ms": 2383,
+  "p50": 997,
+  "p90": 7086,
+  "p95": 11881,
+  "p99": 14616,
+  "max_ms": 18152
+ },
+ "peor_endpoint": "Resumen: agregados sobre firewall_logs",
+ "peor_p95": 7847,
+ "login_p95": null,
+ "peor_endpoint_sin_login": "Resumen: agregados sobre firewall_logs",
+ "peor_p95_sin_login": 7847
+}

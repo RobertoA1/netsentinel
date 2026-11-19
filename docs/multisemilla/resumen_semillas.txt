@@ -1,0 +1,30 @@
+Semillas: [42, 123, 31337]
+
+PR-AUC externa (media de 5 pliegues por semilla; media ± DE entre semillas) y PR-AUC en Prueba
+Dummy                  externa 0.4696 ± 0.0001 | prueba 0.7330 ± 0.0003 | n_semillas=3
+Regresión logística    externa 1.0000 ± 0.0000 | prueba 0.9950 ± 0.0000 | n_semillas=3
+Random Forest          externa 1.0000 ± 0.0000 | prueba 0.9957 ± 0.0000 | n_semillas=3
+GB histogramas         externa 0.9919 ± 0.0070 | prueba 0.9947 ± 0.0005 | n_semillas=3
+XGBoost                externa 1.0000 ± 0.0000 | prueba 0.9955 ± 0.0008 | n_semillas=3
+
+Mejora de PR-AUC externa sobre el Dummy (por semilla, media ± DE)
+Regresión logística    +0.5304 ± 0.0001
+Random Forest          +0.5304 ± 0.0001
+GB histogramas         +0.5224 ± 0.0069
+XGBoost                +0.5304 ± 0.0001
+
+Precisión y F1 en Prueba (umbral 0,5) reponderadas a prevalencia de Botnet (media entre semillas)
+modelo                 π= 0.75(prec/F1) π= 0.10(prec/F1) π= 0.01(prec/F1)
+Dummy                       0.750/0.857        0.100/0.182        0.010/0.020
+Regresión logística         1.000/0.991        1.000/0.991        1.000/0.991
+Random Forest               1.000/0.991        1.000/0.991        1.000/0.991
+GB histogramas              1.000/0.990        0.993/0.987        0.934/0.954
+XGBoost                     1.000/0.991        1.000/0.991        1.000/0.991
+
+Wilcoxon pareado entre modelos sobre las PR-AUC por (semilla×pliegue); NO son independientes: úsese como orientación
+Regresión logística  vs XGBoost              n=15 dif=-0.0000 p=0.1025 p_Holm=0.6148
+Random Forest        vs XGBoost              n=15 dif=-0.0000 p=0.1573 p_Holm=0.7865
+GB histogramas       vs XGBoost              n=15 dif=-0.0081 p=0.1797 p_Holm=0.7865
+Regresión logística  vs Random Forest        n=15 dif=-0.0000 p=0.334 p_Holm=1
+Random Forest        vs GB histogramas       n=15 dif=+0.0081 p=0.4615 p_Holm=1
+Regresión logística  vs GB histogramas       n=15 dif=+0.0081 p=0.6845 p_Holm=1

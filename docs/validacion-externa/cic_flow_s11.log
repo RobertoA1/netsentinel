@@ -1,0 +1,22 @@
+Esc. 1 (Neris): 71335 flujos, Botnet 57.4%
+Esc. 2 (Neris): 30052 flujos, Botnet 69.7%
+Esc. 3 (Rbot): 143553 flujos, Botnet 18.7%
+Esc. 4 (Rbot): 27837 flujos, Botnet 9.3%
+Esc. 5 (Virut): 5577 flujos, Botnet 16.2%
+Esc. 6 (Menti): 12119 flujos, Botnet 38.2%
+Esc. 7 (Sogou): 1739 flujos, Botnet 3.6%
+Esc. 8 (Murlo): 78903 flujos, Botnet 7.8%
+Esc. 9 (Neris): 214943 flujos, Botnet 86.1%
+Esc. 11 (Rbot): 10882 flujos, Botnet 75.0%
+Esc. 12 (NSIS.ay): 9793 flujos, Botnet 22.1%
+Esc. 13 (Virut): 71903 flujos, Botnet 55.6%
+CIC viernes mañana: 191033 flujos, 1966 bot (1.03%)
+logreg: interno PR=0.833
+random_forest: interno PR=0.875
+hist_gb: interno PR=0.875
+xgboost: interno PR=0.880
+{"seed": 11, "variante": "flow", "model": "logreg", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.08042394678018734, "roc_auc": 0.8611476258092148, "umbral": 0.3641602109043141, "recall": 0.7558494404883012, "fpr": 0.1984799039493936, "precision": 0.03809084384292013, "alertas_por_100k": 20421.602550344705}
+{"seed": 11, "variante": "flow", "model": "random_forest", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.019161627702657932, "roc_auc": 0.7174521165966878, "umbral": 0.0800443849303849, "recall": 1.0, "fpr": 0.584565259934309, "precision": 0.017477419813669015, "alertas_por_100k": 58884.06715070171}
+{"seed": 11, "variante": "flow", "model": "hist_gb", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.029152755344531135, "roc_auc": 0.7733991945380922, "umbral": 0.09444397005797367, "recall": 1.0, "fpr": 0.45667937820984095, "precision": 0.02226273652742076, "alertas_por_100k": 46227.091654321506}
+{"seed": 11, "variante": "flow", "model": "xgboost", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.022807707258409936, "roc_auc": 0.7505857684913444, "umbral": 0.11739876866340637, "recall": 0.7558494404883012, "fpr": 0.31440177291647936, "precision": 0.02438904298445732, "alertas_por_100k": 31894.489433762752}
+{"seed": 11, "variante": "flow", "model": "LR+RF+HGB", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.04455080779532912, "roc_auc": 0.8114613662040961, "umbral": 0.32097985548981917, "recall": 0.7711088504577823, "fpr": 0.2739293477973417, "precision": 0.02843904177687733, "alertas_por_100k": 27904.60286966126}

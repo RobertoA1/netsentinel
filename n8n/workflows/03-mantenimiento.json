@@ -1,0 +1,150 @@
+{
+  "id": "ns-mantenimiento-03",
+  "name": "NetSentinel 03 - Mantenimiento",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## 03 · Mantenimiento diario (03:00, hora de Lima)\n1. **POST /maintenance/purge** aplica la política de retención (logs, hallazgos y bitácora según *Configuración → Retención*).\n2. **GET /health** comprueba que API, base de datos y LLM responden.\n3. **Registrar resultado** deja el resumen en la ejecución y en los logs de n8n; si la purga o la salud fallan, la ejecución termina en error para que sea visible en *Executions*.",
+        "height": 200,
+        "width": 640,
+        "color": 4
+      },
+      "id": "32b6297c-6c3b-5d80-8991-f3628d644674",
+      "name": "Nota flujo 03",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -60,
+        -120
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1,
+              "triggerAtHour": 3,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      },
+      "id": "19288b63-ede7-58f2-a304-efcc61dcceed",
+      "name": "Diario 03:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NETSENTINEL_API_URL }}/maintenance/purge",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "={{ $env.N8N_API_KEY }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "39f81c4f-781c-5514-82bf-cc50f9671c58",
+      "name": "POST /maintenance/purge",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        200
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.NETSENTINEL_API_URL }}/health",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "66dc2d89-3ab1-5180-a49d-167d14fe7ecd",
+      "name": "GET /health",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        520,
+        200
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Registra el resultado del mantenimiento diario (queda en la ejecucion y en los logs de n8n).\nconst purga = $('POST /maintenance/purge').first().json || {};\nconst salud = $('GET /health').first().json || {};\nconst purgaOk = !purga.error;\nconst saludOk = salud.status === 'ok' && salud.db !== false;\nconst resumen = {\n  fecha: new Date().toISOString(),\n  purga_ok: purgaOk, purga: purgaOk ? purga : (purga.error.message || String(purga.error)),\n  salud_ok: saludOk, health: salud.error ? (salud.error.message || String(salud.error)) : salud,\n};\nconsole.log('Mantenimiento NetSentinel: ' + JSON.stringify(resumen));\nif (!purgaOk || !saludOk) {\n  // Hace fallar la ejecucion para que quede visible en n8n (Executions) y pueda alertarse.\n  throw new Error('Mantenimiento con problemas: ' + JSON.stringify(resumen));\n}\nreturn [{ json: resumen }];\n"
+      },
+      "id": "73766114-89ac-526b-b4b6-6f16de440e8d",
+      "name": "Registrar resultado",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        200
+      ]
+    }
+  ],
+  "connections": {
+    "Diario 03:00": {
+      "main": [
+        [
+          {
+            "node": "POST /maintenance/purge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "POST /maintenance/purge": {
+      "main": [
+        [
+          {
+            "node": "GET /health",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET /health": {
+      "main": [
+        [
+          {
+            "node": "Registrar resultado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Lima"
+  },
+  "pinData": {},
+  "tags": [],
+  "meta": {
+    "templateCredsSetupCompleted": true
+  }
+}

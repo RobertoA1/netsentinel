@@ -1,0 +1,31 @@
+{
+ "muestras": 1268,
+ "error_pct": 0.0,
+ "rps": 20.9,
+ "media_ms": 915,
+ "p50": 904,
+ "p90": 1169,
+ "p95": 1411,
+ "p99": 2461,
+ "max_ms": 3029,
+ "prueba": "login_0020",
+ "usuarios": 20,
+ "errores": {},
+ "sesion": null,
+ "total_gui": {
+  "muestras": 1268,
+  "error_pct": 0.0,
+  "rps": 20.9,
+  "media_ms": 915,
+  "p50": 904,
+  "p90": 1169,
+  "p95": 1411,
+  "p99": 2461,
+  "max_ms": 3029
+ },
+ "peor_endpoint": "POST /auth/login",
+ "peor_p95": 1411,
+ "login_p95": 1411,
+ "peor_endpoint_sin_login": null,
+ "peor_p95_sin_login": null
+}

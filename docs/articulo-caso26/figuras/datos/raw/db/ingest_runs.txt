@@ -1,0 +1,4 @@
+id|started_at|finished_at|status|trigger|source_id|filename|lines_read|logs_inserted|parse_errors|findings_created|findings_noise|error
+1|2026-11-11 23:08:06.758866+00|2026-11-11 23:08:16.417316+00|success|dataset|3|capture20110818-2.binetflow|107252|107194|1|51|0|
+9|2026-11-12 02:42:41.96661+00|2026-11-12 02:45:33.010517+00|success|dataset|3|capture20110818-2.binetflow|107252|107194|1|4|0|
+(2 rows)

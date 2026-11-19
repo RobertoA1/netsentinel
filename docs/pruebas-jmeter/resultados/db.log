@@ -1,0 +1,9 @@
+{"prueba": "db_0010", "usuarios": 10, "muestras": 529, "error_pct": 0.0, "rps": 6.0, "media_ms": 40, "p50": 2, "p90": 159, "p95": 164, "p99": 182, "max_ms": 929, "errores": {}}
+{"prueba": "db_0025", "usuarios": 25, "muestras": 1296, "error_pct": 0.0, "rps": 14.6, "media_ms": 45, "p50": 2, "p90": 169, "p95": 189, "p99": 260, "max_ms": 764, "errores": {}}
+{"prueba": "db_0050", "usuarios": 50, "muestras": 2571, "error_pct": 0.0, "rps": 29.0, "media_ms": 55, "p50": 2, "p90": 195, "p95": 236, "p99": 314, "max_ms": 793, "errores": {}}
+{"prueba": "db_0100", "usuarios": 100, "muestras": 4871, "error_pct": 0.0, "rps": 55.0, "media_ms": 129, "p50": 6, "p90": 386, "p95": 532, "p99": 1262, "max_ms": 2108, "errores": {}}
+{"prueba": "db_0200", "usuarios": 200, "muestras": 5448, "error_pct": 0.0, "rps": 60.6, "media_ms": 1432, "p50": 816, "p90": 4044, "p95": 5373, "p99": 7521, "max_ms": 9652, "errores": {}}
+{"prueba": "db_0400", "usuarios": 400, "muestras": 4845, "error_pct": 3.72, "rps": 50.6, "media_ms": 5320, "p50": 5127, "p90": 10667, "p95": 12419, "p99": 18165, "max_ms": 20835, "errores": {"null 0": 180}}
+{"prueba": "db_0800", "usuarios": 800, "muestras": 8466, "error_pct": 21.19, "rps": 84.3, "media_ms": 6480, "p50": 8779, "p90": 12023, "p95": 13276, "p99": 16481, "max_ms": 18756, "errores": {"null 0": 1794}}
+{"prueba": "login_0020", "usuarios": 20, "muestras": 1140, "error_pct": 0.0, "rps": 18.4, "media_ms": 1034, "p50": 856, "p90": 1167, "p95": 2232, "p99": 8484, "max_ms": 14005, "errores": {}}
+{"prueba": "resistencia_0150_10min", "usuarios": 150, "muestras": 54859, "error_pct": 0.0, "rps": 91.6, "media_ms": 100, "p50": 35, "p90": 290, "p95": 428, "p99": 716, "max_ms": 1113, "errores": {}}

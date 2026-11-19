@@ -1,0 +1,41 @@
+{
+ "muestras": 8578,
+ "error_pct": 0.0,
+ "rps": 96.3,
+ "media_ms": 362,
+ "p50": 367,
+ "p90": 568,
+ "p95": 633,
+ "p99": 800,
+ "max_ms": 962,
+ "prueba": "carga_0200_r3",
+ "usuarios": 200,
+ "errores": {},
+ "sesion": {
+  "muestras": 874,
+  "error_pct": 0.0,
+  "rps": 11.3,
+  "media_ms": 3236,
+  "p50": 3278,
+  "p90": 3833,
+  "p95": 4008,
+  "p99": 4255,
+  "max_ms": 4810
+ },
+ "total_gui": {
+  "muestras": 9452,
+  "error_pct": 0.0,
+  "rps": 106.1,
+  "media_ms": 627,
+  "p50": 386,
+  "p90": 802,
+  "p95": 3245,
+  "p99": 3813,
+  "max_ms": 4810
+ },
+ "peor_endpoint": "GET /logs",
+ "peor_p95": 717,
+ "login_p95": 568,
+ "peor_endpoint_sin_login": "GET /logs",
+ "peor_p95_sin_login": 717
+}

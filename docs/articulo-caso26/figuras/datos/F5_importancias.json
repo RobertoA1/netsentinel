@@ -1,0 +1,36 @@
+{
+ "shap": {
+  "Bytes por paquete": 5.7186561822891235,
+  "Estado de la conexión": 0.4370919418334961,
+  "Bytes enviados": 0.43082116055488584,
+  "Bytes por segundo": 0.1571989674270153,
+  "Clase de puerto origen": 0.08597413018345833,
+  "Duración (s)": 0.007588204134488478,
+  "Bytes totales": 0.0,
+  "Bytes recibidos": 0.0,
+  "Proporción de bytes salientes": 0.0,
+  "Paquetes": 0.0,
+  "Puerto destino": 0.0,
+  "Paquetes por segundo": 0.0,
+  "Protocolo": 0.0,
+  "Sentido del flujo": 0.0,
+  "Dirección de red": 0.0
+ },
+ "permutacion": {
+  "Bytes por paquete": 0.05202862002906698,
+  "Duración (s)": 0.0,
+  "Bytes recibidos": 0.0,
+  "Bytes enviados": 0.0,
+  "Bytes totales": 0.0,
+  "Paquetes": 0.0,
+  "Proporción de bytes salientes": 0.0,
+  "Bytes por segundo": 0.0,
+  "Paquetes por segundo": 0.0,
+  "Puerto destino": 0.0,
+  "Protocolo": 0.0,
+  "Estado de la conexión": 0.0,
+  "Sentido del flujo": 0.0,
+  "Dirección de red": 0.0,
+  "Clase de puerto destino": 0.0
+ }
+}

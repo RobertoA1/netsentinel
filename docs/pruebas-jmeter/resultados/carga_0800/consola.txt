@@ -1,0 +1,23 @@
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider (file:/opt/jmeter/lib/xstream-1.4.20.jar)
+WARNING: Please consider reporting this to the maintainers of class com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using plan/netsentinel.jmx
+Starting standalone test @ 2026 Nov 18 11:08:29 GMT-05:00 (1795018109859)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      1 in 00:00:02 =    0.6/s Avg:   240 Min:   240 Max:   240 Err:     0 (0.00%) Active: 65 Started: 65 Finished: 0
+summary +    546 in 00:00:28 =   19.2/s Avg: 10317 Min:   130 Max: 23182 Err:     0 (0.00%) Active: 800 Started: 800 Finished: 0
+summary =    547 in 00:00:30 =   18.2/s Avg: 10299 Min:   130 Max: 23182 Err:     0 (0.00%)
+summary +   2499 in 00:00:30 =   83.3/s Avg: 10280 Min:  1357 Max: 30035 Err:    27 (1.08%) Active: 800 Started: 800 Finished: 0
+summary =   3046 in 00:01:00 =   50.7/s Avg: 10284 Min:   130 Max: 30035 Err:    27 (0.89%)
+summary +   2543 in 00:00:30 =   84.7/s Avg:  8171 Min:  6961 Max: 10411 Err:     0 (0.00%) Active: 703 Started: 800 Finished: 97
+summary =   5589 in 00:01:30 =   62.1/s Avg:  9322 Min:   130 Max: 30035 Err:    27 (0.48%)
+summary +    702 in 00:00:09 =   74.9/s Avg:  8092 Min:  7205 Max:  9552 Err:     0 (0.00%) Active: 0 Started: 800 Finished: 800
+summary =   6291 in 00:01:39 =   63.3/s Avg:  9185 Min:   130 Max: 30035 Err:    27 (0.43%)
+Tidying up ...    @ 2026 Nov 18 11:10:09 GMT-05:00 (1795018209394)
+... end of run

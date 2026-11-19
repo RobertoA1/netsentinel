@@ -1,0 +1,33 @@
+{
+ "muestras": 100,
+ "error_pct": 100.0,
+ "rps": 1.5,
+ "media_ms": 30029,
+ "p50": 30031,
+ "p90": 30031,
+ "p95": 30034,
+ "p99": 30054,
+ "max_ms": 30054,
+ "prueba": "recuperacion_0050",
+ "usuarios": 50,
+ "errores": {
+  "Non HTTP response code: java.net.SocketTimeoutException": 100
+ },
+ "sesion": null,
+ "total_gui": {
+  "muestras": 100,
+  "error_pct": 100.0,
+  "rps": 1.5,
+  "media_ms": 30029,
+  "p50": 30031,
+  "p90": 30031,
+  "p95": 30034,
+  "p99": 30054,
+  "max_ms": 30054
+ },
+ "peor_endpoint": "POST /auth/login",
+ "peor_p95": 30054,
+ "login_p95": 30054,
+ "peor_endpoint_sin_login": "GET /health",
+ "peor_p95_sin_login": 30031
+}

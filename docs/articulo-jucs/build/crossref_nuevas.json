@@ -1,0 +1,4230 @@
+{
+ "akiba2019": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T15:45:12Z",
+    "timestamp": 1795103112840,
+    "version": "4.10.3"
+   },
+   "publisher-location": "New York, NY, USA",
+   "reference-count": 29,
+   "publisher": "ACM",
+   "license": [
+    {
+     "start": {
+      "date-parts": [
+       [
+        2019,
+        7,
+        25
+       ]
+      ],
+      "date-time": "2019-07-25T00:00:00Z",
+      "timestamp": 1564012800000
+     },
+     "content-version": "vor",
+     "delay-in-days": 0,
+     "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+    }
+   ],
+   "content-domain": {
+    "domain": [
+     "dl.acm.org"
+    ],
+    "crossmark-restriction": true
+   },
+   "short-container-title": [],
+   "published-print": {
+    "date-parts": [
+     [
+      2019,
+      7,
+      25
+     ]
+    ]
+   },
+   "DOI": "10.1145/3292500.3330701",
+   "type": "proceedings-article",
+   "created": {
+    "date-parts": [
+     [
+      2019,
+      7,
+      26
+     ]
+    ],
+    "date-time": "2019-07-26T09:17:26Z",
+    "timestamp": 1564132646000
+   },
+   "page": "2623-2631",
+   "update-policy": "https://doi.org/10.1145/crossmark-policy",
+   "source": "Crossref",
+   "is-referenced-by-count": 9201,
+   "title": [
+    "Optuna"
+   ],
+   "prefix": "10.1145",
+   "author": [
+    {
+     "given": "Takuya",
+     "family": "Akiba",
+     "sequence": "first",
+     "affiliation": [
+      {
+       "name": "Preferred Networks, Inc., Tokyo, Japan"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Shotaro",
+     "family": "Sano",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Preferred Networks, Inc., Tokyo, Japan"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Toshihiko",
+     "family": "Yanase",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Preferred Networks, Inc., Tokyo, Japan"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Takeru",
+     "family": "Ohta",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Preferred Networks, Inc., Tokyo, Japan"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Masanori",
+     "family": "Koyama",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Preferred Networks, Inc., Tokyo, Japan"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "320",
+   "published-online": {
+    "date-parts": [
+     [
+      2019,
+      7,
+      25
+     ]
+    ]
+   },
+   "reference": [
+    {
+     "key": "e_1_3_2_1_1_1",
+     "unstructured": "Mart'in Abadi Paul Barham Jianmin Chen Zhifeng Chen Andy Davis Jeffrey Dean Matthieu Devin Sanjay Ghemawat Geoffrey Irving Michael Isard Manjunath Kudlur Josh Levenberg Rajat Monga Sherry Moore Derek G. Murray Benoit Steiner Paul Tucker Vijay Vasudevan Pete Warden Martin Wicke Yuan Yu and Xiaoqiang Zheng. 2016. TensorFlow: A System for Large-scale Machine Learning. In OSDI. 265--283.   Mart'in Abadi Paul Barham Jianmin Chen Zhifeng Chen Andy Davis Jeffrey Dean Matthieu Devin Sanjay Ghemawat Geoffrey Irving Michael Isard Manjunath Kudlur Josh Levenberg Rajat Monga Sherry Moore Derek G. Murray Benoit Steiner Paul Tucker Vijay Vasudevan Pete Warden Martin Wicke Yuan Yu and Xiaoqiang Zheng. 2016. TensorFlow: A System for Large-scale Machine Learning. In OSDI. 265--283."
+    },
+    {
+     "key": "e_1_3_2_1_2_1",
+     "volume-title": "ECCV Workshop on Open Images Challenge.",
+     "author": "Akiba Takuya",
+     "year": "2018"
+    },
+    {
+     "key": "e_1_3_2_1_3_1",
+     "unstructured": "James Bergstra Rémi Bardenet Yoshua Bengio and Balázs Kégl. 2011. Algorithms for Hyper-parameter Optimization. In NIPS. 2546--2554.   James Bergstra Rémi Bardenet Yoshua Bengio and Balázs Kégl. 2011. Algorithms for Hyper-parameter Optimization. In NIPS. 2546--2554."
+    },
+    {
+     "key": "e_1_3_2_1_4_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1088/1749-4699/8/1/014008"
+    },
+    {
+     "key": "e_1_3_2_1_5_1",
+     "volume-title": "ICML Workshop on AutoML. 11--20",
+     "author": "Dewancker Ian",
+     "year": "2016"
+    },
+    {
+     "key": "e_1_3_2_1_6_1",
+     "volume-title": "Jost Tobias Springenberg, and Frank Hutter",
+     "author": "Domhan Tobias",
+     "year": "2015"
+    },
+    {
+     "key": "e_1_3_2_1_7_1",
+     "unstructured": "Siying Dong Mark Callaghan Leonidas Galanis Dhruba Borthakur Tony Savor and Michael Strum. 2017. Optimizing Space Amplification in RocksDB. In CIDR.  Siying Dong Mark Callaghan Leonidas Galanis Dhruba Borthakur Tony Savor and Michael Strum. 2017. Optimizing Space Amplification in RocksDB. In CIDR."
+    },
+    {
+     "key": "e_1_3_2_1_8_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1145/3097983.3098043"
+    },
+    {
+     "key": "e_1_3_2_1_9_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1162/106365601750190398"
+    },
+    {
+     "key": "e_1_3_2_1_10_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1007/978-3-642-25566-3_40"
+    },
+    {
+     "key": "e_1_3_2_1_11_1",
+     "doi-asserted-by": "crossref",
+     "unstructured": "Frank Hutter Lars Kotthoff and Joaquin Vanschoren (Eds.). 2018. Automatic Machine Learning: Methods Systems Challenges .Springer. In press available at http://automl.org/book.  Frank Hutter Lars Kotthoff and Joaquin Vanschoren (Eds.). 2018. Automatic Machine Learning: Methods Systems Challenges .Springer. In press available at http://automl.org/book.",
+     "DOI": "10.1007/978-3-030-05318-5"
+    },
+    {
+     "key": "e_1_3_2_1_12_1",
+     "unstructured": "Kevin Jamieson and Ameet Talwalkar. 2016. Non-stochastic best arm identification and hyperparameter optimization. In Artificial Intelligence and Statistics. 240--248.  Kevin Jamieson and Ameet Talwalkar. 2016. Non-stochastic best arm identification and hyperparameter optimization. In Artificial Intelligence and Statistics. 240--248."
+    },
+    {
+     "key": "e_1_3_2_1_13_1",
+     "volume-title": "Jost Tobias Springenberg, and Frank Hutter",
+     "author": "Klein Aaron",
+     "year": "2017"
+    },
+    {
+     "key": "e_1_3_2_1_14_1",
+     "volume-title": "Positioning and Power in Academic Publishing: Players, Agents and Agendas",
+     "author": "Kluyver Thomas"
+    },
+    {
+     "key": "e_1_3_2_1_15_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1145/3219819.3219837"
+    },
+    {
+     "key": "e_1_3_2_1_16_1",
+     "unstructured": "Alex Krizhevsky Ilya Sutskever and Geoffrey E Hinton. 2012. ImageNet Classification with Deep Convolutional Neural Networks. In NIPS. 1097--1105.   Alex Krizhevsky Ilya Sutskever and Geoffrey E Hinton. 2012. ImageNet Classification with Deep Convolutional Neural Networks. In NIPS. 1097--1105."
+    },
+    {
+     "key": "e_1_3_2_1_17_1",
+     "volume-title": "The Open Images Dataset V4: Unified image classification, object detection, and visual relationship detection at scale. CoRR",
+     "author": "Kuznetsova Alina",
+     "year": "2018"
+    },
+    {
+     "key": "e_1_3_2_1_18_1",
+     "first-page": "1",
+     "article-title": "Hyperband: A Novel Bandit-Based Approach to Hyperparameter Optimization",
+     "volume": "18",
+     "author": "Li Lisha",
+     "year": "2018",
+     "journal-title": "Journal of Machine Learning Research"
+    },
+    {
+     "key": "e_1_3_2_1_19_1",
+     "volume-title": "Massively Parallel Hyperparameter Tuning. In NeurIPS Workshop on Machine Learning Systems.",
+     "author": "Li Liam",
+     "year": "2018"
+    },
+    {
+     "key": "e_1_3_2_1_20_1",
+     "volume-title": "Tune: A Research Platform for Distributed Model Selection and Training. In ICML Workshop on AutoML.",
+     "author": "Liaw Richard",
+     "year": "2018"
+    },
+    {
+     "key": "e_1_3_2_1_21_1",
+     "unstructured": "Michael McCourt. 2016. Benchmark suite of test functions suitable for evaluating black-box optimization strategies. https://github.com/sigopt/evalset.  Michael McCourt. 2016. Benchmark suite of test functions suitable for evaluating black-box optimization strategies. https://github.com/sigopt/evalset."
+    },
+    {
+     "key": "e_1_3_2_1_22_1",
+     "volume-title": "SC Workshop on Python for High Performance and Scientific Computing.",
+     "author": "McKinney Wes",
+     "year": "2011"
+    },
+    {
+     "key": "e_1_3_2_1_23_1",
+     "volume-title": "Ray: A Distributed Framework for Emerging AI Applications. CoRR",
+     "author": "Moritz Philipp",
+     "year": "2017"
+    },
+    {
+     "key": "e_1_3_2_1_24_1",
+     "volume-title": "Reading Digits in Natural Images with Unsupervised Feature Learning. In NIPS Workshop on Deep Learning and Unsupervised Feature Learning.",
+     "author": "Netzer Yuval",
+     "year": "2011"
+    },
+    {
+     "key": "e_1_3_2_1_25_1",
+     "unstructured": "Graham Neubig Chris Dyer Yoav Goldberg Austin Matthews Waleed Ammar Antonios Anastasopoulos Miguel Ballesteros David Chiang Daniel Clothiaux Trevor Cohn Kevin Duh Manaal Faruqui Cynthia Gan Dan Garrette Yangfeng Ji Lingpeng Kong Adhiguna Kuncoro Gaurav Kumar Chaitanya Malaviya Paul Michel Yusuke Oda Matthew Richardson Naomi Saphra Swabha Swayamdipta and Pengcheng Yin. 2017. DyNet: The Dynamic Neural Network Toolkit. CoRR Vol. abs/1701.03980 (2017).  Graham Neubig Chris Dyer Yoav Goldberg Austin Matthews Waleed Ammar Antonios Anastasopoulos Miguel Ballesteros David Chiang Daniel Clothiaux Trevor Cohn Kevin Duh Manaal Faruqui Cynthia Gan Dan Garrette Yangfeng Ji Lingpeng Kong Adhiguna Kuncoro Gaurav Kumar Chaitanya Malaviya Paul Michel Yusuke Oda Matthew Richardson Naomi Saphra Swabha Swayamdipta and Pengcheng Yin. 2017. DyNet: The Dynamic Neural Network Toolkit. CoRR Vol. abs/1701.03980 (2017)."
+    },
+    {
+     "key": "e_1_3_2_1_26_1",
+     "volume-title": "NIPS Autodiff Workshop.",
+     "author": "Paszke Adam",
+     "year": "2017"
+    },
+    {
+     "key": "e_1_3_2_1_27_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1109/JPROC.2015.2494218"
+    },
+    {
+     "key": "e_1_3_2_1_28_1",
+     "unstructured": "Jasper Snoek Hugo Larochelle and Ryan P Adams. 2012. Practical Bayesian Optimization of Machine Learning Algorithms. In NIPS. 2951--2959.   Jasper Snoek Hugo Larochelle and Ryan P Adams. 2012. Practical Bayesian Optimization of Machine Learning Algorithms. In NIPS. 2951--2959."
+    },
+    {
+     "key": "e_1_3_2_1_29_1",
+     "volume-title": "NIPS Workshop on Machine Learning Systems.",
+     "author": "Tokui Seiya",
+     "year": "2015"
+    }
+   ],
+   "event": {
+    "name": "KDD '19: The 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+    "location": "Anchorage AK USA",
+    "acronym": "KDD '19",
+    "sponsor": [
+     "SIGMOD ACM Special Interest Group on Management of Data",
+     "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data"
+    ]
+   },
+   "container-title": [
+    "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining"
+   ],
+   "original-title": [],
+   "link": [
+    {
+     "URL": "https://dl.acm.org/doi/10.1145/3292500.3330701",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "text-mining"
+    },
+    {
+     "URL": "https://dl.acm.org/doi/pdf/10.1145/3292500.3330701",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2025,
+      6,
+      17
+     ]
+    ],
+    "date-time": "2025-06-17T21:02:10Z",
+    "timestamp": 1750194130000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "https://dl.acm.org/doi/10.1145/3292500.3330701"
+    }
+   },
+   "subtitle": [
+    "A Next-generation Hyperparameter Optimization Framework"
+   ],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      2019,
+      7,
+      25
+     ]
+    ]
+   },
+   "references-count": 29,
+   "alternative-id": [
+    "10.1145/3292500.3330701",
+    "10.1145/3292500"
+   ],
+   "URL": "https://doi.org/10.1145/3292500.3330701",
+   "relation": {},
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      2019,
+      7,
+      25
+     ]
+    ]
+   },
+   "assertion": [
+    {
+     "value": "2019-07-25",
+     "order": 2,
+     "name": "published",
+     "label": "Published",
+     "group": {
+      "name": "publication_history",
+      "label": "Publication History"
+     }
+    }
+   ]
+  }
+ },
+ "chen2016": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T16:02:56Z",
+    "timestamp": 1795104176862,
+    "version": "4.10.3"
+   },
+   "publisher-location": "New York, NY, USA",
+   "reference-count": 25,
+   "publisher": "ACM",
+   "license": [
+    {
+     "start": {
+      "date-parts": [
+       [
+        2017,
+        8,
+        13
+       ]
+      ],
+      "date-time": "2017-08-13T00:00:00Z",
+      "timestamp": 1502582400000
+     },
+     "content-version": "vor",
+     "delay-in-days": 365,
+     "URL": "http://www.acm.org/publications/policies/copyright_policy#Background"
+    }
+   ],
+   "funder": [
+    {
+     "DOI": "10.13039/100000006",
+     "name": "Office of Naval Research",
+     "doi-asserted-by": "publisher",
+     "award": [
+      "N000141010672"
+     ],
+     "award-info": [
+      {
+       "award-number": [
+        "N000141010672"
+       ]
+      }
+     ],
+     "id": [
+      {
+       "id": "10.13039/100000006",
+       "id-type": "DOI",
+       "asserted-by": "publisher"
+      }
+     ]
+    },
+    {
+     "DOI": "10.13039/100000001",
+     "name": "National Science Foundation",
+     "doi-asserted-by": "publisher",
+     "award": [
+      "1258741"
+     ],
+     "award-info": [
+      {
+       "award-number": [
+        "1258741"
+       ]
+      }
+     ],
+     "id": [
+      {
+       "id": "10.13039/100000001",
+       "id-type": "DOI",
+       "asserted-by": "publisher"
+      }
+     ]
+    }
+   ],
+   "content-domain": {
+    "domain": [
+     "dl.acm.org"
+    ],
+    "crossmark-restriction": true
+   },
+   "short-container-title": [],
+   "published-print": {
+    "date-parts": [
+     [
+      2016,
+      8,
+      13
+     ]
+    ]
+   },
+   "DOI": "10.1145/2939672.2939785",
+   "type": "proceedings-article",
+   "created": {
+    "date-parts": [
+     [
+      2016,
+      8,
+      8
+     ]
+    ],
+    "date-time": "2016-08-08T14:33:46Z",
+    "timestamp": 1470666826000
+   },
+   "page": "785-794",
+   "update-policy": "https://doi.org/10.1145/crossmark-policy",
+   "source": "Crossref",
+   "is-referenced-by-count": 51989,
+   "title": [
+    "XGBoost"
+   ],
+   "prefix": "10.1145",
+   "author": [
+    {
+     "given": "Tianqi",
+     "family": "Chen",
+     "sequence": "first",
+     "affiliation": [
+      {
+       "name": "University of Washington, Seattle, WA, USA"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Carlos",
+     "family": "Guestrin",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "University of Washington, Seattle, WA, USA"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "320",
+   "published-online": {
+    "date-parts": [
+     [
+      2016,
+      8,
+      13
+     ]
+    ]
+   },
+   "reference": [
+    {
+     "key": "e_1_3_2_2_1_1",
+     "unstructured": "R. Bekkerman. The present and the future of the kdd cup competition: an outsider's perspective."
+    },
+    {
+     "key": "e_1_3_2_2_2_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.5555/2124408"
+    },
+    {
+     "key": "e_1_3_2_2_3_1",
+     "first-page": "3",
+     "volume-title": "Proceedings of the KDD Cup Workshop 2007",
+     "author": "Bennett J.",
+     "year": "2007",
+     "unstructured": "J. Bennett and S. Lanning. The netflix prize. In Proceedings of the KDD Cup Workshop 2007, pages 3--6, New York, Aug. 2007."
+    },
+    {
+     "key": "e_1_3_2_2_4_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1023/A:1010933404324"
+    },
+    {
+     "key": "e_1_3_2_2_5_1",
+     "first-page": "23",
+     "article-title": "From ranknet to lambdarank to lambdamart: An overview",
+     "volume": "11",
+     "author": "Burges C.",
+     "year": "2010",
+     "unstructured": "C. Burges. From ranknet to lambdarank to lambdamart: An overview. Learning, 11:23--581, 2010.",
+     "journal-title": "Learning"
+    },
+    {
+     "key": "e_1_3_2_2_6_1",
+     "volume-title": "Yahoo! Learning to Rank Challenge Overview. Journal of Machine Learning Research - W & CP, 14:1--24",
+     "author": "Chapelle O.",
+     "year": "2011",
+     "unstructured": "O. Chapelle and Y. Chang. Yahoo! Learning to Rank Challenge Overview. Journal of Machine Learning Research - W & CP, 14:1--24, 2011."
+    },
+    {
+     "key": "e_1_3_2_2_7_1",
+     "first-page": "436",
+     "volume-title": "Proceeding of 30th International Conference on Machine Learning (ICML'13)",
+     "volume": "1",
+     "author": "Chen T.",
+     "year": "2013",
+     "unstructured": "T. Chen, H. Li, Q. Yang, and Y. Yu. General functional matrix factorization using gradient boosting. In Proceeding of 30th International Conference on Machine Learning (ICML'13), volume 1, pages 436--444, 2013."
+    },
+    {
+     "key": "e_1_3_2_2_8_1",
+     "volume-title": "Proceeding of 18th Artificial Intelligence and Statistics Conference (AISTATS'15)",
+     "volume": "1",
+     "author": "Chen T.",
+     "year": "2015",
+     "unstructured": "T. Chen, S. Singh, B. Taskar, and C. Guestrin. Efficient second-order gradient boosting for conditional random fields. In Proceeding of 18th Artificial Intelligence and Statistics Conference (AISTATS'15), volume 1, 2015."
+    },
+    {
+     "key": "e_1_3_2_2_9_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.5555/1390681.1442794"
+    },
+    {
+     "key": "e_1_3_2_2_10_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1214/aos/1013203451"
+    },
+    {
+     "key": "e_1_3_2_2_11_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/S0167-9473(01)00065-2"
+    },
+    {
+     "key": "e_1_3_2_2_12_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1214/aos/1016218223"
+    },
+    {
+     "key": "e_1_3_2_2_13_1",
+     "volume-title": "Importance sampled learning ensembles",
+     "author": "Friedman J. H.",
+     "year": "2003",
+     "unstructured": "J. H. Friedman and B. E. Popescu. Importance sampled learning ensembles, 2003."
+    },
+    {
+     "key": "e_1_3_2_2_14_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1145/375663.375670"
+    },
+    {
+     "key": "e_1_3_2_2_15_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1145/2648584.2648589"
+    },
+    {
+     "key": "e_1_3_2_2_16_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.5555/3023549.3023585"
+    },
+    {
+     "key": "e_1_3_2_2_17_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.5555/2981562.2981675"
+    },
+    {
+     "key": "e_1_3_2_2_18_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.5555/2946645.2946679"
+    },
+    {
+     "key": "e_1_3_2_2_19_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.14778/1687553.1687569"
+    },
+    {
+     "key": "e_1_3_2_2_20_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.5555/1953048.2078195"
+    },
+    {
+     "key": "e_1_3_2_2_21_1",
+     "unstructured": "G. Ridgeway. Generalized Boosted Models: A guide to the gbm package."
+    },
+    {
+     "key": "e_1_3_2_2_22_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1145/1963405.1963461"
+    },
+    {
+     "key": "e_1_3_2_2_23_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1145/1645953.1646301"
+    },
+    {
+     "key": "e_1_3_2_2_24_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1109/SSDBM.2007.27"
+    },
+    {
+     "issue": "5",
+     "key": "e_1_3_2_2_25_1",
+     "article-title": "Learning nonlinear functions using regularized greedy forest",
+     "volume": "36",
+     "author": "Zhang T.",
+     "year": "2014",
+     "unstructured": "T. Zhang and R. Johnson. Learning nonlinear functions using regularized greedy forest. IEEE Transactions on Pattern Analysis and Machine Intelligence, 36(5), 2014.",
+     "journal-title": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    }
+   ],
+   "event": {
+    "name": "KDD '16: The 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+    "location": "San Francisco California USA",
+    "acronym": "KDD '16",
+    "sponsor": [
+     "SIGMOD ACM Special Interest Group on Management of Data",
+     "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data"
+    ]
+   },
+   "container-title": [
+    "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining"
+   ],
+   "original-title": [],
+   "link": [
+    {
+     "URL": "https://dl.acm.org/doi/10.1145/2939672.2939785",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "text-mining"
+    },
+    {
+     "URL": "https://dl.acm.org/doi/pdf/10.1145/2939672.2939785",
+     "content-type": "application/pdf",
+     "content-version": "vor",
+     "intended-application": "syndication"
+    },
+    {
+     "URL": "https://dl.acm.org/doi/pdf/10.1145/2939672.2939785",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2025,
+      11,
+      18
+     ]
+    ],
+    "date-time": "2025-11-18T09:38:23Z",
+    "timestamp": 1763458703000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "https://dl.acm.org/doi/10.1145/2939672.2939785"
+    }
+   },
+   "subtitle": [
+    "A Scalable Tree Boosting System"
+   ],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      2016,
+      8,
+      13
+     ]
+    ]
+   },
+   "references-count": 25,
+   "alternative-id": [
+    "10.1145/2939672.2939785",
+    "10.1145/2939672"
+   ],
+   "URL": "https://doi.org/10.1145/2939672.2939785",
+   "relation": {
+    "is-referenced-by": [
+     {
+      "id-type": "doi",
+      "id": "10.1186/s13007-026-01545-2",
+      "asserted-by": "object"
+     },
+     {
+      "id-type": "doi",
+      "id": "10.1007/s43621-026-03407-2",
+      "asserted-by": "object"
+     }
+    ],
+    "has-part": [
+     {
+      "id-type": "doi",
+      "id": "10.5194/acp-20-8063-2020",
+      "asserted-by": "object"
+     }
+    ]
+   },
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      2016,
+      8,
+      13
+     ]
+    ]
+   },
+   "assertion": [
+    {
+     "value": "2016-08-13",
+     "order": 3,
+     "name": "published",
+     "label": "Published",
+     "group": {
+      "name": "publication_history",
+      "label": "Publication History"
+     }
+    }
+   ]
+  }
+ },
+ "breiman2001": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T16:18:39Z",
+    "timestamp": 1795105119908,
+    "version": "4.10.3"
+   },
+   "reference-count": 17,
+   "publisher": "Springer Science and Business Media LLC",
+   "issue": "1",
+   "license": [
+    {
+     "start": {
+      "date-parts": [
+       [
+        2001,
+        10,
+        1
+       ]
+      ],
+      "date-time": "2001-10-01T00:00:00Z",
+      "timestamp": 1001894400000
+     },
+     "content-version": "tdm",
+     "delay-in-days": 0,
+     "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+    },
+    {
+     "start": {
+      "date-parts": [
+       [
+        2001,
+        10,
+        1
+       ]
+      ],
+      "date-time": "2001-10-01T00:00:00Z",
+      "timestamp": 1001894400000
+     },
+     "content-version": "vor",
+     "delay-in-days": 0,
+     "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+    }
+   ],
+   "content-domain": {
+    "domain": [
+     "link.springer.com"
+    ],
+    "crossmark-restriction": false
+   },
+   "short-container-title": [
+    "Machine Learning"
+   ],
+   "published-print": {
+    "date-parts": [
+     [
+      2001,
+      10
+     ]
+    ]
+   },
+   "DOI": "10.1023/a:1010933404324",
+   "type": "journal-article",
+   "created": {
+    "date-parts": [
+     [
+      2002,
+      12,
+      22
+     ]
+    ],
+    "date-time": "2002-12-22T23:10:54Z",
+    "timestamp": 1040598654000
+   },
+   "page": "5-32",
+   "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+   "source": "Crossref",
+   "is-referenced-by-count": 126651,
+   "title": [
+    "Random Forests"
+   ],
+   "prefix": "10.1007",
+   "volume": "45",
+   "author": [
+    {
+     "given": "Leo",
+     "family": "Breiman",
+     "sequence": "first",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "297",
+   "reference": [
+    {
+     "key": "354300_CR1",
+     "doi-asserted-by": "crossref",
+     "first-page": "1545",
+     "DOI": "10.1162/neco.1997.9.7.1545",
+     "volume": "9",
+     "author": "Y. Amit",
+     "year": "1997",
+     "unstructured": "Amit, Y. & Geman, D. (1997). Shape quantization and recognition with randomized trees. Neural Computation, 9, 1545–1588.",
+     "journal-title": "Neural Computation"
+    },
+    {
+     "key": "354300_CR2",
+     "unstructured": "Amit, Y., Blanchard, G., & Wilder, K. (1999). Multiple randomized classifiers: MRCL Technical Report, Department of Statistics, University of Chicago."
+    },
+    {
+     "key": "354300_CR3",
+     "doi-asserted-by": "crossref",
+     "first-page": "105",
+     "DOI": "10.1023/A:1007515423169",
+     "volume": "36",
+     "author": "E. Bauer",
+     "year": "1999",
+     "unstructured": "Bauer, E. & Kohavi, R. (1999). An empirical comparison of voting classification algorithms. Machine Learning, 36(1/2), 105–139.",
+     "journal-title": "Machine Learning"
+    },
+    {
+     "issue": "2",
+     "key": "354300_CR4",
+     "doi-asserted-by": "crossref",
+     "first-page": "123",
+     "DOI": "10.1023/A:1018054314350",
+     "volume": "26",
+     "author": "L. Breiman",
+     "year": "1996",
+     "unstructured": "Breiman, L. (1996a). Bagging predictors. Machine Learning 26(2), 123–140.",
+     "journal-title": "Machine Learning"
+    },
+    {
+     "key": "354300_CR5",
+     "unstructured": "Breiman, L. (1996b). Out-of-bag estimation, ftp.stat.berkeley.edu/pub/users/breiman/OOBestimation.ps"
+    },
+    {
+     "key": "354300_CR6",
+     "doi-asserted-by": "crossref",
+     "first-page": "801",
+     "DOI": "10.1214/aos/1024691079",
+     "volume": "26",
+     "author": "L. Breiman",
+     "year": "1998",
+     "unstructured": "Breiman, L. (1998a). Arcing classifiers (discussion paper). Annals of Statistics, 26, 801–824.",
+     "journal-title": "Annals of Statistics"
+    },
+    {
+     "key": "354300_CR7",
+     "unstructured": "Breiman. L. (1998b). Randomizing outputs to increase prediction accuracy. Technical Report 518, May 1, 1998, Statistics Department, UCB (in press, Machine Learning)."
+    },
+    {
+     "key": "354300_CR8",
+     "unstructured": "Breiman, L. 1999. Using adaptive bagging to debias regressions. Technical Report 547, Statistics Dept. UCB."
+    },
+    {
+     "key": "354300_CR9",
+     "unstructured": "Breiman, L. 2000. Some infinity theory for predictor ensembles. Technical Report 579, Statistics Dept. UCB."
+    },
+    {
+     "key": "354300_CR10",
+     "unstructured": "Dietterich, T. (1998). An experimental comparison of three methods for constructing ensembles of decision trees: Bagging, boosting and randomization, Machine Learning, 1–22."
+    },
+    {
+     "key": "354300_CR11",
+     "unstructured": "Freund, Y. & Schapire, R. (1996). Experiments with a new boosting algorithm, Machine Learning: Proceedings of the Thirteenth International Conference, 148–156."
+    },
+    {
+     "key": "354300_CR12",
+     "unstructured": "Grove, A. & Schuurmans, D. (1998). Boosting in the limit: Maximizing the margin of learned ensembles. In Proceedings of the Fifteenth National Conference on Artificial Intelligence (AAAI-98)."
+    },
+    {
+     "issue": "8",
+     "key": "354300_CR13",
+     "doi-asserted-by": "crossref",
+     "first-page": "832",
+     "DOI": "10.1109/34.709601",
+     "volume": "20",
+     "author": "T. K. Ho",
+     "year": "1998",
+     "unstructured": "Ho, T. K. (1998). The random subspace method for constructing decision forests. IEEE Trans. on Pattern Analysis and Machine Intelligence, 20(8), 832–844.",
+     "journal-title": "IEEE Trans. on Pattern Analysis and Machine Intelligence"
+    },
+    {
+     "issue": "5",
+     "key": "354300_CR14",
+     "doi-asserted-by": "crossref",
+     "first-page": "473",
+     "DOI": "10.1109/34.857004",
+     "volume": "22",
+     "author": "E. Kleinberg",
+     "year": "2000",
+     "unstructured": "Kleinberg, E. (2000). On the algorithmic implementation of stochastic discrimination. IEEE Trans. on Pattern Analysis and Machine Intelligence, 22(5), 473–490.",
+     "journal-title": "IEEE Trans. on Pattern Analysis and Machine Intelligence"
+    },
+    {
+     "issue": "5",
+     "key": "354300_CR15",
+     "first-page": "1651",
+     "volume": "26",
+     "author": "R. Schapire",
+     "year": "1998",
+     "unstructured": "Schapire, R., Freund, Y., Bartlett, P., & Lee,W. (1998). Boosting the margin:Anewexplanation for the effectiveness of voting methods. Annals of Statistics, 26(5), 1651–1686.",
+     "journal-title": "Annals of Statistics"
+    },
+    {
+     "key": "354300_CR16",
+     "unstructured": "Tibshirani, R. (1996). Bias, variance, and prediction error for classification rules. Technical Report, Statistics Department, University of Toronto."
+    },
+    {
+     "key": "354300_CR17",
+     "unstructured": "Wolpert, D. H. & Macready, W. G. (1997). An efficient method to estimate Bagging's generalization error (in press, Machine Learning)."
+    }
+   ],
+   "container-title": [
+    "Machine Learning"
+   ],
+   "original-title": [],
+   "language": "en",
+   "link": [
+    {
+     "URL": "https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf",
+     "content-type": "application/pdf",
+     "content-version": "vor",
+     "intended-application": "text-mining"
+    },
+    {
+     "URL": "https://link.springer.com/article/10.1023/A:1010933404324/fulltext.html",
+     "content-type": "text/html",
+     "content-version": "vor",
+     "intended-application": "text-mining"
+    },
+    {
+     "URL": "https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf",
+     "content-type": "application/pdf",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2025,
+      7,
+      10
+     ]
+    ],
+    "date-time": "2025-07-10T11:46:28Z",
+    "timestamp": 1752147988000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "https://link.springer.com/10.1023/A:1010933404324"
+    }
+   },
+   "subtitle": [],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      2001,
+      10
+     ]
+    ]
+   },
+   "references-count": 17,
+   "journal-issue": {
+    "issue": "1",
+    "published-print": {
+     "date-parts": [
+      [
+       2001,
+       10
+      ]
+     ]
+    }
+   },
+   "alternative-id": [
+    "354300"
+   ],
+   "URL": "https://doi.org/10.1023/a:1010933404324",
+   "relation": {},
+   "ISSN": [
+    "0885-6125",
+    "1573-0565"
+   ],
+   "issn-type": [
+    {
+     "value": "0885-6125",
+     "type": "print"
+    },
+    {
+     "value": "1573-0565",
+     "type": "electronic"
+    }
+   ],
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      2001,
+      10
+     ]
+    ]
+   },
+   "assertion": [
+    {
+     "value": "This content has been made available to all.",
+     "name": "free",
+     "label": "Free to read"
+    }
+   ]
+  }
+ },
+ "saito2015": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T16:25:41Z",
+    "timestamp": 1795105541930,
+    "version": "4.10.3"
+   },
+   "reference-count": 54,
+   "publisher": "Public Library of Science (PLoS)",
+   "issue": "3",
+   "license": [
+    {
+     "start": {
+      "date-parts": [
+       [
+        2015,
+        3,
+        4
+       ]
+      ],
+      "date-time": "2015-03-04T00:00:00Z",
+      "timestamp": 1425427200000
+     },
+     "content-version": "vor",
+     "delay-in-days": 0,
+     "URL": "http://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "content-domain": {
+    "domain": [
+     "www.plosone.org"
+    ],
+    "crossmark-restriction": false
+   },
+   "short-container-title": [
+    "PLoS ONE"
+   ],
+   "DOI": "10.1371/journal.pone.0118432",
+   "type": "journal-article",
+   "created": {
+    "date-parts": [
+     [
+      2015,
+      3,
+      4
+     ]
+    ],
+    "date-time": "2015-03-04T14:01:36Z",
+    "timestamp": 1425477696000
+   },
+   "page": "e0118432",
+   "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+   "source": "Crossref",
+   "is-referenced-by-count": 5369,
+   "title": [
+    "The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets"
+   ],
+   "prefix": "10.1371",
+   "volume": "10",
+   "author": [
+    {
+     "given": "Takaya",
+     "family": "Saito",
+     "sequence": "first",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Marc",
+     "family": "Rehmsmeier",
+     "sequence": "additional",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "340",
+   "published-online": {
+    "date-parts": [
+     [
+      2015,
+      3,
+      4
+     ]
+    ]
+   },
+   "reference": [
+    {
+     "key": "ref1",
+     "doi-asserted-by": "crossref",
+     "first-page": "e116",
+     "DOI": "10.1371/journal.pcbi.0030116",
+     "article-title": "Machine learning and its applications to biology",
+     "volume": "3",
+     "author": "AL Tarca",
+     "year": "2007",
+     "journal-title": "PLoS Comput Biol"
+    },
+    {
+     "key": "ref2",
+     "doi-asserted-by": "crossref",
+     "first-page": "195",
+     "DOI": "10.1038/nbt1386",
+     "article-title": "What are artificial neural networks?",
+     "volume": "26",
+     "author": "A Krogh",
+     "year": "2008",
+     "journal-title": "Nat Biotechnol"
+    },
+    {
+     "key": "ref3",
+     "doi-asserted-by": "crossref",
+     "first-page": "e1000173",
+     "DOI": "10.1371/journal.pcbi.1000173",
+     "article-title": "Support vector machines and kernels for computational biology",
+     "volume": "4",
+     "author": "A Ben-Hur",
+     "year": "2008",
+     "journal-title": "PLoS Comput Biol"
+    },
+    {
+     "key": "ref4",
+     "doi-asserted-by": "crossref",
+     "first-page": "29",
+     "DOI": "10.1148/radiology.143.1.7063747",
+     "article-title": "The meaning and use of the area under a receiver operating characteristic (ROC) curve",
+     "volume": "143",
+     "author": "JA Hanley",
+     "year": "1982",
+     "journal-title": "Radiology"
+    },
+    {
+     "key": "ref5",
+     "doi-asserted-by": "crossref",
+     "first-page": "1263",
+     "DOI": "10.1109/TKDE.2008.239",
+     "article-title": "Learning from Imbalanced Data",
+     "volume": "21",
+     "author": "H He",
+     "year": "2009",
+     "journal-title": "IEEE Trans Knowl Data Eng"
+    },
+    {
+     "key": "ref6",
+     "first-page": "6",
+     "article-title": "Editorial: Special Issue on Learning from Imbalanced Data Sets",
+     "author": "N Chawla",
+     "year": "2004",
+     "journal-title": "SIGKDD Explor"
+    },
+    {
+     "key": "ref7",
+     "doi-asserted-by": "crossref",
+     "first-page": "321",
+     "DOI": "10.1613/jair.953",
+     "article-title": "SMOTE: synthetic minority over-sampling technique",
+     "volume": "16",
+     "author": "NV Chawla",
+     "year": "2002",
+     "journal-title": "J Artif Intell Res"
+    },
+    {
+     "key": "ref8",
+     "doi-asserted-by": "crossref",
+     "first-page": "3",
+     "DOI": "10.1145/1147234.1147236",
+     "article-title": "Data mining for improved cardiac care",
+     "volume": "8",
+     "author": "RB Rao",
+     "year": "2006",
+     "journal-title": "SIGKDD Explor"
+    },
+    {
+     "key": "ref9",
+     "doi-asserted-by": "crossref",
+     "first-page": "195",
+     "DOI": "10.1023/A:1007452223027",
+     "article-title": "Machine Learning for the Detection of Oil Spills in Satellite Radar Images",
+     "volume": "30",
+     "author": "M Kubat",
+     "year": "1998",
+     "journal-title": "Mach Learn"
+    },
+    {
+     "key": "ref10",
+     "unstructured": "Provost F. Machine learning from imbalanced data sets 101. Proceedings of the AAAI-2000 Workshop on Imbalanced Data Sets. 2000."
+    },
+    {
+     "key": "ref11",
+     "first-page": "935",
+     "article-title": "Experimental perspectives on learning from imbalanced data. Proceedings of the 24th international conference on",
+     "author": "JV Hulse",
+     "year": "2007",
+     "journal-title": "Machine learning"
+    },
+    {
+     "key": "ref12",
+     "doi-asserted-by": "crossref",
+     "first-page": "30",
+     "DOI": "10.1145/1007730.1007736",
+     "article-title": "Learning from imbalanced data sets with boosting and data generation: the DataBoost-IM approach",
+     "volume": "6",
+     "author": "H Guo",
+     "year": "2004",
+     "journal-title": "SIGKDD Explor"
+    },
+    {
+     "key": "ref13",
+     "first-page": "179",
+     "article-title": "Addressing the curse of imbalanced training sets: one-sided selection",
+     "author": "M Kubat",
+     "year": "1997",
+     "journal-title": "In Proceedings of the Fourteenth International Conference on Machine Learning"
+    },
+    {
+     "key": "ref14",
+     "first-page": "73",
+     "article-title": "Data Mining for Direct Marketing: Problems and Solutions",
+     "author": "C Ling",
+     "year": "1998",
+     "journal-title": "In Proceedings of the Fourth International Conference on Knowledge Discovery and Data Mining"
+    },
+    {
+     "key": "ref15",
+     "first-page": "973",
+     "article-title": "The foundations of cost-sensitive learning",
+     "volume": "Volume 2",
+     "author": "C Elkan",
+     "year": "2001",
+     "journal-title": "Proceedings of the 17th international joint conference on Artificial intelligence"
+    },
+    {
+     "key": "ref16",
+     "doi-asserted-by": "crossref",
+     "first-page": "3358",
+     "DOI": "10.1016/j.patcog.2007.04.009",
+     "article-title": "Cost-sensitive boosting for classification of imbalanced data",
+     "volume": "40",
+     "author": "Y Sun",
+     "year": "2007",
+     "journal-title": "Pattern Recognit"
+    },
+    {
+     "key": "ref17",
+     "doi-asserted-by": "crossref",
+     "first-page": "429",
+     "DOI": "10.3233/IDA-2002-6504",
+     "article-title": "The class imbalance problem: A systematic study",
+     "volume": "6",
+     "author": "N Japkowicz",
+     "year": "2002",
+     "journal-title": "Intell Data Anal"
+    },
+    {
+     "key": "ref18",
+     "doi-asserted-by": "crossref",
+     "first-page": "28",
+     "DOI": "10.1109/TNN.2006.882812",
+     "article-title": "A kernel-based two-class classifier for imbalanced data sets",
+     "volume": "18",
+     "author": "X Hong",
+     "year": "2007",
+     "journal-title": "IEEE Trans Neural Netw"
+    },
+    {
+     "key": "ref19",
+     "unstructured": "Wu G, Chang E. Class-Boundary Alignment for Imbalanced Dataset Learning. Workshop on Learning from Imbalanced Datasets in ICML. 2003."
+    },
+    {
+     "key": "ref20",
+     "doi-asserted-by": "crossref",
+     "first-page": "18",
+     "DOI": "10.1111/j.0824-7935.2004.t01-1-00228.x",
+     "article-title": "A Multiple Resampling Method for Learning from Imbalanced Data Sets",
+     "volume": "20",
+     "author": "A Estabrooks",
+     "year": "2004",
+     "journal-title": "Comput Intell"
+    },
+    {
+     "key": "ref21",
+     "doi-asserted-by": "crossref",
+     "first-page": "223",
+     "DOI": "10.1007/978-1-60327-241-4_13",
+     "article-title": "A user&apos;s guide to support vector machines",
+     "volume": "609",
+     "author": "A Ben-Hur",
+     "year": "2010",
+     "journal-title": "Methods Mol Biol"
+    },
+    {
+     "key": "ref22",
+     "doi-asserted-by": "crossref",
+     "first-page": "51",
+     "DOI": "10.1016/S0933-3657(01)00092-6",
+     "article-title": "The problem of bias in training data in regression problems in medical decision support",
+     "volume": "24",
+     "author": "B Mac Namee",
+     "year": "2002",
+     "journal-title": "Artif Intell Med"
+    },
+    {
+     "key": "ref23",
+     "doi-asserted-by": "crossref",
+     "first-page": "1",
+     "DOI": "10.1136/jcp.2008.061010",
+     "article-title": "Receiver-operating characteristic curve analysis in diagnostic, prognostic and predictive biomarker research",
+     "volume": "62",
+     "author": "K Soreide",
+     "year": "2009",
+     "journal-title": "J Clin Pathol"
+    },
+    {
+     "key": "ref24",
+     "doi-asserted-by": "crossref",
+     "first-page": "861",
+     "DOI": "10.1016/j.patrec.2005.10.010",
+     "article-title": "An introduction to ROC analysis",
+     "volume": "27",
+     "author": "T Fawcett",
+     "year": "2006",
+     "journal-title": "Pattern Recognit Lett"
+    },
+    {
+     "key": "ref25",
+     "doi-asserted-by": "crossref",
+     "first-page": "1285",
+     "DOI": "10.1126/science.3287615",
+     "article-title": "Measuring the accuracy of diagnostic systems",
+     "volume": "240",
+     "author": "JA Swets",
+     "year": "1988",
+     "journal-title": "Science"
+    },
+    {
+     "key": "ref26",
+     "doi-asserted-by": "crossref",
+     "first-page": "233",
+     "DOI": "10.1145/1143844.1143874",
+     "article-title": "The relationship between Precision-Recall and ROC curves",
+     "author": "J Davis",
+     "year": "2006",
+     "journal-title": "Proceedings of the 23rd international conference on Machine learning"
+    },
+    {
+     "key": "ref27",
+     "doi-asserted-by": "crossref",
+     "first-page": "1348",
+     "DOI": "10.1093/bioinformatics/btq140",
+     "article-title": "A CROC stronger than ROC: measuring, visualizing and optimizing early retrieval",
+     "volume": "26",
+     "author": "SJ Swamidass",
+     "year": "2010",
+     "journal-title": "Bioinformatics"
+    },
+    {
+     "key": "ref28",
+     "doi-asserted-by": "crossref",
+     "first-page": "198",
+     "DOI": "10.1145/347090.347126",
+     "article-title": "Explicitly Representing Expected Cost: An Alternative to ROC Representation",
+     "author": "C Drummond",
+     "year": "2000",
+     "journal-title": "In Proceedings of the Sixth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining"
+    },
+    {
+     "key": "ref29",
+     "doi-asserted-by": "crossref",
+     "first-page": "83",
+     "DOI": "10.1093/bib/bbr008",
+     "article-title": "Caveats and pitfalls of ROC analysis in clinical microarray research (and how to avoid them)",
+     "volume": "13",
+     "author": "D Berrar",
+     "year": "2012",
+     "journal-title": "Brief Bioinform"
+    },
+    {
+     "key": "ref30",
+     "doi-asserted-by": "crossref",
+     "first-page": "341",
+     "DOI": "10.1186/1471-2105-8-341",
+     "article-title": "MiRFinder: an improved approach and software implementation for genome-wide fast microRNA precursor scans",
+     "volume": "8",
+     "author": "TH Huang",
+     "year": "2007",
+     "journal-title": "BMC Bioinformatics"
+    },
+    {
+     "key": "ref31",
+     "doi-asserted-by": "crossref",
+     "first-page": "1552",
+     "DOI": "10.1136/bmj.308.6943.1552",
+     "article-title": "Diagnostic tests. 1: Sensitivity and specificity",
+     "volume": "308",
+     "author": "DG Altman",
+     "year": "1994",
+     "journal-title": "BMJ"
+    },
+    {
+     "key": "ref32",
+     "doi-asserted-by": "crossref",
+     "first-page": "412",
+     "DOI": "10.1093/bioinformatics/16.5.412",
+     "article-title": "Assessing the accuracy of prediction algorithms for classification: an overview",
+     "volume": "16",
+     "author": "P Baldi",
+     "year": "2000",
+     "journal-title": "Bioinformatics"
+    },
+    {
+     "key": "ref33",
+     "doi-asserted-by": "crossref",
+     "first-page": "345",
+     "DOI": "10.1007/978-3-540-31865-1_25",
+     "article-title": "A probabilistic interpretation of precision, recall and F-score, with implication for evaluation",
+     "author": "C Goutte",
+     "year": "2005",
+     "journal-title": "Advances in Information Retrieval"
+    },
+    {
+     "key": "ref34",
+     "doi-asserted-by": "crossref",
+     "first-page": "10",
+     "DOI": "10.1145/1656274.1656278",
+     "article-title": "The WEKA data mining software: an update",
+     "volume": "11",
+     "author": "M Hall",
+     "year": "2009",
+     "journal-title": "SIGKDD Explor"
+    },
+    {
+     "key": "ref35",
+     "doi-asserted-by": "crossref",
+     "first-page": "1",
+     "DOI": "10.1145/1961189.1961199",
+     "article-title": "LIBSVM: A library for support vector machines",
+     "volume": "2",
+     "author": "C-C Chang",
+     "year": "2011",
+     "journal-title": "ACM Trans Intell Syst Technol"
+    },
+    {
+     "key": "ref36",
+     "doi-asserted-by": "crossref",
+     "first-page": "95",
+     "DOI": "10.1177/0272989X9101100204",
+     "article-title": "The area under the ROC curve and its competitors",
+     "volume": "11",
+     "author": "J Hilden",
+     "year": "1991",
+     "journal-title": "Med Decis Making"
+    },
+    {
+     "key": "ref37",
+     "doi-asserted-by": "crossref",
+     "first-page": "488",
+     "DOI": "10.1021/ci600426e",
+     "article-title": "Evaluating virtual screening methods: good and bad metrics for the &quot;early recognition&quot; problem",
+     "volume": "47",
+     "author": "JF Truchon",
+     "year": "2007",
+     "journal-title": "J Chem Inf Model"
+    },
+    {
+     "key": "ref38",
+     "doi-asserted-by": "crossref",
+     "first-page": "25",
+     "DOI": "10.1016/S0097-8485(96)80004-0",
+     "article-title": "Use of receiver operating characteristic (ROC) analysis to evaluate sequence matching",
+     "volume": "20",
+     "author": "M Gribskov",
+     "year": "1996",
+     "journal-title": "Comput Chem"
+    },
+    {
+     "key": "ref39",
+     "doi-asserted-by": "crossref",
+     "unstructured": "Macskassy S, Provost F. Confidence bands for ROC curves: Methods and an empirical study. Proceedings of the First Workshop on ROC Analysis in AI. 2004.",
+     "DOI": "10.21236/ADA453849"
+    },
+    {
+     "key": "ref40",
+     "doi-asserted-by": "crossref",
+     "first-page": "3940",
+     "DOI": "10.1093/bioinformatics/bti623",
+     "article-title": "ROCR: visualizing classifier performance in R",
+     "volume": "21",
+     "author": "T Sing",
+     "year": "2005",
+     "journal-title": "Bioinformatics"
+    },
+    {
+     "key": "ref41",
+     "doi-asserted-by": "crossref",
+     "first-page": "299",
+     "DOI": "10.1080/10618600.1996.10474713",
+     "article-title": "R: A Language for Data Analysis and Graphics",
+     "volume": "5",
+     "author": "R Ihaka",
+     "year": "1996",
+     "journal-title": "J Comput Graph Stat"
+    },
+    {
+     "key": "ref42",
+     "doi-asserted-by": "crossref",
+     "first-page": "R80",
+     "DOI": "10.1186/gb-2004-5-10-r80",
+     "article-title": "Bioconductor: open software development for computational biology and bioinformatics",
+     "volume": "5",
+     "author": "RC Gentleman",
+     "year": "2004",
+     "journal-title": "Genome Biol"
+    },
+    {
+     "key": "ref43",
+     "doi-asserted-by": "crossref",
+     "first-page": "461",
+     "DOI": "10.1186/1471-2105-9-461",
+     "article-title": "minet: A R/Bioconductor package for inferring large transcriptional networks using mutual information",
+     "volume": "9",
+     "author": "PE Meyer",
+     "year": "2008",
+     "journal-title": "BMC Bioinformatics"
+    },
+    {
+     "key": "ref44",
+     "doi-asserted-by": "crossref",
+     "first-page": "95",
+     "DOI": "10.1038/nrg1521",
+     "article-title": "Genome-wide association studies for common diseases and complex traits",
+     "volume": "6",
+     "author": "JN Hirschhorn",
+     "year": "2005",
+     "journal-title": "Nat Rev Genet"
+    },
+    {
+     "key": "ref45",
+     "first-page": "69",
+     "article-title": "RNAz 2.0: improved noncoding RNA detection",
+     "author": "AR Gruber",
+     "year": "2010",
+     "journal-title": "Pac Symp Biocomput"
+    },
+    {
+     "key": "ref46",
+     "doi-asserted-by": "crossref",
+     "first-page": "D152",
+     "DOI": "10.1093/nar/gkq1027",
+     "article-title": "miRBase: integrating microRNA annotation and deep-sequencing data",
+     "volume": "39",
+     "author": "A Kozomara",
+     "year": "2011",
+     "journal-title": "Nucleic Acids Res"
+    },
+    {
+     "key": "ref47",
+     "doi-asserted-by": "crossref",
+     "first-page": "W339",
+     "DOI": "10.1093/nar/gkm368",
+     "article-title": "MiPred: classification of real and pseudo microRNA precursors using random forest prediction model with combined features",
+     "volume": "35",
+     "author": "P Jiang",
+     "year": "2007",
+     "journal-title": "Nucleic Acids Res"
+    },
+    {
+     "key": "ref48",
+     "doi-asserted-by": "crossref",
+     "first-page": "e197",
+     "DOI": "10.1093/bioinformatics/btl257",
+     "article-title": "Hairpins in a Haystack: recognizing microRNA precursors in comparative genomics data",
+     "volume": "22",
+     "author": "J Hertel",
+     "year": "2006",
+     "journal-title": "Bioinformatics"
+    },
+    {
+     "key": "ref49",
+     "doi-asserted-by": "crossref",
+     "first-page": "3570",
+     "DOI": "10.1093/nar/gki668",
+     "article-title": "Human microRNA prediction through a probabilistic co-learning model of sequence and structure",
+     "volume": "33",
+     "author": "JW Nam",
+     "year": "2005",
+     "journal-title": "Nucleic Acids Res"
+    },
+    {
+     "key": "ref50",
+     "doi-asserted-by": "crossref",
+     "first-page": "167",
+     "DOI": "10.1007/BF00818163",
+     "article-title": "Fast Folding and Comparison of RNA Secondary Structures",
+     "volume": "125",
+     "author": "I Hofacker",
+     "year": "1994",
+     "journal-title": "Monatsh Chem"
+    },
+    {
+     "key": "ref51",
+     "doi-asserted-by": "crossref",
+     "first-page": "144",
+     "DOI": "10.1145/130385.130401",
+     "article-title": "A training algorithm for optimal margin classifiers",
+     "author": "B Boser",
+     "year": "1992",
+     "journal-title": "Proceedings of the fifth annual workshop on Computational learning theory"
+    },
+    {
+     "key": "ref52",
+     "doi-asserted-by": "crossref",
+     "first-page": "252",
+     "DOI": "10.1109/34.75512",
+     "article-title": "Small Sample Size Effects in Statistical Pattern Recognition: Recommendations for Practitioners",
+     "volume": "13",
+     "author": "SJ Raudys",
+     "year": "1991",
+     "journal-title": "IEEE Trans Pattern Anal Mach Intell"
+    },
+    {
+     "key": "ref53",
+     "doi-asserted-by": "crossref",
+     "first-page": "281",
+     "DOI": "10.1016/S0092-8674(04)00045-5",
+     "article-title": "MicroRNAs: genomics, biogenesis, mechanism, and function",
+     "volume": "116",
+     "author": "DP Bartel",
+     "year": "2004",
+     "journal-title": "Cell"
+    },
+    {
+     "key": "ref54",
+     "doi-asserted-by": "crossref",
+     "first-page": "81",
+     "DOI": "10.3389/fgene.2013.00081",
+     "article-title": "A Review of Computational Tools in microRNA Discovery",
+     "volume": "4",
+     "author": "CP Gomes",
+     "year": "2013",
+     "journal-title": "Front Genet"
+    }
+   ],
+   "container-title": [
+    "PLOS ONE"
+   ],
+   "original-title": [],
+   "language": "en",
+   "link": [
+    {
+     "URL": "http://dx.plos.org/10.1371/journal.pone.0118432",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2024,
+      6,
+      7
+     ]
+    ],
+    "date-time": "2024-06-07T12:30:59Z",
+    "timestamp": 1717763459000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "https://dx.plos.org/10.1371/journal.pone.0118432"
+    }
+   },
+   "subtitle": [],
+   "editor": [
+    {
+     "given": "Guy",
+     "family": "Brock",
+     "sequence": "first",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "editor"
+      }
+     ]
+    }
+   ],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      2015,
+      3,
+      4
+     ]
+    ]
+   },
+   "references-count": 54,
+   "journal-issue": {
+    "issue": "3",
+    "published-online": {
+     "date-parts": [
+      [
+       2015,
+       3,
+       4
+      ]
+     ]
+    }
+   },
+   "URL": "https://doi.org/10.1371/journal.pone.0118432",
+   "relation": {
+    "has-review": [
+     {
+      "id-type": "doi",
+      "id": "10.3410/f.725375858.793530299",
+      "asserted-by": "object"
+     }
+    ],
+    "has-part": [
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.g001",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.g002",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.g003",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.g004",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.g005",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.g006",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.g007",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.t001",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.t002",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.t003",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.t004",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.t005",
+      "asserted-by": "subject"
+     },
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1371/journal.pone.0118432.s001",
+      "asserted-by": "subject"
+     }
+    ]
+   },
+   "ISSN": [
+    "1932-6203"
+   ],
+   "issn-type": [
+    {
+     "value": "1932-6203",
+     "type": "electronic"
+    }
+   ],
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      2015,
+      3,
+      4
+     ]
+    ]
+   }
+  }
+ },
+ "engelen2021": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      17
+     ]
+    ],
+    "date-time": "2026-11-17T18:31:51Z",
+    "timestamp": 1794940311336,
+    "version": "4.9.1"
+   },
+   "reference-count": 17,
+   "publisher": "IEEE",
+   "license": [
+    {
+     "start": {
+      "date-parts": [
+       [
+        2021,
+        5,
+        1
+       ]
+      ],
+      "date-time": "2021-05-01T00:00:00Z",
+      "timestamp": 1619827200000
+     },
+     "content-version": "vor",
+     "delay-in-days": 0,
+     "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+    },
+    {
+     "start": {
+      "date-parts": [
+       [
+        2021,
+        5,
+        1
+       ]
+      ],
+      "date-time": "2021-05-01T00:00:00Z",
+      "timestamp": 1619827200000
+     },
+     "content-version": "stm-asf",
+     "delay-in-days": 0,
+     "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+     "start": {
+      "date-parts": [
+       [
+        2021,
+        5,
+        1
+       ]
+      ],
+      "date-time": "2021-05-01T00:00:00Z",
+      "timestamp": 1619827200000
+     },
+     "content-version": "stm-asf",
+     "delay-in-days": 0,
+     "URL": "https://doi.org/10.15223/policy-037"
+    }
+   ],
+   "funder": [
+    {
+     "DOI": "10.13039/501100004040",
+     "name": "KU Leuven",
+     "doi-asserted-by": "publisher",
+     "id": [
+      {
+       "id": "10.13039/501100004040",
+       "id-type": "DOI",
+       "asserted-by": "publisher"
+      }
+     ]
+    }
+   ],
+   "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+   },
+   "short-container-title": [],
+   "published-print": {
+    "date-parts": [
+     [
+      2021,
+      5
+     ]
+    ]
+   },
+   "DOI": "10.1109/spw53761.2021.00009",
+   "type": "proceedings-article",
+   "created": {
+    "date-parts": [
+     [
+      2021,
+      7,
+      8
+     ]
+    ],
+    "date-time": "2021-07-08T15:55:55Z",
+    "timestamp": 1625759755000
+   },
+   "page": "7-12",
+   "source": "Crossref",
+   "is-referenced-by-count": 234,
+   "title": [
+    "Troubleshooting an Intrusion Detection Dataset: the CICIDS2017 Case Study"
+   ],
+   "prefix": "10.1109",
+   "author": [
+    {
+     "given": "Gints",
+     "family": "Engelen",
+     "sequence": "first",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Vera",
+     "family": "Rimmer",
+     "sequence": "additional",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Wouter",
+     "family": "Joosen",
+     "sequence": "additional",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "263",
+   "reference": [
+    {
+     "key": "ref10",
+     "year": "0",
+     "journal-title": "Extended documentation of the corrected CICFlowMeter generated CICIDS dataset and the source code of the paper"
+    },
+    {
+     "key": "ref11",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1109/ICISSEC.2016.7885840"
+    },
+    {
+     "key": "ref12",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1109/NCA.2019.8935039"
+    },
+    {
+     "key": "ref13",
+     "first-page": "172",
+     "article-title": "A detailed analysis of the CICIDS2017 data set",
+     "author": "sharafaldin",
+     "year": "2018",
+     "journal-title": "International Conference on Information Systems Security and Privacy"
+    },
+    {
+     "key": "ref14",
+     "first-page": "1",
+     "article-title": "SMOTE: Class imbalance problem in intrusion detection system",
+     "author": "abdullah alfrhan",
+     "year": "2020",
+     "journal-title": "2020 International Conference on Computing and Information Technology (ICCIT1441)"
+    },
+    {
+     "key": "ref15",
+     "year": "2017",
+     "journal-title": "Intrusion detection evaluation dataset (cicids2017)"
+    },
+    {
+     "key": "ref16",
+     "year": "2021",
+     "journal-title": "CICFlowMeter tool"
+    },
+    {
+     "key": "ref17",
+     "author": "postel",
+     "year": "1981",
+     "journal-title": "RFC 793 Transmission Control Protocol specification"
+    },
+    {
+     "key": "ref4",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/j.cose.2019.06.005"
+    },
+    {
+     "key": "ref3",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/j.comnet.2017.08.013"
+    },
+    {
+     "key": "ref6",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1007/978-3-030-52683-2_12"
+    },
+    {
+     "key": "ref5",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.5220/0006639801080116"
+    },
+    {
+     "key": "ref8",
+     "doi-asserted-by": "crossref",
+     "first-page": "132911",
+     "DOI": "10.1109/ACCESS.2020.3009843",
+     "article-title": "CICIDS2017 dataset feature analysis with information gain for anomaly detection",
+     "volume": "8",
+     "author": "stiawan",
+     "year": "2020",
+     "journal-title": "IEEE Access"
+    },
+    {
+     "key": "ref7",
+     "first-page": "240",
+     "article-title": "MLP4NIDS: An efficient MLP-Based network intrusion detection for CICIDS2017 dataset",
+     "author": "rosay",
+     "year": "2019",
+     "journal-title": "International Conference on Machine Learning for Networking"
+    },
+    {
+     "key": "ref2",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.13052/jsn2445-9739.2017.009"
+    },
+    {
+     "key": "ref1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1109/ACCESS.2020.3000179"
+    },
+    {
+     "key": "ref9",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1186/s40537-020-00382-x"
+    }
+   ],
+   "event": {
+    "name": "2021 IEEE Security and Privacy Workshops (SPW)",
+    "location": "San Francisco, CA, USA",
+    "start": {
+     "date-parts": [
+      [
+       2021,
+       5,
+       27
+      ]
+     ]
+    },
+    "end": {
+     "date-parts": [
+      [
+       2021,
+       5,
+       27
+      ]
+     ]
+    }
+   },
+   "container-title": [
+    "2021 IEEE Security and Privacy Workshops (SPW)"
+   ],
+   "original-title": [],
+   "link": [
+    {
+     "URL": "http://xplorestaging.ieee.org/ielx7/9473902/9474266/09474286.pdf?arnumber=9474286",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2022,
+      5,
+      10
+     ]
+    ],
+    "date-time": "2022-05-10T11:46:55Z",
+    "timestamp": 1652183215000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "https://ieeexplore.ieee.org/document/9474286/"
+    }
+   },
+   "subtitle": [],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      2021,
+      5
+     ]
+    ]
+   },
+   "references-count": 17,
+   "URL": "https://doi.org/10.1109/spw53761.2021.00009",
+   "relation": {},
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      2021,
+      5
+     ]
+    ]
+   }
+  }
+ },
+ "sharafaldin2018": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T00:50:14Z",
+    "timestamp": 1795049414564,
+    "version": "4.10.2"
+   },
+   "reference-count": 0,
+   "publisher": "SCITEPRESS - Science and Technology Publications",
+   "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+   },
+   "short-container-title": [],
+   "published-print": {
+    "date-parts": [
+     [
+      2018
+     ]
+    ]
+   },
+   "DOI": "10.5220/0006639801080116",
+   "type": "proceedings-article",
+   "created": {
+    "date-parts": [
+     [
+      2018,
+      2,
+      1
+     ]
+    ],
+    "date-time": "2018-02-01T06:51:41Z",
+    "timestamp": 1517467901000
+   },
+   "page": "108-116",
+   "source": "Crossref",
+   "is-referenced-by-count": 4193,
+   "title": [
+    "Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization"
+   ],
+   "prefix": "10.5220",
+   "author": [
+    {
+     "given": "Iman",
+     "family": "Sharafaldin",
+     "sequence": "first",
+     "affiliation": [
+      {
+       "name": "University of New Brunswick (UNB), Canada"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Arash",
+     "family": "Habibi Lashkari",
+     "sequence": "first",
+     "affiliation": [
+      {
+       "name": "University of New Brunswick (UNB), Canada"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Ali A.",
+     "family": "Ghorbani",
+     "sequence": "first",
+     "affiliation": [
+      {
+       "name": "University of New Brunswick (UNB), Canada"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "3171",
+   "event": {
+    "name": "4th International Conference on Information Systems Security and Privacy",
+    "location": "Funchal, Madeira, Portugal",
+    "start": {
+     "date-parts": [
+      [
+       2018,
+       1,
+       22
+      ]
+     ]
+    },
+    "end": {
+     "date-parts": [
+      [
+       2018,
+       1,
+       24
+      ]
+     ]
+    }
+   },
+   "container-title": [
+    "Proceedings of the 4th International Conference on Information Systems Security and Privacy"
+   ],
+   "original-title": [
+    "Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization"
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2018,
+      4,
+      4
+     ]
+    ],
+    "date-time": "2018-04-04T09:33:26Z",
+    "timestamp": 1522834406000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "http://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0006639801080116"
+    }
+   },
+   "subtitle": [
+    ""
+   ],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      2018
+     ]
+    ]
+   },
+   "references-count": 0,
+   "URL": "https://doi.org/10.5220/0006639801080116",
+   "relation": {},
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      2018
+     ]
+    ]
+   }
+  }
+ },
+ "dietterich2000": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T08:41:53Z",
+    "timestamp": 1795077713525,
+    "version": "4.10.2"
+   },
+   "publisher-location": "Berlin, Heidelberg",
+   "reference-count": 22,
+   "publisher": "Springer Berlin Heidelberg",
+   "isbn-type": [
+    {
+     "value": "9783540677048",
+     "type": "print"
+    },
+    {
+     "value": "9783540450146",
+     "type": "electronic"
+    }
+   ],
+   "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+   },
+   "short-container-title": [],
+   "published-print": {
+    "date-parts": [
+     [
+      2000
+     ]
+    ]
+   },
+   "DOI": "10.1007/3-540-45014-9_1",
+   "type": "book-chapter",
+   "created": {
+    "date-parts": [
+     [
+      2007,
+      10,
+      25
+     ]
+    ],
+    "date-time": "2007-10-25T15:19:51Z",
+    "timestamp": 1193325591000
+   },
+   "page": "1-15",
+   "source": "Crossref",
+   "is-referenced-by-count": 5135,
+   "title": [
+    "Ensemble Methods in Machine Learning"
+   ],
+   "prefix": "10.1007",
+   "author": [
+    {
+     "given": "Thomas G.",
+     "family": "Dietterich",
+     "sequence": "first",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "297",
+   "published-online": {
+    "date-parts": [
+     [
+      2000,
+      12,
+      1
+     ]
+    ]
+   },
+   "reference": [
+    {
+     "issue": "3",
+     "key": "1_CR1",
+     "first-page": "173",
+     "volume": "24",
+     "author": "M. Ali",
+     "year": "1996",
+     "unstructured": "Ali, M., & Pazzani, M.J. (1996). Error reduction through learning multiple descriptions. Machine Learning, 24(3), 173–202.",
+     "journal-title": "Machine Learning"
+    },
+    {
+     "issue": "1/2",
+     "key": "1_CR2",
+     "doi-asserted-by": "publisher",
+     "first-page": "105",
+     "DOI": "10.1023/A:1007515423169",
+     "volume": "36",
+     "author": "E. Bauer",
+     "year": "1999",
+     "unstructured": "Bauer, E., & Kohavi, R. (1999). An empirical comparison of voting classification algorithms: Bagging, boosting, and variants. Machine Learning, 36(1/2), 105–139.",
+     "journal-title": "Machine Learning"
+    },
+    {
+     "key": "1_CR3",
+     "first-page": "9",
+     "volume-title": "Proceedings of the 1988 Workshop on Computational Learning Theory",
+     "author": "A. Blum",
+     "year": "1988",
+     "unstructured": "Blum, A., & Rivest, R.L. (1988). Training a 3-node neural network is NP-Complete (Extended abstract). In Proceedings of the 1988 Workshop on Computational Learning Theory, pp. 9–18 San Francisco, CA. Morgan Kaufmann."
+    },
+    {
+     "issue": "2",
+     "key": "1_CR4",
+     "first-page": "123",
+     "volume": "24",
+     "author": "L. Breiman",
+     "year": "1996",
+     "unstructured": "Breiman, L. (1996). Bagging predictors. Machine Learning, 24(2), 123–140.",
+     "journal-title": "Machine Learning"
+    },
+    {
+     "key": "1_CR5",
+     "unstructured": "Cherkauer, K.J. (1996). Human expert-level performance on a scientific image analysis task by a system using combined artificial neural networks. In Chan, P. (Ed.), Working Notes of the AAAI Workshop on Integrating Multiple Learned Models, pp. 15–21. Available from \n                  http://www.cs.fit.edu/imlm/\n                  \n                ."
+    },
+    {
+     "key": "1_CR6",
+     "doi-asserted-by": "crossref",
+     "unstructured": "Dietterich, T.G. (2000). An experimental comparison of three methods for constructing ensembles of decision trees: Bagging, boosting, and randomization. Machine Learning.",
+     "DOI": "10.1023/A:1007607513941"
+    },
+    {
+     "key": "1_CR7",
+     "doi-asserted-by": "crossref",
+     "first-page": "263",
+     "DOI": "10.1613/jair.105",
+     "volume": "2",
+     "author": "T.G. Dietterich",
+     "year": "1995",
+     "unstructured": "Dietterich, T.G., & Bakiri, G. (1995). Solving multiclass learning problems via error-correcting output codes. Journal of Artificial Intelligence Research, 2 263–286.",
+     "journal-title": "Journal of Artificial Intelligence Research"
+    },
+    {
+     "key": "1_CR8",
+     "volume-title": "Tech. rep.",
+     "author": "Y. Freund",
+     "year": "1995",
+     "unstructured": "Freund, Y., & Schapire, R. E. (1995). A decision-theoretic generalization of on-line learning and an application to boosting. Tech. rep., AT&T Bell Laboratories, Murray Hill, NJ."
+    },
+    {
+     "key": "1_CR9",
+     "unstructured": "Freund, Y., & Schapire, R.E. (1996). Experiments with a new boosting algorithm. In Proc. 13th International Conference on Machine Learning, pp. 148–146. Morgan Kaufmann."
+    },
+    {
+     "key": "1_CR10",
+     "doi-asserted-by": "publisher",
+     "first-page": "993",
+     "DOI": "10.1109/34.58871",
+     "volume": "12",
+     "author": "L. Hansen",
+     "year": "1990",
+     "unstructured": "Hansen, L., & Salamon, P. (1990). Neural network ensembles. IEEE Trans. Pattern Analysis and Machine Intell., 12, 993–1001.",
+     "journal-title": "IEEE Trans. Pattern Analysis and Machine Intell"
+    },
+    {
+     "key": "1_CR11",
+     "doi-asserted-by": "publisher",
+     "first-page": "551",
+     "DOI": "10.1016/0893-6080(90)90005-6",
+     "volume": "3",
+     "author": "K. Hornik",
+     "year": "1990",
+     "unstructured": "Hornik, K., Stinchcombe, M., & White, H. (1990). Universal approximation of an unknown mapping and its derivatives using multilayer feedforward networks. Neural Networks, 3, 551–560.",
+     "journal-title": "Neural Networks"
+    },
+    {
+     "issue": "1",
+     "key": "1_CR12",
+     "doi-asserted-by": "publisher",
+     "first-page": "15",
+     "DOI": "10.1016/0020-0190(76)90095-8",
+     "volume": "5",
+     "author": "L. Hyafil",
+     "year": "1976",
+     "unstructured": "Hyafil, L., & Rivest, R.L. (1976). Constructing optimal binary decision trees is NP-Complete. Information Processing Letters, 5(1), 15–17.",
+     "journal-title": "Information Processing Letters"
+    },
+    {
+     "key": "1_CR13",
+     "first-page": "860",
+     "volume-title": "Advances in Neural Information Processing Systems",
+     "author": "J.F. Kolen",
+     "year": "1991",
+     "unstructured": "Kolen, J.F., & Pollack, J.B. (1991). Back propagation is sensitive to initial conditions. In Advances in Neural Information Processing Systems, Vol. 3, pp. 860–867 San Francisco, CA. Morgan Kaufmann."
+    },
+    {
+     "key": "1_CR14",
+     "doi-asserted-by": "crossref",
+     "first-page": "327",
+     "DOI": "10.1016/B978-0-444-88650-7.50030-5",
+     "volume-title": "Uncertainty in Artificial Intelligence",
+     "author": "S.W. Kwok",
+     "year": "1990",
+     "unstructured": "Kwok, S.W., & Carter, C. (1990). Multiple decision trees. In Schachter, R. D., Levitt, T.S., Kannal, L.N., & Lemmer, J.F. (Eds.), Uncertainty in Artificial Intelligence4, pp. 327–335. Elsevier Science, Amsterdam."
+    },
+    {
+     "key": "1_CR15",
+     "volume-title": "Tech. rep. CRG-TR-93-1",
+     "author": "R. Neal",
+     "year": "1993",
+     "unstructured": "Neal, R. (1993). Probabilistic inference using Markov chain Monte Carlo methods. Tech. rep. CRG-TR-93-1, Department of Computer Science, University of Toronto, Toronto,CA."
+    },
+    {
+     "key": "1_CR16",
+     "first-page": "882",
+     "volume-title": "Advances in Neural Information Processing Systems",
+     "author": "B. Parmanto",
+     "year": "1996",
+     "unstructured": "Parmanto, B., Munro, P.W., & Doyle, H.R. (1996). Improving committee diagnosis with resampling techniques. In Touretzky, D.S., Mozer, M.C., & Hesselmo, M.E. (Eds.), Advances in Neural Information Processing Systems, Vol. 8, pp. 882–888 Cambridge, MA. MIT Press."
+    },
+    {
+     "issue": "3–4",
+     "key": "1_CR17",
+     "doi-asserted-by": "publisher",
+     "first-page": "355",
+     "DOI": "10.1080/095400996116811",
+     "volume": "8",
+     "author": "Y. Raviv",
+     "year": "1996",
+     "unstructured": "Raviv, Y., & Intrator, N. (1996). Bootstrapping with noise: An effective regularization technique. Connection Science, 8(3–4), 355–372.",
+     "journal-title": "Connection Science"
+    },
+    {
+     "key": "1_CR18",
+     "unstructured": "Ricci, F., & Aha, D.W. (1997). Extending local learners with error-correcting output codes. Tech. rep., Naval Center for Applied Research in Artificial Intelligence, Washington, D.C."
+    },
+    {
+     "key": "1_CR19",
+     "first-page": "313",
+     "volume-title": "Proceedings of the Fourteenth International Conference on Machine Learning",
+     "author": "R.E. Schapire",
+     "year": "1997",
+     "unstructured": "Schapire, R.E. (1997). Using output codes to boost multiclass learning problems. In Proceedings of the Fourteenth International Conference on Machine Learning, pp. 313–321 San Francisco, CA. Morgan Kaufmann."
+    },
+    {
+     "key": "1_CR20",
+     "unstructured": "Schapire, R.E., Freund, Y., Bartlett, P., & Lee, W.S. (1997). Boosting the margin: A new explanation for the effectiveness of voting methods. In Fisher, D. (Ed.), Machine Learning: Proceedings of the Fourteenth International Conference. Morgan Kaufmann."
+    },
+    {
+     "key": "1_CR21",
+     "first-page": "80",
+     "volume-title": "Proc. 11th Annu. Conf. on Comput. Learning Theory",
+     "author": "R.E. Schapire",
+     "year": "1998",
+     "unstructured": "Schapire, R.E., & Singer, Y. (1998). Improved boosting algorithms using confidence-rated predictions. In Proc. 11th Annu. Conf. on Comput. Learning Theory, pp. 80–91. ACM Press, New York, NY."
+    },
+    {
+     "issue": "3–4",
+     "key": "1_CR22",
+     "doi-asserted-by": "publisher",
+     "first-page": "385",
+     "DOI": "10.1080/095400996116839",
+     "volume": "8",
+     "author": "K. Tumer",
+     "year": "1996",
+     "unstructured": "Tumer, K., & Ghosh, J. (1996). Error correlation and error reduction in ensemble classifiers. Connection Science, 8(3–4), 385–404.",
+     "journal-title": "Connection Science"
+    }
+   ],
+   "container-title": [
+    "Lecture Notes in Computer Science",
+    "Multiple Classifier Systems"
+   ],
+   "original-title": [],
+   "link": [
+    {
+     "URL": "http://link.springer.com/content/pdf/10.1007/3-540-45014-9_1",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2019,
+      2,
+      24
+     ]
+    ],
+    "date-time": "2019-02-24T09:05:29Z",
+    "timestamp": 1550999129000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "http://link.springer.com/10.1007/3-540-45014-9_1"
+    }
+   },
+   "subtitle": [],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      2000
+     ]
+    ]
+   },
+   "ISBN": [
+    "9783540677048",
+    "9783540450146"
+   ],
+   "references-count": 22,
+   "URL": "https://doi.org/10.1007/3-540-45014-9_1",
+   "relation": {
+    "is-part-of": [
+     {
+      "id-type": "doi",
+      "id": "https://doi.org/10.1007/3-540-45014-9",
+      "asserted-by": "object"
+     }
+    ]
+   },
+   "ISSN": [
+    "0302-9743"
+   ],
+   "issn-type": [
+    {
+     "value": "0302-9743",
+     "type": "print"
+    }
+   ],
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      2000
+     ]
+    ]
+   }
+  }
+ },
+ "roberts2017": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T16:18:56Z",
+    "timestamp": 1795105136190,
+    "version": "4.10.3"
+   },
+   "reference-count": 101,
+   "publisher": "Wiley",
+   "issue": "8",
+   "license": [
+    {
+     "start": {
+      "date-parts": [
+       [
+        2017,
+        3,
+        3
+       ]
+      ],
+      "date-time": "2017-03-03T00:00:00Z",
+      "timestamp": 1488499200000
+     },
+     "content-version": "vor",
+     "delay-in-days": 0,
+     "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+    }
+   ],
+   "content-domain": {
+    "domain": [
+     "nsojournals.onlinelibrary.wiley.com"
+    ],
+    "crossmark-restriction": true
+   },
+   "short-container-title": [
+    "Ecography"
+   ],
+   "published-print": {
+    "date-parts": [
+     [
+      2017,
+      8
+     ]
+    ]
+   },
+   "abstract": "<jats:p>Ecological data often show temporal, spatial, hierarchical (random effects), or phylogenetic structure. Modern statistical approaches are increasingly accounting for such dependencies. However, when performing cross‐validation, these structures are regularly ignored, resulting in serious underestimation of predictive error. One cause for the poor performance of uncorrected (random) cross‐validation, noted often by modellers, are dependence structures in the data that persist as dependence structures in model residuals, violating the assumption of independence. Even more concerning, because often overlooked, is that structured data also provides ample opportunity for overfitting with non‐causal predictors. This problem can persist even if remedies such as autoregressive models, generalized least squares, or mixed models are used. Block cross‐validation, where data are split strategically rather than randomly, can address these issues. However, the blocking strategy must be carefully considered. Blocking in space, time, random effects or phylogenetic distance, while accounting for dependencies in the data, may also unwittingly induce extrapolations by restricting the ranges or combinations of predictor variables available for model training, thus overestimating interpolation errors. On the other hand, deliberate blocking in predictor space may also improve error estimates when extrapolation is the modelling goal. Here, we review the ecological literature on non‐random and blocked cross‐validation approaches. We also provide a series of simulations and case studies, in which we show that, for all instances tested, block cross‐validation is nearly universally more appropriate than random cross‐validation if the goal is predicting to new data or predictor space, or for selecting causal predictors. We recommend that block cross‐validation be used wherever dependence structures exist in a dataset, even if no correlation structure is visible in the fitted model residuals, or if the fitted models account for such correlations.</jats:p>",
+   "DOI": "10.1111/ecog.02881",
+   "type": "journal-article",
+   "created": {
+    "date-parts": [
+     [
+      2016,
+      12,
+      8
+     ]
+    ],
+    "date-time": "2016-12-08T23:52:39Z",
+    "timestamp": 1481241159000
+   },
+   "page": "913-929",
+   "update-policy": "https://doi.org/10.1002/crossmark_policy",
+   "source": "Crossref",
+   "is-referenced-by-count": 4203,
+   "title": [
+    "Cross‐validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure"
+   ],
+   "prefix": "10.1111",
+   "volume": "40",
+   "author": [
+    {
+     "given": "David R.",
+     "family": "Roberts",
+     "sequence": "first",
+     "affiliation": [
+      {
+       "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Volker",
+     "family": "Bahn",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Dept of Biological Sciences Wright State Univ. Dayton OH USA"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Simone",
+     "family": "Ciuti",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Mark S.",
+     "family": "Boyce",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Dept of Biological Sciences Univ. of Alberta Edmonton AB Canada"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Jane",
+     "family": "Elith",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Gurutzeta",
+     "family": "Guillera‐Arroita",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Severin",
+     "family": "Hauenstein",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "José J.",
+     "family": "Lahoz‐Monfort",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Boris",
+     "family": "Schröder",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Inst. of Geoecology, Div. of Landscape Ecology and Environmental Systems Analysis, Technische Univ. Braunschweig, Braunschweig, Germany, and: Berlin‐Brandenburg Inst. of Advanced Biodiversity Research (BBIB) Berlin Germany"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Wilfried",
+     "family": "Thuiller",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Lab. d’Écologie Alpine, Univ. Joseph Fourier Grenoble France"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "David I.",
+     "family": "Warton",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "School of Mathematics and Statistics and Evolution and Ecology Research Centre, The Univ. of New South Wales Sydney Australia"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Brendan A.",
+     "family": "Wintle",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Florian",
+     "family": "Hartig",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+      },
+      {
+       "name": "Theoretical Ecology, Univ. of Regensburg Regensburg Germany"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    },
+    {
+     "given": "Carsten F.",
+     "family": "Dormann",
+     "sequence": "additional",
+     "affiliation": [
+      {
+       "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+      }
+     ],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "311",
+   "published-online": {
+    "date-parts": [
+     [
+      2017,
+      3,
+      3
+     ]
+    ]
+   },
+   "reference": [
+    {
+     "key": "e_1_2_2_2_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1002/jqs.2584"
+    },
+    {
+     "key": "e_1_2_2_3_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/nyas.12264"
+    },
+    {
+     "key": "e_1_2_2_4_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1365-2486.2005.01000.x"
+    },
+    {
+     "key": "e_1_2_2_5_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1214/09-SS054"
+    },
+    {
+     "key": "e_1_2_2_6_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/S0304-3800(02)00205-3"
+    },
+    {
+     "key": "e_1_2_2_7_1",
+     "unstructured": "A new method for evaluating species distribution models"
+    },
+    {
+     "key": "e_1_2_2_8_1",
+     "doi-asserted-by": "crossref",
+     "first-page": "733",
+     "DOI": "10.1111/j.1466-8238.2007.00331.x",
+     "article-title": "Can niche‐based distribution models outperform spatial interpolation? – Global Ecol",
+     "volume": "16",
+     "author": "Bahn V.",
+     "year": "2007",
+     "journal-title": "Biogeogr"
+    },
+    {
+     "key": "e_1_2_2_9_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1600-0706.2012.00299.x"
+    },
+    {
+     "key": "e_1_2_2_10_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/j.ins.2011.12.028"
+    },
+    {
+     "key": "e_1_2_2_11_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1126/science.1062226"
+    },
+    {
+     "key": "e_1_2_2_12_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1073/pnas.1220228110"
+    },
+    {
+     "key": "e_1_2_2_13_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/S0304-3800(02)00200-4"
+    },
+    {
+     "key": "e_1_2_2_14_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1023/A:1010933404324"
+    },
+    {
+     "key": "e_1_2_2_15_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.2307/2290687"
+    },
+    {
+     "key": "e_1_2_2_16_1",
+     "unstructured": "Introduction to time series and forecasting"
+    },
+    {
+     "key": "e_1_2_2_17_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1466-8238.2011.00698.x"
+    },
+    {
+     "key": "e_1_2_2_18_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1466-822X.2006.00170.x"
+    },
+    {
+     "key": "e_1_2_2_19_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1093/biomet/81.2.351"
+    },
+    {
+     "key": "e_1_2_2_20_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1365-2656.2011.01803.x"
+    },
+    {
+     "key": "e_1_2_2_21_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1007/s10530-012-0187-z"
+    },
+    {
+     "key": "e_1_2_2_22_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1080/13658816.2012.717628"
+    },
+    {
+     "key": "e_1_2_2_23_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1002/jwmg.10"
+    },
+    {
+     "key": "e_1_2_2_24_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1890/0012-9658(2006)87[1465:ATTFHF]2.0.CO;2"
+    },
+    {
+     "key": "e_1_2_2_25_1",
+     "unstructured": "Statistics for spatial data"
+    },
+    {
+     "key": "e_1_2_2_26_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.2007.0906-7590.05171.x"
+    },
+    {
+     "key": "e_1_2_2_27_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1038/srep01164"
+    },
+    {
+     "key": "e_1_2_2_28_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1600-0587.2008.05505.x"
+    },
+    {
+     "key": "e_1_2_2_29_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.2006.0906-7590.04596.x"
+    },
+    {
+     "key": "e_1_2_2_30_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1365-2656.2008.01390.x"
+    },
+    {
+     "key": "e_1_2_2_31_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.2041-210X.2010.00036.x"
+    },
+    {
+     "key": "e_1_2_2_32_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1086/284325"
+    },
+    {
+     "key": "e_1_2_2_33_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1017/S0376892997000088"
+    },
+    {
+     "key": "e_1_2_2_34_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/2041-210X.12242"
+    },
+    {
+     "key": "e_1_2_2_35_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1365-2699.2009.02089.x"
+    },
+    {
+     "key": "e_1_2_2_36_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/j.renene.2011.05.033"
+    },
+    {
+     "key": "e_1_2_2_37_1",
+     "unstructured": "Geographically weighted regression: the analysis of spatially varying relationships"
+    },
+    {
+     "key": "e_1_2_2_38_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1098/rstb.1989.0106"
+    },
+    {
+     "key": "e_1_2_2_39_1",
+     "unstructured": "The comparative method in evolutionary biology"
+    },
+    {
+     "key": "e_1_2_2_40_1",
+     "unstructured": "The elements of statistical learning: data mining inference and prediction"
+    },
+    {
+     "key": "e_1_2_2_41_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1021/ci0342472"
+    },
+    {
+     "key": "e_1_2_2_42_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1600-0587.2011.06999.x"
+    },
+    {
+     "key": "e_1_2_2_43_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1890/04-0702"
+    },
+    {
+     "key": "e_1_2_2_44_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1080/00401706.1969.10490666"
+    },
+    {
+     "key": "e_1_2_2_45_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/S0169-5347(98)01533-X"
+    },
+    {
+     "key": "e_1_2_2_46_1",
+     "unstructured": "A study of cross‐validation and bootstrap for accuracy estimation and model selection"
+    },
+    {
+     "key": "e_1_2_2_47_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1365-2664.2009.01642.x"
+    },
+    {
+     "key": "e_1_2_2_48_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1472-4642.2006.00293.x"
+    },
+    {
+     "key": "e_1_2_2_49_1",
+     "unstructured": "Applied predictive modeling"
+    },
+    {
+     "key": "e_1_2_2_50_1",
+     "first-page": "167",
+     "article-title": "The problem of overfitting data",
+     "volume": "10",
+     "author": "Larimore W. E.",
+     "year": "1985",
+     "journal-title": "Byte"
+    },
+    {
+     "key": "e_1_2_2_51_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/geb.12161"
+    },
+    {
+     "key": "e_1_2_2_52_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1577/1548-8659(1997)126<0725:FIBATO>2.3.CO;2"
+    },
+    {
+     "key": "e_1_2_2_53_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.2307/1939924"
+    },
+    {
+     "key": "e_1_2_2_54_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1007/BF00048036"
+    },
+    {
+     "key": "e_1_2_2_55_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/1365-2656.12141"
+    },
+    {
+     "key": "e_1_2_2_56_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.3808/jei.201100191"
+    },
+    {
+     "key": "e_1_2_2_57_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/S0169-5347(00)01981-9"
+    },
+    {
+     "key": "e_1_2_2_58_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1046/j.1365-2699.2001.00626.x"
+    },
+    {
+     "key": "e_1_2_2_59_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1146/annurev-ecolsys-112414-054441"
+    },
+    {
+     "key": "e_1_2_2_60_1",
+     "first-page": "Innis",
+     "article-title": "The importance of validation in ecosystem analysis",
+     "author": "Mankin J. B.",
+     "year": "1977",
+     "journal-title": "New directions in the analysis of ecological systems"
+    },
+    {
+     "key": "e_1_2_2_61_1",
+     "unstructured": "Resource selection by animals: statistical design and analysis for field studies"
+    },
+    {
+     "key": "e_1_2_2_62_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/ddi.12209"
+    },
+    {
+     "key": "e_1_2_2_63_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/j.ecolmodel.2006.12.012"
+    },
+    {
+     "key": "e_1_2_2_64_1",
+     "unstructured": "Data analysis and regression: a second course in statistics"
+    },
+    {
+     "key": "e_1_2_2_65_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1038/nature14324"
+    },
+    {
+     "key": "e_1_2_2_66_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.2307/2491416"
+    },
+    {
+     "key": "e_1_2_2_67_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1577/1548-8659(2002)131<0329:PMOFSD>2.0.CO;2"
+    },
+    {
+     "key": "e_1_2_2_68_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.2307/3802819"
+    },
+    {
+     "key": "e_1_2_2_69_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/j.tree.2005.11.022"
+    },
+    {
+     "key": "e_1_2_2_70_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/ele.12443"
+    },
+    {
+     "key": "e_1_2_2_71_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1080/01621459.1984.10478083"
+    },
+    {
+     "key": "e_1_2_2_72_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/0304-3800(93)90106-3"
+    },
+    {
+     "key": "e_1_2_2_73_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/S0304-4076(00)00030-0"
+    },
+    {
+     "key": "e_1_2_2_74_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/jbi.12227"
+    },
+    {
+     "key": "e_1_2_2_75_1",
+     "first-page": "Breckling",
+     "article-title": "Computer‐intensive methods in the analysis of species–habitat relationships",
+     "author": "Reineking B.",
+     "year": "2003",
+     "journal-title": "Gene Bits und Ökosysteme: Implikationen neuer Technologien für die ökologische Theorie"
+    },
+    {
+     "key": "e_1_2_2_76_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.2041-210X.2010.00044.x"
+    },
+    {
+     "key": "e_1_2_2_77_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1600-0587.2011.07147.x"
+    },
+    {
+     "key": "e_1_2_2_78_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1466-8238.2011.00657.x"
+    },
+    {
+     "key": "e_1_2_2_79_1",
+     "unstructured": "Data from: Cross‐validation strategies for data with temporal spatial hierarchical or phylogenetic structure"
+    },
+    {
+     "key": "e_1_2_2_80_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1046/j.1365-2907.1998.00028.x"
+    },
+    {
+     "key": "e_1_2_2_81_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1467-9868.2008.00700.x"
+    },
+    {
+     "key": "e_1_2_2_82_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/0304-3800(95)00152-2"
+    },
+    {
+     "key": "e_1_2_2_83_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1600-0587.2013.00368.x"
+    },
+    {
+     "key": "e_1_2_2_84_1",
+     "first-page": "195",
+     "article-title": "Are habitat models transferable in space and time? – J. Nat",
+     "volume": "8",
+     "author": "Schröder B.",
+     "year": "2000",
+     "journal-title": "Conserv"
+    },
+    {
+     "key": "e_1_2_2_85_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1080/01621459.1993.10476299"
+    },
+    {
+     "key": "e_1_2_2_86_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1080/00401706.1977.10489581"
+    },
+    {
+     "key": "e_1_2_2_87_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1126/science.aac4858"
+    },
+    {
+     "key": "e_1_2_2_88_1",
+     "doi-asserted-by": "crossref",
+     "first-page": "111",
+     "DOI": "10.1111/j.2517-6161.1974.tb00994.x",
+     "article-title": "Cross‐validatory choice and assessment of statistical predictions",
+     "volume": "36",
+     "author": "Stone M",
+     "year": "1974",
+     "journal-title": "J. R. Stat. Soc. B"
+    },
+    {
+     "key": "e_1_2_2_89_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1098/rstb.2005.1733"
+    },
+    {
+     "key": "e_1_2_2_90_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/j.quascirev.2008.12.020"
+    },
+    {
+     "key": "e_1_2_2_91_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1029/2004PA001072"
+    },
+    {
+     "key": "e_1_2_2_92_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1002/rrr.3450080307"
+    },
+    {
+     "key": "e_1_2_2_93_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.0906-7590.2004.03673.x"
+    },
+    {
+     "key": "e_1_2_2_94_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.5194/cp-12-1215-2016"
+    },
+    {
+     "key": "e_1_2_2_95_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1365-2699.2009.02174.x"
+    },
+    {
+     "key": "e_1_2_2_96_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1007/BF01868317"
+    },
+    {
+     "key": "e_1_2_2_97_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.2041-210X.2011.00170.x"
+    },
+    {
+     "key": "e_1_2_2_98_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/j.ecolmodel.2007.10.005"
+    },
+    {
+     "key": "e_1_2_2_99_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1890/070037"
+    },
+    {
+     "key": "e_1_2_2_100_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1890/0012-9658(2001)082[3346:DAOLQV]2.0.CO;2"
+    },
+    {
+     "key": "e_1_2_2_101_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1016/S0304-3800(01)00499-9"
+    },
+    {
+     "key": "e_1_2_2_102_1",
+     "doi-asserted-by": "publisher",
+     "DOI": "10.1111/j.1472-4642.2012.00887.x"
+    }
+   ],
+   "container-title": [
+    "Ecography"
+   ],
+   "original-title": [],
+   "language": "en",
+   "link": [
+    {
+     "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fecog.02881",
+     "content-type": "application/pdf",
+     "content-version": "vor",
+     "intended-application": "text-mining"
+    },
+    {
+     "URL": "https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.02881",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2025,
+      10,
+      31
+     ]
+    ],
+    "date-time": "2025-10-31T00:37:36Z",
+    "timestamp": 1761871056000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.02881"
+    }
+   },
+   "subtitle": [],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      2017,
+      3,
+      3
+     ]
+    ]
+   },
+   "references-count": 101,
+   "journal-issue": {
+    "issue": "8",
+    "published-print": {
+     "date-parts": [
+      [
+       2017,
+       8
+      ]
+     ]
+    }
+   },
+   "alternative-id": [
+    "10.1111/ecog.02881"
+   ],
+   "URL": "https://doi.org/10.1111/ecog.02881",
+   "archive": [
+    "Portico"
+   ],
+   "relation": {},
+   "ISSN": [
+    "0906-7590",
+    "1600-0587"
+   ],
+   "issn-type": [
+    {
+     "value": "0906-7590",
+     "type": "print"
+    },
+    {
+     "value": "1600-0587",
+     "type": "electronic"
+    }
+   ],
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      2017,
+      3,
+      3
+     ]
+    ]
+   },
+   "assertion": [
+    {
+     "value": "2016-12-07",
+     "order": 2,
+     "name": "accepted",
+     "label": "Accepted",
+     "group": {
+      "name": "publication_history",
+      "label": "Publication History"
+     }
+    },
+    {
+     "value": "2017-03-03",
+     "order": 3,
+     "name": "published",
+     "label": "Published",
+     "group": {
+      "name": "publication_history",
+      "label": "Publication History"
+     }
+    }
+   ]
+  }
+ },
+ "efron1979": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T15:37:58Z",
+    "timestamp": 1795102678950,
+    "version": "4.10.3"
+   },
+   "reference-count": 0,
+   "publisher": "Institute of Mathematical Statistics",
+   "issue": "1",
+   "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+   },
+   "short-container-title": [
+    "Ann. Statist."
+   ],
+   "published-print": {
+    "date-parts": [
+     [
+      1979,
+      1,
+      1
+     ]
+    ]
+   },
+   "abstract": "<jats:p>We discuss the following problem: given a random sample $\\mathbf{X} = (X_1, X_2, \\cdots, X_n)$ from an unknown probability distribution $F$, estimate the sampling distribution of some prespecified random variable $R(\\mathbf{X}, F)$, on the basis of the observed data $\\mathbf{x}$. (Standard jackknife theory gives an approximate mean and variance in the case $R(\\mathbf{X}, F) = \\theta(\\hat{F}) - \\theta(F), \\theta$ some parameter of interest.) A general method, called the \"bootstrap,\" is introduced, and shown to work satisfactorily on a variety of estimation problems. The jackknife is shown to be a linear approximation method for the bootstrap. The exposition proceeds by a series of examples: variance of the sample median, error rates in a linear discriminant analysis, ratio estimation, estimating regression parameters, etc.</jats:p>",
+   "DOI": "10.1214/aos/1176344552",
+   "type": "journal-article",
+   "created": {
+    "date-parts": [
+     [
+      2007,
+      12,
+      17
+     ]
+    ],
+    "date-time": "2007-12-17T15:20:07Z",
+    "timestamp": 1197904807000
+   },
+   "page": "1-26",
+   "source": "Crossref",
+   "is-referenced-by-count": 13374,
+   "title": [
+    "Bootstrap Methods: Another Look at the Jackknife"
+   ],
+   "prefix": "10.1214",
+   "volume": "7",
+   "author": [
+    {
+     "given": "B.",
+     "family": "Efron",
+     "sequence": "first",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "108",
+   "container-title": [
+    "The Annals of Statistics"
+   ],
+   "original-title": [],
+   "link": [
+    {
+     "URL": "http://projecteuclid.org/download/pdf_1/euclid.aos/1176344552",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2026,
+      10,
+      16
+     ]
+    ],
+    "date-time": "2026-10-16T19:13:27Z",
+    "timestamp": 1792178007000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "https://projecteuclid.org/journals/annals-of-statistics/volume-7/issue-1/Bootstrap-Methods-Another-Look-at-the-Jackknife/10.1214/aos/1176344552.full"
+    }
+   },
+   "subtitle": [],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      1979,
+      1,
+      1
+     ]
+    ]
+   },
+   "references-count": 0,
+   "journal-issue": {
+    "issue": "1",
+    "published-online": {
+     "date-parts": [
+      [
+       1979,
+       1,
+       1
+      ]
+     ]
+    }
+   },
+   "URL": "https://doi.org/10.1214/aos/1176344552",
+   "relation": {},
+   "ISSN": [
+    "0090-5364",
+    "2168-8966"
+   ],
+   "issn-type": [
+    {
+     "value": "0090-5364",
+     "type": "print"
+    },
+    {
+     "value": "2168-8966",
+     "type": "electronic"
+    }
+   ],
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      1979,
+      1,
+      1
+     ]
+    ]
+   }
+  }
+ },
+ "wilcoxon1945": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T16:00:38Z",
+    "timestamp": 1795104038102,
+    "version": "4.10.3"
+   },
+   "reference-count": 0,
+   "publisher": "JSTOR",
+   "issue": "6",
+   "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+   },
+   "short-container-title": [
+    "Biometrics Bulletin"
+   ],
+   "published-print": {
+    "date-parts": [
+     [
+      1945,
+      12
+     ]
+    ]
+   },
+   "DOI": "10.2307/3001968",
+   "type": "journal-article",
+   "created": {
+    "date-parts": [
+     [
+      2006,
+      6,
+      18
+     ]
+    ],
+    "date-time": "2006-06-18T06:48:17Z",
+    "timestamp": 1150613297000
+   },
+   "page": "80",
+   "source": "Crossref",
+   "is-referenced-by-count": 13982,
+   "title": [
+    "Individual Comparisons by Ranking Methods"
+   ],
+   "prefix": "10.2307",
+   "volume": "1",
+   "author": [
+    {
+     "given": "Frank",
+     "family": "Wilcoxon",
+     "sequence": "first",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "1121",
+   "container-title": [
+    "Biometrics Bulletin"
+   ],
+   "original-title": [],
+   "deposited": {
+    "date-parts": [
+     [
+      2018,
+      4,
+      18
+     ]
+    ],
+    "date-time": "2018-04-18T15:52:25Z",
+    "timestamp": 1524066745000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "https://www.jstor.org/stable/10.2307/3001968?origin=crossref"
+    }
+   },
+   "subtitle": [],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      1945,
+      12
+     ]
+    ]
+   },
+   "references-count": 0,
+   "journal-issue": {
+    "issue": "6",
+    "published-print": {
+     "date-parts": [
+      [
+       1945,
+       12
+      ]
+     ]
+    }
+   },
+   "URL": "https://doi.org/10.2307/3001968",
+   "relation": {},
+   "ISSN": [
+    "0099-4987"
+   ],
+   "issn-type": [
+    {
+     "value": "0099-4987",
+     "type": "print"
+    }
+   ],
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      1945,
+      12
+     ]
+    ]
+   }
+  }
+ },
+ "friedman1937": {
+  "status": 200,
+  "msg": {
+   "indexed": {
+    "date-parts": [
+     [
+      2026,
+      11,
+      19
+     ]
+    ],
+    "date-time": "2026-11-19T03:49:27Z",
+    "timestamp": 1795060167516,
+    "version": "4.10.2"
+   },
+   "reference-count": 0,
+   "publisher": "Informa UK Limited",
+   "issue": "200",
+   "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+   },
+   "short-container-title": [
+    "Journal of the American Statistical Association"
+   ],
+   "published-print": {
+    "date-parts": [
+     [
+      1937,
+      12
+     ]
+    ]
+   },
+   "DOI": "10.1080/01621459.1937.10503522",
+   "type": "journal-article",
+   "created": {
+    "date-parts": [
+     [
+      2012,
+      5,
+      8
+     ]
+    ],
+    "date-time": "2012-05-08T18:59:10Z",
+    "timestamp": 1336503550000
+   },
+   "page": "675-701",
+   "source": "Crossref",
+   "is-referenced-by-count": 7849,
+   "title": [
+    "The Use of Ranks to Avoid the Assumption of Normality Implicit in the Analysis of Variance"
+   ],
+   "prefix": "10.1080",
+   "volume": "32",
+   "author": [
+    {
+     "given": "Milton",
+     "family": "Friedman",
+     "sequence": "first",
+     "affiliation": [],
+     "role": [
+      {
+       "vocabulary": "crossref",
+       "role": "author"
+      }
+     ]
+    }
+   ],
+   "member": "301",
+   "container-title": [
+    "Journal of the American Statistical Association"
+   ],
+   "original-title": [],
+   "language": "en",
+   "link": [
+    {
+     "URL": "http://www.tandfonline.com/doi/pdf/10.1080/01621459.1937.10503522",
+     "content-type": "unspecified",
+     "content-version": "vor",
+     "intended-application": "similarity-checking"
+    }
+   ],
+   "deposited": {
+    "date-parts": [
+     [
+      2016,
+      12,
+      15
+     ]
+    ],
+    "date-time": "2016-12-15T13:41:23Z",
+    "timestamp": 1481809283000
+   },
+   "score": 1,
+   "resource": {
+    "primary": {
+     "URL": "http://www.tandfonline.com/doi/abs/10.1080/01621459.1937.10503522"
+    }
+   },
+   "subtitle": [],
+   "short-title": [],
+   "issued": {
+    "date-parts": [
+     [
+      1937,
+      12
+     ]
+    ]
+   },
+   "references-count": 0,
+   "aliases": [
+    "10.2307/2279372",
+    "10.2307/2279372",
+    "10.2307/2279372"
+   ],
+   "journal-issue": {
+    "issue": "200",
+    "published-print": {
+     "date-parts": [
+      [
+       1937,
+       12
+      ]
+     ]
+    }
+   },
+   "alternative-id": [
+    "10.1080/01621459.1937.10503522"
+   ],
+   "URL": "https://doi.org/10.1080/01621459.1937.10503522",
+   "relation": {},
+   "ISSN": [
+    "0162-1459",
+    "1537-274X"
+   ],
+   "issn-type": [
+    {
+     "value": "0162-1459",
+     "type": "print"
+    },
+    {
+     "value": "1537-274X",
+     "type": "electronic"
+    }
+   ],
+   "subject": [],
+   "published": {
+    "date-parts": [
+     [
+      1937,
+      12
+     ]
+    ]
+   }
+  }
+ }
+}

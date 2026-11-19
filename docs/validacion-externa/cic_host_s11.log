@@ -1,0 +1,22 @@
+Esc. 1 (Neris): 71335 flujos, Botnet 57.4%
+Esc. 2 (Neris): 30052 flujos, Botnet 69.7%
+Esc. 3 (Rbot): 143553 flujos, Botnet 18.7%
+Esc. 4 (Rbot): 27837 flujos, Botnet 9.3%
+Esc. 5 (Virut): 5577 flujos, Botnet 16.2%
+Esc. 6 (Menti): 12119 flujos, Botnet 38.2%
+Esc. 7 (Sogou): 1739 flujos, Botnet 3.6%
+Esc. 8 (Murlo): 78903 flujos, Botnet 7.8%
+Esc. 9 (Neris): 214943 flujos, Botnet 86.1%
+Esc. 11 (Rbot): 10882 flujos, Botnet 75.0%
+Esc. 12 (NSIS.ay): 9793 flujos, Botnet 22.1%
+Esc. 13 (Virut): 71903 flujos, Botnet 55.6%
+CIC viernes mañana: 191033 flujos, 1966 bot (1.03%)
+logreg: interno PR=0.791
+random_forest: interno PR=0.900
+hist_gb: interno PR=0.891
+xgboost: interno PR=0.904
+{"seed": 11, "variante": "host", "model": "logreg", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.009509280703327684, "roc_auc": 0.47680595565327344, "umbral": 0.3048923531649864, "recall": 0.26042726347914547, "fpr": 0.29584221466464267, "precision": 0.009070616164121461, "alertas_por_100k": 29547.77446828558}
+{"seed": 11, "variante": "host", "model": "random_forest", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.014329238892238172, "roc_auc": 0.6501625767278342, "umbral": 0.21985948395014468, "recall": 1.0, "fpr": 0.9666202986242972, "precision": 0.010643020322430464, "alertas_por_100k": 96696.38230044024}
+{"seed": 11, "variante": "host", "model": "hist_gb", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.029816028817671942, "roc_auc": 0.66515409466847, "umbral": 2.6042563642981546e-08, "recall": 1.0, "fpr": 0.860694885939905, "precision": 0.011937217280427457, "alertas_por_100k": 86212.853276659}
+{"seed": 11, "variante": "host", "model": "xgboost", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.013373274167837467, "roc_auc": 0.5988018580999945, "umbral": 0.0446617491543293, "recall": 1.0, "fpr": 0.8599914316089006, "precision": 0.011946865011363498, "alertas_por_100k": 86143.23179764752}
+{"seed": 11, "variante": "host", "model": "LR+RF+HGB", "n": 191033, "n_bot": 1966, "prevalencia": 0.010291415619290908, "pr_auc": 0.013170832658658958, "roc_auc": 0.6024837411569359, "umbral": 0.07328649467489672, "recall": 1.0, "fpr": 0.9666414551455305, "precision": 0.010642789861741173, "alertas_por_100k": 96698.47617950826}

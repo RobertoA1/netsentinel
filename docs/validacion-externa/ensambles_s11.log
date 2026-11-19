@@ -1,0 +1,60 @@
+Esc. 1 (Neris): 71335 flujos, Botnet 57.4%
+Esc. 2 (Neris): 30052 flujos, Botnet 69.7%
+Esc. 3 (Rbot): 143553 flujos, Botnet 18.7%
+Esc. 4 (Rbot): 27837 flujos, Botnet 9.3%
+Esc. 5 (Virut): 5577 flujos, Botnet 16.2%
+Esc. 6 (Menti): 12119 flujos, Botnet 38.2%
+Esc. 7 (Sogou): 1739 flujos, Botnet 3.6%
+Esc. 8 (Murlo): 78903 flujos, Botnet 7.8%
+Esc. 9 (Neris): 214943 flujos, Botnet 86.1%
+Esc. 11 (Rbot): 10882 flujos, Botnet 75.0%
+Esc. 12 (NSIS.ay): 9793 flujos, Botnet 22.1%
+Esc. 13 (Virut): 71903 flujos, Botnet 55.6%
+s11 esc 1 Neris    RF+HGB      PR=0.965
+s11 esc 1 Neris    LR+RF+HGB   PR=0.965
+s11 esc 1 Neris    RF+HGB+XGB  PR=0.964
+s11 esc 1 Neris    los 4       PR=0.965
+s11 esc 2 Neris    RF+HGB      PR=0.998
+s11 esc 2 Neris    LR+RF+HGB   PR=0.997
+s11 esc 2 Neris    RF+HGB+XGB  PR=0.997
+s11 esc 2 Neris    los 4       PR=0.997
+s11 esc 3 Rbot     RF+HGB      PR=0.999
+s11 esc 3 Rbot     LR+RF+HGB   PR=0.997
+s11 esc 3 Rbot     RF+HGB+XGB  PR=0.999
+s11 esc 3 Rbot     los 4       PR=0.998
+s11 esc 4 Rbot     RF+HGB      PR=0.972
+s11 esc 4 Rbot     LR+RF+HGB   PR=0.989
+s11 esc 4 Rbot     RF+HGB+XGB  PR=0.980
+s11 esc 4 Rbot     los 4       PR=0.991
+s11 esc 5 Virut    RF+HGB      PR=0.951
+s11 esc 5 Virut    LR+RF+HGB   PR=0.943
+s11 esc 5 Virut    RF+HGB+XGB  PR=0.950
+s11 esc 5 Virut    los 4       PR=0.945
+s11 esc 6 Menti    RF+HGB      PR=1.000
+s11 esc 6 Menti    LR+RF+HGB   PR=1.000
+s11 esc 6 Menti    RF+HGB+XGB  PR=1.000
+s11 esc 6 Menti    los 4       PR=1.000
+s11 esc 7 Sogou    RF+HGB      PR=0.446
+s11 esc 7 Sogou    LR+RF+HGB   PR=0.443
+s11 esc 7 Sogou    RF+HGB+XGB  PR=0.367
+s11 esc 7 Sogou    los 4       PR=0.375
+s11 esc 8 Murlo    RF+HGB      PR=0.894
+s11 esc 8 Murlo    LR+RF+HGB   PR=0.891
+s11 esc 8 Murlo    RF+HGB+XGB  PR=0.892
+s11 esc 8 Murlo    los 4       PR=0.890
+s11 esc 9 Neris    RF+HGB      PR=0.996
+s11 esc 9 Neris    LR+RF+HGB   PR=0.995
+s11 esc 9 Neris    RF+HGB+XGB  PR=0.996
+s11 esc 9 Neris    los 4       PR=0.995
+s11 esc11 Rbot     RF+HGB      PR=1.000
+s11 esc11 Rbot     LR+RF+HGB   PR=1.000
+s11 esc11 Rbot     RF+HGB+XGB  PR=1.000
+s11 esc11 Rbot     los 4       PR=1.000
+s11 esc12 NSIS.ay  RF+HGB      PR=0.658
+s11 esc12 NSIS.ay  LR+RF+HGB   PR=0.736
+s11 esc12 NSIS.ay  RF+HGB+XGB  PR=0.677
+s11 esc12 NSIS.ay  los 4       PR=0.734
+s11 esc13 Virut    RF+HGB      PR=0.999
+s11 esc13 Virut    LR+RF+HGB   PR=0.998
+s11 esc13 Virut    RF+HGB+XGB  PR=0.999
+s11 esc13 Virut    los 4       PR=0.998

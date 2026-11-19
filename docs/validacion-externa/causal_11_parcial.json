@@ -1,0 +1,62 @@
+[
+ {
+  "seed": 11,
+  "W": 1.0,
+  "held_out": 1,
+  "familia": "Neris",
+  "model": "logreg",
+  "pr_auc": 0.996992777113454,
+  "roc_auc": 0.996959887532201,
+  "recall": 0.9770194986072424,
+  "precision": 0.9901199717713479,
+  "balanced_acc": 0.9819308019352001
+ },
+ {
+  "seed": 11,
+  "W": 1.0,
+  "held_out": 1,
+  "familia": "Neris",
+  "model": "random_forest",
+  "pr_auc": 0.9956273842429842,
+  "roc_auc": 0.9954205238025425,
+  "recall": 0.9143454038997214,
+  "precision": 0.9879608728367193,
+  "balanced_acc": 0.9496539049573796
+ },
+ {
+  "seed": 11,
+  "W": 1.0,
+  "held_out": 1,
+  "familia": "Neris",
+  "model": "hist_gb",
+  "pr_auc": 0.9963009351294018,
+  "roc_auc": 0.9958806312438477,
+  "recall": 0.8871866295264624,
+  "precision": 0.9883630721489527,
+  "balanced_acc": 0.93654444258278
+ },
+ {
+  "seed": 11,
+  "W": 1.0,
+  "held_out": 1,
+  "familia": "Neris",
+  "model": "xgboost",
+  "pr_auc": 0.9972452853618298,
+  "roc_auc": 0.996621515487884,
+  "recall": 0.9233983286908078,
+  "precision": 0.9917726252804787,
+  "balanced_acc": 0.9565299914130732
+ },
+ {
+  "seed": 11,
+  "W": 1.0,
+  "held_out": 1,
+  "familia": "Neris",
+  "model": "LR+RF+HGB",
+  "pr_auc": 0.9973244160942735,
+  "roc_auc": 0.9970999486878757,
+  "recall": 0.9853760445682451,
+  "precision": 0.9881284916201117,
+  "balanced_acc": 0.9846993004796113
+ }
+]

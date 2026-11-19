@@ -1,0 +1,43 @@
+{
+ "muestras": 5434,
+ "error_pct": 14.37,
+ "rps": 45.6,
+ "media_ms": 8937,
+ "p50": 4321,
+ "p90": 30030,
+ "p95": 30030,
+ "p99": 30031,
+ "max_ms": 30034,
+ "prueba": "pico_0600",
+ "usuarios": 600,
+ "errores": {
+  "Non HTTP response code: java.net.SocketTimeoutException": 781
+ },
+ "sesion": {
+  "muestras": 208,
+  "error_pct": 99.52,
+  "rps": 1.9,
+  "media_ms": 77717,
+  "p50": 72765,
+  "p90": 97912,
+  "p95": 98954,
+  "p99": 102115,
+  "max_ms": 102912
+ },
+ "total_gui": {
+  "muestras": 5642,
+  "error_pct": 17.51,
+  "rps": 47.3,
+  "media_ms": 11473,
+  "p50": 4376,
+  "p90": 30030,
+  "p95": 30031,
+  "p99": 93152,
+  "max_ms": 102912
+ },
+ "peor_endpoint": "GET /logs",
+ "peor_p95": 30031,
+ "login_p95": 19857,
+ "peor_endpoint_sin_login": "GET /logs",
+ "peor_p95_sin_login": 30031
+}

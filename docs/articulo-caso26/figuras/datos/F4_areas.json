@@ -1,0 +1,27 @@
+[
+ {
+  "modelo": "Línea base trivial",
+  "auc_pr_trapecio": 0.8665573770491803,
+  "auc_roc": 0.5
+ },
+ {
+  "modelo": "XGBoost",
+  "auc_pr_trapecio": 0.9974934748819614,
+  "auc_roc": 0.990608228980322
+ },
+ {
+  "modelo": "Regresión logística",
+  "auc_pr_trapecio": 0.9974593540063222,
+  "auc_roc": 0.9905159265624383
+ },
+ {
+  "modelo": "Random Forest",
+  "auc_pr_trapecio": 0.9978344994012097,
+  "auc_roc": 0.9919037593456198
+ },
+ {
+  "modelo": "Boosting de histogramas",
+  "auc_pr_trapecio": 0.9974934748819614,
+  "auc_roc": 0.990608228980322
+ }
+]

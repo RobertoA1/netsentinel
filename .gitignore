@@ -1,0 +1,26 @@
+# Secretos y configuración local
+.env
+.env.*
+!.env.example
+
+# Datos (logs de firewall, dataset CTU-13, reportes)
+data/*
+!data/ingest/
+!data/dataset/
+data/ingest/*
+data/dataset/*
+!data/ingest/.gitkeep
+!data/dataset/.gitkeep
+
+# Dependencias y artefactos
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.DS_Store

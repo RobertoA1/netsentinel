@@ -1,0 +1,472 @@
+{
+  "id": "ns-despacho-02",
+  "name": "NetSentinel 02 - Despacho de alertas",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## 02 · Despacho de alertas (cada 5 min)\n1. Cada 5 minutos (o cuando el flujo 01 lo invoca) se llama a **GET /alerts/pending-dispatch**: alertas por webhook o correo aún no entregadas.\n2. Por cada alerta se consulta su regla (`/alert-rules/{id}`) para conocer la URL del webhook o el destinatario.\n3. **Por canal**: *webhook* → HTTP Request a la URL de la regla (sin enviar la API key a terceros); *email* → nodo Send Email.\n4. Si el envío fue exitoso, **POST /alerts/{id}/delivered** marca la alerta como entregada. Si falla, queda pendiente y se reintenta en 5 min.\n\n**Correo:** el nodo Send Email viene DESHABILITADO. Para usarlo: cree la credencial SMTP en n8n, habilite el nodo y ponga `NETSENTINEL_SMTP_ENABLED=true` en `.env` (mientras tanto las alertas de correo quedan pendientes, no se marcan como entregadas).",
+        "height": 300,
+        "width": 700,
+        "color": 4
+      },
+      "id": "f80a2094-bf03-5fd2-bfa9-610da6bc38af",
+      "name": "Nota flujo 02",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -60,
+        -250
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 5
+            }
+          ]
+        }
+      },
+      "id": "21de3e2c-e67d-5f19-89de-79795d5d7348",
+      "name": "Cada 5 minutos",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "b37eb7de-b707-5858-817d-dcb64cfe8364",
+      "name": "Desde flujo 01",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        380
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.NETSENTINEL_API_URL }}/alerts/pending-dispatch",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "={{ $env.N8N_API_KEY }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "ca61074a-5d6e-558f-a131-3d6c14ca7e32",
+      "name": "Alertas pendientes",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.NETSENTINEL_API_URL }}/alert-rules/{{ $json.rule_id }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "={{ $env.N8N_API_KEY }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "d16560dc-05cd-5984-89c0-33988311d934",
+      "name": "Obtener regla",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        500,
+        280
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Une la alerta con su regla (destino del webhook / correo) y prepara el payload.\nconst alerta = $('Alertas pendientes').item.json;\nlet regla = $input.item.json || {};\nif (Array.isArray(regla) || regla.error) regla = {};        // regla no disponible: se usa lo que traiga la alerta\nconst webhook_url = alerta.webhook_url || regla.webhook_url || null;\nconst email_to = alerta.email_to || regla.email_to || null;\nlet channel = alerta.channel;\nif (channel === 'webhook' && !webhook_url) channel = 'sin_destino';\nif (channel === 'email' && !email_to) channel = 'sin_destino';\nreturn { json: {\n  alert_id: alerta.id, channel, severity: alerta.severity, title: alerta.title,\n  message: alerta.message, finding_id: alerta.finding_id, rule_id: alerta.rule_id,\n  webhook_url, email_to,\n  payload: { source: 'netsentinel', alert_id: alerta.id, finding_id: alerta.finding_id,\n             severity: alerta.severity, title: alerta.title, message: alerta.message,\n             created_at: alerta.created_at },\n} };\n"
+      },
+      "id": "04bafbb5-9e38-5354-83bc-a3941f5b4c57",
+      "name": "Resolver destino",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        740,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "08f442c3-d323-5434-8493-19b8049ae27b",
+                    "leftValue": "={{ $json.channel }}",
+                    "rightValue": "webhook",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "webhook"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "f5810813-7704-5ea1-9810-833671086b06",
+                    "leftValue": "={{ $json.channel }}",
+                    "rightValue": "email",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "email"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra",
+          "renameFallbackOutput": "otros"
+        }
+      },
+      "id": "0bf96838-7acf-5cf1-9e0c-dcafafd5c502",
+      "name": "Por canal",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        980,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $json.webhook_url }}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.payload) }}",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "4b3f664a-1615-504c-aedb-c82315bc255a",
+      "name": "Enviar webhook",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1240,
+        120
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "1e87bf8a-6157-5fa6-9eba-d2fe5a9ce51c",
+              "leftValue": "={{ $env.NETSENTINEL_SMTP_ENABLED }}",
+              "rightValue": "true",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "1305be03-eafb-51f0-87c6-cd244cdd79f4",
+      "name": "¿SMTP habilitado?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "netsentinel@example.com",
+        "toEmail": "={{ $('Resolver destino').item.json.email_to }}",
+        "subject": "=[NetSentinel] {{ $('Resolver destino').item.json.severity }}: {{ $('Resolver destino').item.json.title }}",
+        "emailFormat": "text",
+        "text": "={{ $('Resolver destino').item.json.message }}",
+        "options": {}
+      },
+      "id": "f7b43b42-b36a-50a7-bd7c-95ad7d79f845",
+      "name": "Enviar correo",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1480,
+        260
+      ],
+      "disabled": true,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {},
+      "id": "d7c6dfb6-622b-58d3-bbe2-bd62422dbd7f",
+      "name": "Omitido (SMTP sin configurar)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1480,
+        420
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b25e54c3-10e2-5ecb-b7b7-de1001db83ac",
+      "name": "Sin destino o canal interno",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1240,
+        500
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "c4ff2c2b-c383-5dc0-b7b6-e87599073b63",
+      "name": "Falló el envío (queda pendiente)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1480,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NETSENTINEL_API_URL }}/alerts/{{ $('Resolver destino').item.json.alert_id }}/delivered",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "={{ $env.N8N_API_KEY }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "a14f9b64-5740-5542-bb4b-71c1531e2b80",
+      "name": "Marcar entregada",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1740,
+        200
+      ]
+    }
+  ],
+  "connections": {
+    "Cada 5 minutos": {
+      "main": [
+        [
+          {
+            "node": "Alertas pendientes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Desde flujo 01": {
+      "main": [
+        [
+          {
+            "node": "Alertas pendientes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Alertas pendientes": {
+      "main": [
+        [
+          {
+            "node": "Obtener regla",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Obtener regla": {
+      "main": [
+        [
+          {
+            "node": "Resolver destino",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resolver destino": {
+      "main": [
+        [
+          {
+            "node": "Por canal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Por canal": {
+      "main": [
+        [
+          {
+            "node": "Enviar webhook",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "¿SMTP habilitado?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Sin destino o canal interno",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar webhook": {
+      "main": [
+        [
+          {
+            "node": "Marcar entregada",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Falló el envío (queda pendiente)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿SMTP habilitado?": {
+      "main": [
+        [
+          {
+            "node": "Enviar correo",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Omitido (SMTP sin configurar)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar correo": {
+      "main": [
+        [
+          {
+            "node": "Marcar entregada",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Falló el envío (queda pendiente)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Lima"
+  },
+  "pinData": {},
+  "tags": [],
+  "meta": {
+    "templateCredsSetupCompleted": true
+  }
+}

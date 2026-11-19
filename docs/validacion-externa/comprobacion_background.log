@@ -1,0 +1,27 @@
+Esc. 1 (Neris): 71335 flujos, Botnet 57.4%
+Esc. 2 (Neris): 30052 flujos, Botnet 69.7%
+Esc. 3 (Rbot): 143553 flujos, Botnet 18.7%
+Esc. 4 (Rbot): 27837 flujos, Botnet 9.3%
+Esc. 5 (Virut): 5577 flujos, Botnet 16.2%
+Esc. 6 (Menti): 12119 flujos, Botnet 38.2%
+Esc. 7 (Sogou): 1739 flujos, Botnet 3.6%
+Esc. 8 (Murlo): 78903 flujos, Botnet 7.8%
+Esc. 9 (Neris): 214943 flujos, Botnet 86.1%
+Esc. 11 (Rbot): 10882 flujos, Botnet 75.0%
+Esc. 12 (NSIS.ay): 9793 flujos, Botnet 22.1%
+Esc. 13 (Virut): 71903 flujos, Botnet 55.6%
+esc 7: 1739 flujos etiquetados, 63 botnet; flujos totales del archivo 114011
+{"seed": 11, "W": 1.0, "held_out": 7, "model": "logreg", "n": 1739, "n_pos": 63, "pr_flujo": 0.4173308372222308, "pr_ventana_pura": 0.9815735001601453, "pr_ventana_real": 0.9742069601803471}
+{"seed": 11, "W": 1.0, "held_out": 7, "model": "random_forest", "n": 1739, "n_pos": 63, "pr_flujo": 0.4675403760126809, "pr_ventana_pura": 0.9955345116063701, "pr_ventana_real": 0.9927660370165368}
+{"seed": 11, "W": 1.0, "held_out": 7, "model": "hist_gb", "n": 1739, "n_pos": 63, "pr_flujo": 0.35903813041812027, "pr_ventana_pura": 0.9880308964095805, "pr_ventana_real": 0.9854237240018593}
+{"seed": 11, "W": 1.0, "held_out": 7, "model": "xgboost", "n": 1739, "n_pos": 63, "pr_flujo": 0.179594022737923, "pr_ventana_pura": 0.9695417737890986, "pr_ventana_real": 0.9696154342611096}
+esc 5: 5577 flujos etiquetados, 901 botnet; flujos totales del archivo 129760
+{"seed": 11, "W": 1.0, "held_out": 5, "model": "logreg", "n": 5577, "n_pos": 901, "pr_flujo": 0.8821021436232842, "pr_ventana_pura": 0.9996516057591301, "pr_ventana_real": 0.9996461842941045}
+{"seed": 11, "W": 1.0, "held_out": 5, "model": "random_forest", "n": 5577, "n_pos": 901, "pr_flujo": 0.9475642474622556, "pr_ventana_pura": 0.9998390276017249, "pr_ventana_real": 0.9997787372419864}
+{"seed": 11, "W": 1.0, "held_out": 5, "model": "hist_gb", "n": 5577, "n_pos": 901, "pr_flujo": 0.949586388021903, "pr_ventana_pura": 0.9999182255988283, "pr_ventana_real": 0.999887098195455}
+{"seed": 11, "W": 1.0, "held_out": 5, "model": "xgboost", "n": 5577, "n_pos": 901, "pr_flujo": 0.9405990774984785, "pr_ventana_pura": 0.9998043818804625, "pr_ventana_real": 0.9997750267534927}
+esc 12: 9793 flujos etiquetados, 2168 botnet; flujos totales del archivo 325344
+{"seed": 11, "W": 1.0, "held_out": 12, "model": "logreg", "n": 9793, "n_pos": 2168, "pr_flujo": 0.7893014197501449, "pr_ventana_pura": 0.9895565198518396, "pr_ventana_real": 0.988693568582195}
+{"seed": 11, "W": 1.0, "held_out": 12, "model": "random_forest", "n": 9793, "n_pos": 2168, "pr_flujo": 0.719336407824458, "pr_ventana_pura": 0.7327416780607697, "pr_ventana_real": 0.7287680209271121}
+{"seed": 11, "W": 1.0, "held_out": 12, "model": "hist_gb", "n": 9793, "n_pos": 2168, "pr_flujo": 0.6620891392581552, "pr_ventana_pura": 0.938692134781058, "pr_ventana_real": 0.931618219500526}
+{"seed": 11, "W": 1.0, "held_out": 12, "model": "xgboost", "n": 9793, "n_pos": 2168, "pr_flujo": 0.7572873181679656, "pr_ventana_pura": 0.954061142848516, "pr_ventana_real": 0.9483623189361894}

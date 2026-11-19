@@ -1,0 +1,585 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1795020286122,929,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,76,0,2,2,null,928,0,692
+1795020287511,181,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,76,0,2,2,null,181,0,0
+1795020288135,67,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,163,0,2,2,null,66,0,0
+1795020289217,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,163,0,3,3,null,63,0,0
+1795020290008,52,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,278,0,3,3,null,51,0,0
+1795020290296,170,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,76,0,4,4,null,170,0,0
+1795020290619,52,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,278,0,4,4,null,51,0,0
+1795020291061,39,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,161,0,4,4,null,38,0,0
+1795020291784,42,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,161,0,4,4,null,42,0,0
+1795020291679,204,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,76,0,4,4,null,203,0,0
+1795020291876,113,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,163,0,4,4,null,113,0,0
+1795020292484,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,50,0,5,5,null,1,0,0
+1795020292987,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,163,0,5,5,null,66,0,0
+1795020293149,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,50,0,5,5,null,0,0,0
+1795020293641,48,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,278,0,5,5,null,48,0,1
+1795020293852,3,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3087,0,5,5,null,1,0,0
+1795020294059,180,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,76,0,5,5,null,180,0,1
+1795020294382,2,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3087,0,5,5,null,1,0,0
+1795020294421,54,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,278,0,6,6,null,54,0,0
+1795020294767,39,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,161,0,6,6,null,39,0,0
+1795020294997,3,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3622,0,6,6,null,1,0,1
+1795020295708,2,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3622,0,6,6,null,0,0,0
+1795020296006,3,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,2614,0,6,6,null,2,0,0
+1795020295999,75,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,163,0,6,6,null,75,0,0
+1795020296118,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,161,0,6,6,null,35,0,0
+1795020296244,163,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,76,0,6,6,null,162,0,0
+1795020296730,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,50,0,7,7,null,1,0,1
+1795020296927,3,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,2614,0,7,7,null,2,0,0
+1795020297210,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,278,0,7,7,null,49,0,0
+1795020297322,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,132,0,7,7,null,1,0,0
+1795020284428,1098,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-1,,true,,10183,0,7,7,null,1089,11796,693
+1795020297525,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,163,0,7,7,null,64,0,0
+1795020298133,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3087,0,7,7,null,1,0,0
+1795020298136,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,50,0,7,7,null,0,0,0
+1795020298195,166,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,76,0,7,7,null,166,0,1
+1795020298705,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,132,0,8,8,null,0,0,0
+1795020286423,347,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-2,,true,,10183,0,8,8,null,340,11934,0
+1795020298770,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,161,0,8,8,null,34,0,0
+1795020299110,53,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,278,0,8,8,null,52,0,0
+1795020299051,162,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,76,0,8,8,null,162,0,0
+1795020299488,168,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,76,0,8,8,null,167,0,0
+1795020299774,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3087,0,8,8,null,1,0,0
+1795020299937,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,50,0,8,8,null,1,0,0
+1795020300081,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3622,0,8,8,null,1,0,0
+1795020300026,68,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,163,0,8,8,null,67,0,0
+1795020300374,68,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,163,0,9,9,null,68,0,0
+1795020300409,37,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,161,0,9,9,null,37,0,0
+1795020300478,169,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,76,0,9,9,null,169,0,0
+1795020301136,2,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3087,0,9,9,null,1,0,0
+1795020301272,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,2614,0,9,9,null,2,0,1
+1795020301296,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3622,0,9,9,null,1,0,0
+1795020301399,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,163,0,9,9,null,65,0,0
+1795020301735,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,278,0,9,9,null,51,0,0
+1795020301976,70,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,163,0,9,9,null,69,0,1
+1795020302073,54,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,278,0,9,9,null,54,0,0
+1795020301957,172,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,76,0,9,9,null,172,0,0
+1795020302327,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,50,0,9,9,null,1,0,0
+1795020302462,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,132,0,10,10,null,1,0,0
+1795020288422,376,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-3,,true,,10183,0,10,10,null,376,13664,3
+1795020302491,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3622,0,10,10,null,1,0,0
+1795020302850,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,2614,0,10,10,null,2,0,0
+1795020302916,48,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,278,0,10,10,null,48,0,0
+1795020303014,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,161,0,10,10,null,34,0,0
+1795020303103,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,278,0,10,10,null,51,0,0
+1795020303763,2,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3087,0,10,10,null,2,0,0
+1795020303752,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,161,0,10,10,null,35,0,0
+1795020303629,164,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,76,0,10,10,null,164,0,0
+1795020303860,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,2614,0,10,10,null,1,0,0
+1795020304048,68,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,163,0,10,10,null,68,0,0
+1795020303971,166,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,76,0,10,10,null,166,0,0
+1795020304234,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,132,0,10,10,null,1,0,0
+1795020290422,365,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-4,,true,,10183,0,10,10,null,363,13447,0
+1795020304373,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,161,0,10,10,null,35,0,0
+1795020304420,37,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,161,0,10,10,null,37,0,0
+1795020304876,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3622,0,10,10,null,0,0,0
+1795020305030,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,50,0,10,10,null,1,0,0
+1795020305321,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,50,0,10,10,null,1,0,0
+1795020305387,47,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,278,0,10,10,null,47,0,1
+1795020305498,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,163,0,10,10,null,65,0,0
+1795020305663,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,163,0,10,10,null,65,0,0
+1795020305788,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,132,0,10,10,null,0,0,0
+1795020292420,344,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-5,,true,,10183,0,10,10,null,342,13024,1
+1795020305849,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,50,0,10,10,null,1,0,0
+1795020305961,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,2614,0,10,10,null,1,0,0
+1795020306018,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,50,0,10,10,null,1,0,0
+1795020305919,163,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,76,0,10,10,null,163,0,0
+1795020306269,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3087,0,10,10,null,1,0,0
+1795020306783,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,278,0,10,10,null,50,0,0
+1795020306812,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,278,0,10,10,null,49,0,0
+1795020307007,36,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,161,0,10,10,null,36,0,0
+1795020307096,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3087,0,10,10,null,1,0,0
+1795020307377,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3622,0,10,10,null,1,0,0
+1795020307540,2,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3087,0,10,10,null,1,0,0
+1795020307769,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3087,0,10,10,null,1,0,0
+1795020307807,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,132,0,10,10,null,1,0,0
+1795020294419,324,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-6,,true,,10183,0,10,10,null,320,13065,0
+1795020307655,161,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,76,0,10,10,null,161,0,0
+1795020307910,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,163,0,10,10,null,63,0,0
+1795020308481,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,161,0,10,10,null,35,0,0
+1795020308669,36,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,161,0,10,10,null,36,0,0
+1795020308728,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3622,0,10,10,null,1,0,0
+1795020308790,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,2614,0,10,10,null,2,0,0
+1795020308794,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3622,0,10,10,null,1,0,0
+1795020308821,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,50,0,10,10,null,1,0,0
+1795020308898,2,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3622,0,10,10,null,1,0,0
+1795020308866,163,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,76,0,10,10,null,163,0,0
+1795020309415,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,163,0,10,10,null,66,0,0
+1795020309578,48,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,278,0,10,10,null,48,0,0
+1795020309976,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,50,0,10,10,null,1,0,1
+1795020310146,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3087,0,10,10,null,1,0,0
+1795020310173,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,2614,0,10,10,null,1,0,0
+1795020310330,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,132,0,10,10,null,1,0,0
+1795020296420,325,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-7,,true,,10183,0,10,10,null,324,13587,1
+1795020310373,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,50,0,10,10,null,1,0,1
+1795020310448,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,2614,0,10,10,null,2,0,0
+1795020310601,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,163,0,10,10,null,64,0,0
+1795020310675,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,2614,0,10,10,null,2,0,0
+1795020310812,48,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,278,0,10,10,null,48,0,0
+1795020311012,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,161,0,10,10,null,35,0,0
+1795020311568,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,132,0,10,10,null,1,0,0
+1795020297323,325,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-1,,true,,10183,0,10,10,null,325,13922,0
+1795020311705,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,132,0,10,10,null,1,0,0
+1795020298419,322,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-8,,true,,10183,0,10,10,null,320,12966,0
+1795020311743,2,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,132,0,10,10,null,2,0,0
+1795020298706,335,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-2,,true,,10183,0,10,10,null,333,12705,1
+1795020311722,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,278,0,10,10,null,51,0,0
+1795020311606,168,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,76,0,10,10,null,168,0,0
+1795020311870,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3087,0,10,10,null,1,0,0
+1795020311874,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3622,0,10,10,null,0,0,0
+1795020312060,0,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3087,0,10,10,null,0,0,0
+1795020312550,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,50,0,10,10,null,1,0,0
+1795020312562,33,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,161,0,10,10,null,33,0,0
+1795020312876,164,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,76,0,10,10,null,164,0,0
+1795020312946,162,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,76,0,10,10,null,162,0,0
+1795020313119,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3622,0,10,10,null,0,0,0
+1795020313060,68,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,163,0,10,10,null,68,0,1
+1795020313024,170,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,76,0,10,10,null,170,0,0
+1795020313221,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,161,0,10,10,null,35,0,0
+1795020313337,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3622,0,10,10,null,1,0,0
+1795020313746,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,2614,0,10,10,null,1,0,0
+1795020313893,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,50,0,10,10,null,1,0,0
+1795020314335,61,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,163,0,10,10,null,61,0,0
+1795020314404,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3087,0,10,10,null,1,0,0
+1795020314362,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,163,0,10,10,null,62,0,0
+1795020314569,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,50,0,10,10,null,1,0,0
+1795020314583,44,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,278,0,10,10,null,44,0,0
+1795020314724,62,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,163,0,10,10,null,62,0,0
+1795020314927,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,2614,0,10,10,null,2,0,0
+1795020314996,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,2614,0,10,10,null,1,0,0
+1795020315195,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,132,0,10,10,null,1,0,0
+1795020300420,329,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-9,,true,,10183,0,10,10,null,327,14448,1
+1795020315460,2,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3622,0,10,10,null,1,0,0
+1795020315633,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3087,0,10,10,null,1,0,0
+1795020315638,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,161,0,10,10,null,33,0,0
+1795020315734,50,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,278,0,10,10,null,50,0,0
+1795020315807,47,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,278,0,10,10,null,47,0,0
+1795020316208,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3087,0,10,10,null,1,0,0
+1795020316516,46,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,278,0,10,10,null,46,0,0
+1795020316862,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,132,0,10,10,null,0,0,0
+1795020302463,321,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-3,,true,,10183,0,10,10,null,318,14079,1
+1795020316877,2,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3622,0,10,10,null,1,0,0
+1795020316914,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,132,0,10,10,null,1,0,0
+1795020302420,321,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-10,,true,,10183,0,10,10,null,320,14175,1
+1795020316818,162,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,76,0,10,10,null,162,0,0
+1795020317196,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,161,0,10,10,null,34,0,0
+1795020317253,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,50,0,10,10,null,1,0,0
+1795020317364,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,2614,0,10,10,null,2,0,0
+1795020317394,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,161,0,10,10,null,35,0,0
+1795020318030,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,2614,0,10,10,null,1,0,0
+1795020318199,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3622,0,10,10,null,0,0,0
+1795020318269,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,50,0,10,10,null,0,0,0
+1795020318323,36,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,161,0,10,10,null,36,0,0
+1795020318399,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3087,0,10,10,null,1,0,0
+1795020318298,155,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,76,0,10,10,null,155,0,0
+1795020318648,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,163,0,10,10,null,65,0,0
+1795020318806,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,50,0,10,10,null,1,0,0
+1795020318695,160,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,76,0,10,10,null,160,0,1
+1795020319169,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,132,0,10,10,null,1,0,0
+1795020304235,316,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-4,,true,,10183,0,10,10,null,315,14620,0
+1795020319365,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,50,0,10,10,null,1,0,0
+1795020319570,0,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3087,0,10,10,null,0,0,0
+1795020319787,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,2614,0,10,10,null,1,0,0
+1795020319937,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,132,0,10,10,null,1,0,0
+1795020305788,315,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-5,,true,,10183,0,10,10,null,313,13835,0
+1795020319955,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,163,0,10,10,null,66,0,0
+1795020319969,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,163,0,10,10,null,65,0,0
+1795020320205,54,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,278,0,10,10,null,54,0,0
+1795020320330,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3622,0,10,10,null,1,0,0
+1795020320511,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3087,0,10,10,null,1,0,0
+1795020320595,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3087,0,10,10,null,0,0,0
+1795020320705,158,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,76,0,10,10,null,158,0,0
+1795020321030,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3622,0,10,10,null,0,0,0
+1795020321074,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,132,0,10,10,null,0,0,0
+1795020307808,317,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-6,,true,,10183,0,10,10,null,316,12949,0
+1795020321119,55,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,278,0,10,10,null,55,0,0
+1795020321226,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,278,0,10,10,null,49,0,0
+1795020321716,37,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,161,0,10,10,null,37,0,0
+1795020321825,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3622,0,10,10,null,1,0,0
+1795020321822,157,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,76,0,10,10,null,157,0,0
+1795020322060,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3622,0,10,10,null,0,0,0
+1795020322206,36,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,161,0,10,10,null,36,0,0
+1795020322094,162,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,76,0,10,10,null,162,0,0
+1795020322206,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,163,0,10,10,null,65,0,0
+1795020322271,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,2614,0,10,10,null,2,0,0
+1795020322705,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,2614,0,10,10,null,2,0,0
+1795020322949,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,50,0,10,10,null,1,0,0
+1795020323251,37,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,161,0,10,10,null,37,0,0
+1795020323348,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,2614,0,10,10,null,2,0,0
+1795020323558,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,132,0,10,10,null,1,0,0
+1795020310331,320,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-7,,true,,10183,0,10,10,null,319,12908,1
+1795020323549,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,163,0,10,10,null,66,0,0
+1795020323739,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,50,0,10,10,null,1,0,0
+1795020323759,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,132,0,10,10,null,1,0,0
+1795020311745,313,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-2,,true,,10183,0,10,10,null,312,11702,0
+1795020323718,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,278,0,10,10,null,49,0,0
+1795020323860,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,2614,0,10,10,null,1,0,0
+1795020324261,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3087,0,10,10,null,0,0,0
+1795020324207,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,163,0,10,10,null,65,0,0
+1795020324414,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,132,0,10,10,null,1,0,0
+1795020311706,312,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-8,,true,,10183,0,10,10,null,311,12397,0
+1795020324784,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,50,0,10,10,null,0,0,0
+1795020324984,164,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,76,0,10,10,null,164,0,0
+1795020325264,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,132,0,10,10,null,1,0,0
+1795020311569,320,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-1,,true,,10183,0,10,10,null,318,13376,0
+1795020325205,160,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,76,0,10,10,null,160,0,0
+1795020325392,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,161,0,10,10,null,34,0,0
+1795020325471,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3087,0,10,10,null,1,0,1
+1795020325496,48,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,278,0,10,10,null,47,0,0
+1795020325660,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3622,0,10,10,null,0,0,0
+1795020326022,46,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,278,0,10,10,null,46,0,0
+1795020326167,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,163,0,10,10,null,63,0,0
+1795020326268,157,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,76,0,10,10,null,157,0,0
+1795020326436,0,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3087,0,10,10,null,0,0,0
+1795020326802,0,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3622,0,10,10,null,0,0,0
+1795020327229,70,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,163,0,10,10,null,70,0,0
+1795020327381,2,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,50,0,10,10,null,2,0,0
+1795020327348,55,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,278,0,10,10,null,55,0,0
+1795020327369,39,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,161,0,10,10,null,39,0,0
+1795020327255,179,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,76,0,10,10,null,179,0,0
+1795020327484,39,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,161,0,10,10,null,39,0,0
+1795020327658,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,2614,0,10,10,null,1,0,0
+1795020327907,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,163,0,10,10,null,64,0,0
+1795020328272,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,2614,0,10,10,null,1,0,0
+1795020328275,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3622,0,10,10,null,0,0,0
+1795020328555,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,50,0,10,10,null,1,0,0
+1795020328630,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,163,0,10,10,null,66,0,0
+1795020328719,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,132,0,10,10,null,1,0,0
+1795020315196,324,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-9,,true,,10183,0,10,10,null,321,13200,0
+1795020328681,53,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,278,0,10,10,null,53,0,0
+1795020328923,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,50,0,10,10,null,1,0,0
+1795020329012,37,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,161,0,10,10,null,37,0,0
+1795020329312,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,132,0,10,10,null,0,0,0
+1795020316862,314,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-3,,true,,10183,0,10,10,null,314,12136,1
+1795020329321,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3087,0,10,10,null,1,0,0
+1795020329574,57,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,278,0,10,10,null,57,0,0
+1795020329658,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,2614,0,10,10,null,2,0,0
+1795020330090,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3087,0,10,10,null,1,0,0
+1795020330111,50,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,278,0,10,10,null,50,0,0
+1795020330450,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,50,0,10,10,null,0,0,0
+1795020330315,160,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,76,0,10,10,null,160,0,0
+1795020330691,37,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,161,0,10,10,null,37,0,0
+1795020330828,2,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3087,0,10,10,null,2,0,1
+1795020330914,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3622,0,10,10,null,0,0,0
+1795020331157,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,132,0,10,10,null,1,0,0
+1795020316915,316,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-10,,true,,10183,0,10,10,null,315,13926,1
+1795020331099,168,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,76,0,10,10,null,168,0,0
+1795020331518,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3622,0,10,10,null,1,0,0
+1795020331524,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,161,0,10,10,null,34,0,0
+1795020331592,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,161,0,10,10,null,34,0,0
+1795020331818,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3087,0,10,10,null,0,0,0
+1795020331830,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3622,0,10,10,null,1,0,0
+1795020332296,72,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,163,0,10,10,null,72,0,0
+1795020332545,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,2614,0,10,10,null,1,0,0
+1795020332550,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,2614,0,10,10,null,2,0,0
+1795020332524,72,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,163,0,10,10,null,72,0,0
+1795020332678,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,50,0,10,10,null,1,0,0
+1795020332794,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,50,0,10,10,null,1,0,0
+1795020332761,193,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,76,0,10,10,null,193,0,0
+1795020333107,2,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,50,0,10,10,null,1,0,1
+1795020333379,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3622,0,10,10,null,1,0,0
+1795020333588,60,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,278,0,10,10,null,60,0,0
+1795020333682,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,2614,0,10,10,null,2,0,0
+1795020333861,2,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3087,0,10,10,null,2,0,0
+1795020334080,58,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,278,0,10,10,null,58,0,1
+1795020334213,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3087,0,10,10,null,1,0,0
+1795020334242,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,132,0,10,10,null,1,0,0
+1795020319170,314,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-4,,true,,10183,0,10,10,null,311,14758,0
+1795020334300,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3087,0,10,10,null,1,0,1
+1795020334489,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,132,0,10,10,null,1,0,0
+1795020321074,318,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-6,,true,,10183,0,10,10,null,318,13098,0
+1795020334612,70,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,163,0,10,10,null,70,0,0
+1795020334685,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,132,0,10,10,null,1,0,0
+1795020319938,317,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-5,,true,,10183,0,10,10,null,316,14431,1
+1795020334889,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,2614,0,10,10,null,1,0,0
+1795020335259,39,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,161,0,10,10,null,39,0,0
+1795020335491,51,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,161,0,10,10,null,50,0,1
+1795020335707,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3622,0,10,10,null,1,0,0
+1795020335824,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3622,0,10,10,null,0,0,0
+1795020335950,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3622,0,10,10,null,1,0,0
+1795020336093,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,278,0,10,10,null,49,0,0
+1795020336071,166,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,76,0,10,10,null,166,0,0
+1795020336144,180,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,76,0,10,10,null,180,0,0
+1795020336308,183,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,76,0,10,10,null,182,0,0
+1795020336806,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,132,0,10,10,null,1,0,0
+1795020323559,323,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-7,,true,,10183,0,10,10,null,322,12925,0
+1795020336961,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,50,0,10,10,null,1,0,0
+1795020337208,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,2614,0,10,10,null,1,0,0
+1795020337375,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,2614,0,10,10,null,1,0,0
+1795020337440,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,50,0,10,10,null,0,0,0
+1795020337431,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,163,0,10,10,null,65,0,0
+1795020337604,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,2614,0,10,10,null,1,0,0
+1795020337713,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,163,0,10,10,null,64,0,0
+1795020337844,33,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,161,0,10,10,null,33,0,0
+1795020338069,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3087,0,10,10,null,1,0,0
+1795020338154,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,163,0,10,10,null,63,0,0
+1795020338536,48,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,278,0,10,10,null,48,0,0
+1795020338593,158,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,76,0,10,10,null,158,0,0
+1795020338961,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,132,0,10,10,null,0,0,0
+1795020325265,334,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-1,,true,,10183,0,10,10,null,333,13362,1
+1795020338937,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,278,0,10,10,null,49,0,0
+1795020338992,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,132,0,10,10,null,1,0,0
+1795020323760,326,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-2,,true,,10183,0,10,10,null,324,14907,1
+1795020339048,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,132,0,10,10,null,0,0,0
+1795020324415,319,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-8,,true,,10183,0,10,10,null,317,14315,0
+1795020339080,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3087,0,10,10,null,1,0,0
+1795020339515,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3622,0,10,10,null,1,0,0
+1795020339541,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,50,0,10,10,null,0,0,0
+1795020339741,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,278,0,10,10,null,49,0,0
+1795020340096,39,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,161,0,10,10,null,39,0,0
+1795020340560,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3087,0,10,10,null,0,0,0
+1795020340630,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,2614,0,10,10,null,2,0,0
+1795020340467,180,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,76,0,10,10,null,180,0,0
+1795020340502,182,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,76,0,10,10,null,181,0,0
+1795020340646,80,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,163,0,10,10,null,79,0,0
+1795020340764,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3622,0,10,10,null,1,0,0
+1795020340800,42,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,161,0,10,10,null,41,0,0
+1795020340867,41,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,161,0,10,10,null,41,0,0
+1795020341034,184,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,76,0,10,10,null,184,0,0
+1795020341466,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,50,0,10,10,null,0,0,0
+1795020341652,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3622,0,10,10,null,1,0,0
+1795020341651,71,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,163,0,10,10,null,71,0,0
+1795020341932,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,132,0,10,10,null,0,0,0
+1795020329313,342,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-3,,true,,10183,0,10,10,null,342,12277,1
+1795020342074,67,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,163,0,10,10,null,67,0,0
+1795020342100,52,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,278,0,10,10,null,52,0,0
+1795020342266,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,2614,0,10,10,null,2,0,1
+1795020342287,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,50,0,10,10,null,1,0,0
+1795020342550,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,163,0,10,10,null,63,0,0
+1795020342687,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,50,0,10,10,null,1,0,0
+1795020342881,50,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,278,0,10,10,null,50,0,0
+1795020343056,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,2614,0,10,10,null,2,0,0
+1795020343151,167,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,76,0,10,10,null,167,0,0
+1795020343392,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3087,0,10,10,null,1,0,0
+1795020343463,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,278,0,10,10,null,51,0,0
+1795020343608,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,132,0,10,10,null,1,0,0
+1795020328720,348,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-9,,true,,10183,0,10,10,null,347,14541,2
+1795020343705,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,161,0,10,10,null,34,0,1
+1795020343764,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3087,0,10,10,null,1,0,0
+1795020343963,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,278,0,10,10,null,49,0,0
+1795020344219,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3087,0,10,10,null,1,0,0
+1795020344587,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,161,0,10,10,null,35,0,0
+1795020344675,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3622,0,10,10,null,1,0,0
+1795020344670,158,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,76,0,10,10,null,158,0,0
+1795020344831,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,161,0,10,10,null,35,0,0
+1795020344914,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,50,0,10,10,null,1,0,0
+1795020344978,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,132,0,10,10,null,1,0,0
+1795020331158,350,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-10,,true,,10183,0,10,10,null,349,13472,0
+1795020345137,0,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3622,0,10,10,null,0,0,0
+1795020345147,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,161,0,10,10,null,35,0,0
+1795020345186,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,163,0,10,10,null,63,0,0
+1795020346030,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,50,0,10,10,null,1,0,0
+1795020346112,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3622,0,10,10,null,1,0,0
+1795020346208,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,2614,0,10,10,null,2,0,0
+1795020346169,157,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,76,0,10,10,null,157,0,0
+1795020346391,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,2614,0,10,10,null,1,0,0
+1795020346413,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,50,0,10,10,null,1,0,0
+1795020346477,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,163,0,10,10,null,64,0,0
+1795020346718,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3087,0,10,10,null,1,0,0
+1795020347045,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,50,0,10,10,null,1,0,0
+1795020346998,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,278,0,10,10,null,49,0,0
+1795020347053,0,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3087,0,10,10,null,0,0,0
+1795020347332,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,163,0,10,10,null,63,0,0
+1795020347404,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,132,0,10,10,null,1,0,0
+1795020334243,337,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-4,,true,,10183,0,10,10,null,337,12826,0
+1795020347533,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,2614,0,10,10,null,1,0,0
+1795020347570,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,132,0,10,10,null,1,0,0
+1795020334686,341,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-5,,true,,10183,0,10,10,null,339,12544,0
+1795020347724,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3087,0,10,10,null,1,0,0
+1795020347984,47,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,278,0,10,10,null,47,0,0
+1795020348064,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3087,0,10,10,null,0,0,0
+1795020348116,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,161,0,10,10,null,35,0,0
+1795020348319,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3622,0,10,10,null,1,0,0
+1795020348451,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3622,0,10,10,null,0,0,0
+1795020348840,49,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,278,0,10,10,null,49,0,0
+1795020348936,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,132,0,10,10,null,1,0,0
+1795020334490,326,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-6,,true,,10183,0,10,10,null,325,14121,0
+1795020348985,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3622,0,10,10,null,0,0,0
+1795020348893,164,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,76,0,10,10,null,164,0,0
+1795020349132,37,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,161,0,10,10,null,37,0,0
+1795020349243,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3622,0,10,10,null,1,0,0
+1795020349533,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,2614,0,10,10,null,2,0,0
+1795020349374,163,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,76,0,10,10,null,163,0,0
+1795020349645,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,2614,0,10,10,null,1,0,0
+1795020350090,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,50,0,10,10,null,1,0,0
+1795020350115,160,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,76,0,10,10,null,159,0,0
+1795020350386,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,2614,0,10,10,null,1,0,0
+1795020350482,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,2614,0,10,10,null,1,0,0
+1795020350524,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,163,0,10,10,null,64,0,0
+1795020350714,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,132,0,10,10,null,0,0,0
+1795020336807,328,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-7,,true,,10183,0,10,10,null,327,13580,1
+1795020350740,39,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,161,0,10,10,null,39,0,0
+1795020350877,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,163,0,10,10,null,66,0,0
+1795020351077,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,50,0,10,10,null,0,0,0
+1795020351152,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3087,0,10,10,null,1,0,0
+1795020351193,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,132,0,10,10,null,1,0,0
+1795020338961,340,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-1,,true,,10183,0,10,10,null,338,11893,0
+1795020351407,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,132,0,10,10,null,1,0,0
+1795020339049,337,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-8,,true,,10183,0,10,10,null,335,12022,0
+1795020351555,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,132,0,10,10,null,1,0,0
+1795020338993,342,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-2,,true,,10183,0,10,10,null,340,12221,0
+1795020352024,50,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,278,0,10,10,null,50,0,0
+1795020352191,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3087,0,10,10,null,1,0,0
+1795020352282,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,50,0,10,10,null,1,0,0
+1795020352234,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,163,0,10,10,null,63,0,0
+1795020352404,56,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,278,0,10,10,null,56,0,1
+1795020352437,163,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,76,0,10,10,null,163,0,0
+1795020352587,159,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,76,0,10,10,null,159,0,0
+1795020352905,166,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,76,0,10,10,null,166,0,0
+1795020352931,163,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,76,0,10,10,null,163,0,0
+1795020353121,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3622,0,10,10,null,0,0,0
+1795020353678,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3622,0,10,10,null,1,0,0
+1795020353711,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,161,0,10,10,null,35,0,0
+1795020353699,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,163,0,10,10,null,66,0,0
+1795020353820,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3087,0,10,10,null,1,0,0
+1795020353796,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,163,0,10,10,null,65,0,0
+1795020353992,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,278,0,10,10,null,51,0,0
+1795020354382,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,163,0,10,10,null,64,0,0
+1795020354451,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,2614,0,10,10,null,1,0,0
+1795020354458,37,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,161,0,10,10,null,37,0,0
+1795020354691,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,2614,0,10,10,null,2,0,0
+1795020354921,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,163,0,10,10,null,65,0,0
+1795020355156,50,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,278,0,10,10,null,50,0,0
+1795020355235,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3622,0,10,10,null,1,0,0
+1795020355225,50,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,278,0,10,10,null,50,0,0
+1795020355637,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,50,0,10,10,null,1,0,0
+1795020355804,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,132,0,10,10,null,0,0,0
+1795020341932,318,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-3,,true,,10183,0,10,10,null,317,13554,0
+1795020355988,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,50,0,10,10,null,1,0,0
+1795020356010,33,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,161,0,10,10,null,33,0,0
+1795020356130,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,132,0,10,10,null,1,0,0
+1795020343609,312,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-9,,true,,10183,0,10,10,null,311,12210,0
+1795020356336,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,161,0,10,10,null,34,0,0
+1795020356385,48,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,278,0,10,10,null,48,0,0
+1795020356489,37,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,161,0,10,10,null,37,0,0
+1795020356733,50,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,278,0,10,10,null,50,0,0
+1795020356847,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,2614,0,10,10,null,2,0,0
+1795020356938,159,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,76,0,10,10,null,159,0,0
+1795020357156,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3087,0,10,10,null,1,0,0
+1795020357490,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3087,0,10,10,null,1,0,0
+1795020357709,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,50,0,10,10,null,0,0,0
+1795020357771,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,50,0,10,10,null,1,0,0
+1795020357829,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,50,0,10,10,null,1,0,1
+1795020357814,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,161,0,10,10,null,35,0,0
+1795020358039,159,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,76,0,10,10,null,159,0,0
+1795020358240,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3622,0,10,10,null,1,0,0
+1795020358192,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,163,0,10,10,null,64,0,0
+1795020358228,36,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,161,0,10,10,null,36,0,0
+1795020358443,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,132,0,10,10,null,1,0,0
+1795020344979,314,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-10,,true,,10183,0,10,10,null,314,13151,0
+1795020359135,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3087,0,10,10,null,1,0,0
+1795020359195,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3087,0,10,10,null,1,0,0
+1795020359314,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,50,0,10,10,null,1,0,0
+1795020359343,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3087,0,10,10,null,0,0,0
+1795020359373,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,50,0,10,10,null,0,0,0
+1795020359468,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3622,0,10,10,null,0,0,0
+1795020359640,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,2614,0,10,10,null,2,0,0
+1795020359828,47,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,278,0,10,10,null,47,0,0
+1795020359891,155,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,76,0,10,10,null,155,0,0
+1795020360150,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,163,0,10,10,null,64,0,0
+1795020360343,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3622,0,10,10,null,0,0,0
+1795020360346,0,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3622,0,10,10,null,0,0,0
+1795020360663,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3087,0,10,10,null,1,0,0
+1795020361134,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,2614,0,10,10,null,1,0,0
+1795020361152,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3622,0,10,10,null,1,0,0
+1795020361186,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3087,0,10,10,null,0,0,0
+1795020361392,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,132,0,10,10,null,0,0,0
+1795020347571,319,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-5,,true,,10183,0,10,10,null,318,13503,0
+1795020361360,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,163,0,10,10,null,65,0,0
+1795020361564,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,2614,0,10,10,null,1,0,0
+1795020361621,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,2614,0,10,10,null,2,0,0
+1795020361579,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,278,0,10,10,null,51,0,0
+1795020361766,36,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,161,0,10,10,null,36,0,0
+1795020362398,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,3622,0,10,10,null,1,0,0
+1795020362524,162,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,76,0,10,10,null,162,0,0
+1795020362738,53,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,278,0,10,10,null,53,0,0
+1795020362899,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,2614,0,10,10,null,1,0,0
+1795020362879,36,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,161,0,10,10,null,36,0,0
+1795020363111,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,132,0,10,10,null,1,0,0
+1795020351556,313,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-2,,true,,10183,0,10,10,null,312,11243,0
+1795020363120,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,132,0,10,10,null,0,0,0
+1795020347405,326,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-4,,true,,10183,0,10,10,null,325,15390,1
+1795020363140,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,3622,0,10,10,null,0,0,0
+1795020363149,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,50,0,10,10,null,1,0,0
+1795020363154,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,132,0,10,10,null,0,0,0
+1795020350715,320,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-7,,true,,10183,0,10,10,null,320,12119,1
+1795020363889,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,161,0,10,10,null,35,0,0
+1795020364025,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,132,0,10,10,null,0,0,0
+1795020348937,310,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-6,,true,,10183,0,10,10,null,308,14779,0
+1795020364051,64,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,163,0,10,10,null,64,0,0
+1795020364398,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,2614,0,10,10,null,1,0,0
+1795020364428,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,2614,0,10,10,null,1,0,0
+1795020364444,169,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,76,0,10,10,null,169,0,0
+1795020364456,169,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,76,0,10,10,null,169,0,0
+1795020364853,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,50,0,10,10,null,0,0,0
+1795020364950,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3087,0,10,10,null,1,0,0
+1795020364980,163,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,76,0,10,10,null,163,0,0
+1795020365634,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,163,0,10,10,null,65,0,0
+1795020365780,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,50,0,10,10,null,1,0,0
+1795020365709,156,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,76,0,10,10,null,156,0,0
+1795020365833,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,163,0,10,10,null,65,0,0
+1795020365945,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,132,0,10,10,null,0,0,0
+1795020351194,316,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-1,,true,,10183,0,10,10,null,314,14435,0
+1795020365994,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,3622,0,10,10,null,1,0,0
+1795020366018,50,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,278,0,10,10,null,50,0,0
+1795020366394,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,132,0,10,10,null,1,0,0
+1795020351408,321,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-8,,true,,10183,0,10,10,null,319,14666,0
+1795020366530,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,163,0,10,10,null,63,0,0
+1795020366597,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3087,0,10,10,null,1,0,0
+1795020367035,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3087,0,10,10,null,1,0,0
+1795020367189,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,2614,0,10,10,null,1,0,0
+1795020367388,48,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,278,0,10,10,null,48,0,1
+1795020367635,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,278,0,10,10,null,51,0,0
+1795020367632,65,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,163,0,10,10,null,65,0,0
+1795020367770,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,278,0,10,10,null,51,0,0
+1795020367804,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,161,0,10,10,null,35,0,0
+1795020367857,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,3622,0,10,10,null,1,0,0
+1795020367806,163,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,76,0,10,10,null,163,0,0
+1795020368121,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,3622,0,10,10,null,0,0,0
+1795020367965,159,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,76,0,10,10,null,159,0,0
+1795020368735,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,161,0,10,10,null,34,0,0
+1795020368951,36,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,161,0,10,10,null,36,0,0
+1795020369041,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,132,0,10,10,null,0,0,0
+1795020355804,313,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-3,,true,,10183,0,10,10,null,310,12925,0
+1795020368984,66,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,163,0,10,10,null,66,0,0
+1795020369129,1,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,2614,0,10,10,null,1,0,0
+1795020369265,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,50,0,10,10,null,0,0,0
+1795020369325,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,163,0,10,10,null,63,0,0
+1795020369346,51,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,278,0,10,10,null,51,0,0
+1795020369585,35,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,161,0,10,10,null,35,0,0
+1795020369673,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,2614,0,10,10,null,2,0,0
+1795020370185,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,50,0,10,10,null,0,0,0
+1795020370325,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3087,0,10,10,null,1,0,0
+1795020370396,0,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,132,0,10,10,null,0,0,0
+1795020358444,312,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-10,,true,,10183,0,10,10,null,311,11640,0
+1795020370476,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,50,0,10,10,null,1,0,0
+1795020370473,48,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,278,0,10,10,null,47,0,0
+1795020370556,50,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,278,0,10,10,null,50,0,0
+1795020370473,162,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,76,0,10,10,null,161,0,0
+1795020371026,36,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,161,0,10,10,null,36,0,1
+1795020371086,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,50,0,10,10,null,1,0,0
+1795020371386,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3087,0,10,10,null,0,0,0
+1795020371589,1,Busqueda de usuario (login),200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,132,0,10,10,null,1,0,0
+1795020356131,316,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-9,,true,,10183,0,10,10,null,315,15143,0
+1795020371536,169,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,76,0,10,10,null,169,0,0
+1795020371896,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3087,0,10,10,null,1,0,0
+1795020372098,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,161,0,10,10,null,34,0,0
+1795020372138,34,Top puertos destino,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,161,0,10,10,null,34,0,0
+1795020372224,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3087,0,10,10,null,1,0,0
+1795020372300,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,3622,0,10,10,null,1,0,0
+1795020372341,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,163,0,10,10,null,62,0,0
+1795020372827,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,50,0,10,10,null,0,0,0
+1795020372737,157,Resumen: agregados sobre firewall_logs,200,OK,Usuarios virtuales (consultas SQL) 1-9,text,true,,76,0,10,10,null,157,0,0
+1795020372910,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,3622,0,9,9,null,1,0,0
+1795020373322,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-5,text,true,,2614,0,9,9,null,2,0,0
+1795020361393,315,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-5,,true,,10051,0,9,9,null,315,11616,0
+1795020373288,63,Serie temporal por hora,200,OK,Usuarios virtuales (consultas SQL) 1-10,text,true,,163,0,8,8,null,63,0,0
+1795020373599,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-7,text,true,,3622,0,7,7,null,1,0,0
+1795020373616,1,Listado paginado de logs,200,OK,Usuarios virtuales (consultas SQL) 1-4,text,true,,3622,0,6,6,null,1,0,0
+1795020373687,1,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-1,text,true,,50,0,5,5,null,1,0,0
+1795020374155,0,Hallazgos por severidad,200,OK,Usuarios virtuales (consultas SQL) 1-8,text,true,,50,0,4,4,null,0,0,0
+1795020374288,2,Logs filtrados por origen,200,OK,Usuarios virtuales (consultas SQL) 1-2,text,true,,2614,0,3,3,null,1,0,0
+1795020363112,317,Sesion tipica: panel + hallazgos + logs,200,"Number of samples in transaction : 9, number of failing samples : 0",Usuarios virtuales (consultas SQL) 1-2,,true,,10051,0,3,3,null,315,10861,0
+1795020374244,47,Top talkers (bytes),200,OK,Usuarios virtuales (consultas SQL) 1-3,text,true,,278,0,2,2,null,47,0,0
+1795020374320,1,Listado paginado de hallazgos,200,OK,Usuarios virtuales (consultas SQL) 1-6,text,true,,3087,0,1,1,null,1,0,0

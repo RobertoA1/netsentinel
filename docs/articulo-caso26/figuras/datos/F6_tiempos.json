@@ -1,0 +1,38 @@
+[
+ {
+  "operacion": "Endpoints del panel",
+  "min_s": 0.014,
+  "max_s": 0.472,
+  "fuente": "reg"
+ },
+ {
+  "operacion": "Intervalo entre reportes (n = 35)",
+  "min_s": 0.03669,
+  "max_s": 0.629407,
+  "fuente": "bd"
+ },
+ {
+  "operacion": "Importación de 107 194 registros",
+  "min_s": 9.66,
+  "max_s": 9.66,
+  "fuente": "bd"
+ },
+ {
+  "operacion": "Análisis LLM por hallazgo (CPU)",
+  "min_s": 28,
+  "max_s": 37,
+  "fuente": "reg"
+ },
+ {
+  "operacion": "Narración bajo demanda (LLM)",
+  "min_s": 74.5,
+  "max_s": 74.5,
+  "fuente": "reg"
+ },
+ {
+  "operacion": "Entrenamiento por modelo (validación anidada)",
+  "min_s": 64.1,
+  "max_s": 1073.2,
+  "fuente": "bd"
+ }
+]

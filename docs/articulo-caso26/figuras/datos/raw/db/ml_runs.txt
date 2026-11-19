@@ -1,0 +1,7 @@
+id|model_type|status|duration_s|final_params
+6|dummy|succeeded|0.7|{}
+7|logreg|succeeded|64.1|{"C": 17.346775694798808, "penalty": "l2", "class_weight": "none"}
+8|random_forest|succeeded|1073.2|{"max_depth": 17, "class_weight": "balanced_subsample", "max_features": "sqrt", "n_estimators": 700, "min_samples_leaf": 1}
+9|hist_gb|succeeded|242.7|{"max_iter": 327, "class_weight": "none", "learning_rate": 0.04435371427049445, "max_leaf_nodes": 36, "min_samples_leaf": 80, "l2_regularization": 0.003421383520617039}
+12|xgboost|succeeded|125.1|{"eta": 0.17880021125724577, "gamma": 0.2846258270284491, "max_depth": 6, "subsample": 0.6020238588035023, "reg_lambda": 0.013841442881959796, "colsample_bytree": 0.8513629643777421, "min_child_weight": 6.61805982172608, "scale_pos_weight": 5.170641590438639}
+(5 rows)

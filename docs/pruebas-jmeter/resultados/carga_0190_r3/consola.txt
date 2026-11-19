@@ -1,0 +1,21 @@
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider (file:/opt/jmeter/lib/xstream-1.4.20.jar)
+WARNING: Please consider reporting this to the maintainers of class com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using plan/netsentinel.jmx
+Starting standalone test @ 2026 Nov 18 12:37:05 GMT-05:00 (1795023425301)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +   1491 in 00:00:25 =   60.5/s Avg:   271 Min:     3 Max:   816 Err:     0 (0.00%) Active: 190 Started: 190 Finished: 0
+summary +   3170 in 00:00:30 =  105.7/s Avg:   290 Min:    17 Max:   643 Err:     0 (0.00%) Active: 190 Started: 190 Finished: 0
+summary =   4661 in 00:00:55 =   85.3/s Avg:   284 Min:     3 Max:   816 Err:     0 (0.00%)
+summary +   3124 in 00:00:30 =  104.1/s Avg:   327 Min:     3 Max:   949 Err:     0 (0.00%) Active: 190 Started: 190 Finished: 0
+summary =   7785 in 00:01:25 =   92.0/s Avg:   301 Min:     3 Max:   949 Err:     0 (0.00%)
+summary +    645 in 00:00:06 =  115.2/s Avg:   191 Min:     3 Max:   444 Err:     0 (0.00%) Active: 0 Started: 190 Finished: 190
+summary =   8430 in 00:01:30 =   93.4/s Avg:   293 Min:     3 Max:   949 Err:     0 (0.00%)
+Tidying up ...    @ 2026 Nov 18 12:38:35 GMT-05:00 (1795023515602)
+... end of run

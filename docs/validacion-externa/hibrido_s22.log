@@ -1,0 +1,132 @@
+Esc. 1 (Neris): 71335 flujos, Botnet 57.4%
+Esc. 2 (Neris): 30052 flujos, Botnet 69.7%
+Esc. 3 (Rbot): 143553 flujos, Botnet 18.7%
+Esc. 4 (Rbot): 27837 flujos, Botnet 9.3%
+Esc. 5 (Virut): 5577 flujos, Botnet 16.2%
+Esc. 6 (Menti): 12119 flujos, Botnet 38.2%
+Esc. 7 (Sogou): 1739 flujos, Botnet 3.6%
+Esc. 8 (Murlo): 78903 flujos, Botnet 7.8%
+Esc. 9 (Neris): 214943 flujos, Botnet 86.1%
+Esc. 11 (Rbot): 10882 flujos, Botnet 75.0%
+Esc. 12 (NSIS.ay): 9793 flujos, Botnet 22.1%
+Esc. 13 (Virut): 71903 flujos, Botnet 55.6%
+s22 W=1 esc 1 Neris    logreg     PR=1.000
+s22 W=1 esc 1 Neris    random_forest PR=1.000
+s22 W=1 esc 1 Neris    hist_gb    PR=0.997
+s22 W=1 esc 1 Neris    xgboost    PR=1.000
+s22 W=1 esc 1 Neris    LR+RF+HGB  PR=1.000
+s22 W=1 esc 2 Neris    logreg     PR=0.995
+s22 W=1 esc 2 Neris    random_forest PR=1.000
+s22 W=1 esc 2 Neris    hist_gb    PR=1.000
+s22 W=1 esc 2 Neris    xgboost    PR=1.000
+s22 W=1 esc 2 Neris    LR+RF+HGB  PR=1.000
+s22 W=1 esc 3 Rbot     logreg     PR=1.000
+s22 W=1 esc 3 Rbot     random_forest PR=1.000
+s22 W=1 esc 3 Rbot     hist_gb    PR=1.000
+s22 W=1 esc 3 Rbot     xgboost    PR=1.000
+s22 W=1 esc 3 Rbot     LR+RF+HGB  PR=1.000
+s22 W=1 esc 4 Rbot     logreg     PR=0.937
+s22 W=1 esc 4 Rbot     random_forest PR=0.958
+s22 W=1 esc 4 Rbot     hist_gb    PR=0.933
+s22 W=1 esc 4 Rbot     xgboost    PR=0.906
+s22 W=1 esc 4 Rbot     LR+RF+HGB  PR=0.951
+s22 W=1 esc 5 Virut    logreg     PR=0.999
+s22 W=1 esc 5 Virut    random_forest PR=0.999
+s22 W=1 esc 5 Virut    hist_gb    PR=1.000
+s22 W=1 esc 5 Virut    xgboost    PR=1.000
+s22 W=1 esc 5 Virut    LR+RF+HGB  PR=1.000
+s22 W=1 esc 6 Menti    logreg     PR=1.000
+s22 W=1 esc 6 Menti    random_forest PR=1.000
+s22 W=1 esc 6 Menti    hist_gb    PR=1.000
+s22 W=1 esc 6 Menti    xgboost    PR=1.000
+s22 W=1 esc 6 Menti    LR+RF+HGB  PR=1.000
+s22 W=1 esc 7 Sogou    logreg     PR=0.974
+s22 W=1 esc 7 Sogou    random_forest PR=0.995
+s22 W=1 esc 7 Sogou    hist_gb    PR=0.990
+s22 W=1 esc 7 Sogou    xgboost    PR=0.974
+s22 W=1 esc 7 Sogou    LR+RF+HGB  PR=0.998
+s22 W=1 esc 8 Murlo    logreg     PR=0.865
+s22 W=1 esc 8 Murlo    random_forest PR=0.914
+s22 W=1 esc 8 Murlo    hist_gb    PR=0.554
+s22 W=1 esc 8 Murlo    xgboost    PR=0.915
+s22 W=1 esc 8 Murlo    LR+RF+HGB  PR=0.914
+s22 W=1 esc 9 Neris    logreg     PR=1.000
+s22 W=1 esc 9 Neris    random_forest PR=1.000
+s22 W=1 esc 9 Neris    hist_gb    PR=1.000
+s22 W=1 esc 9 Neris    xgboost    PR=1.000
+s22 W=1 esc 9 Neris    LR+RF+HGB  PR=1.000
+s22 W=1 esc11 Rbot     logreg     PR=0.937
+s22 W=1 esc11 Rbot     random_forest PR=0.999
+s22 W=1 esc11 Rbot     hist_gb    PR=0.998
+s22 W=1 esc11 Rbot     xgboost    PR=0.840
+s22 W=1 esc11 Rbot     LR+RF+HGB  PR=0.998
+s22 W=1 esc12 NSIS.ay  logreg     PR=0.988
+s22 W=1 esc12 NSIS.ay  random_forest PR=0.980
+s22 W=1 esc12 NSIS.ay  hist_gb    PR=0.951
+s22 W=1 esc12 NSIS.ay  xgboost    PR=0.976
+s22 W=1 esc12 NSIS.ay  LR+RF+HGB  PR=0.990
+s22 W=1 esc13 Virut    logreg     PR=1.000
+s22 W=1 esc13 Virut    random_forest PR=1.000
+s22 W=1 esc13 Virut    hist_gb    PR=1.000
+s22 W=1 esc13 Virut    xgboost    PR=1.000
+s22 W=1 esc13 Virut    LR+RF+HGB  PR=1.000
+s22 W=5 esc 1 Neris    logreg     PR=0.989
+s22 W=5 esc 1 Neris    random_forest PR=1.000
+s22 W=5 esc 1 Neris    hist_gb    PR=0.998
+s22 W=5 esc 1 Neris    xgboost    PR=1.000
+s22 W=5 esc 1 Neris    LR+RF+HGB  PR=0.999
+s22 W=5 esc 2 Neris    logreg     PR=1.000
+s22 W=5 esc 2 Neris    random_forest PR=1.000
+s22 W=5 esc 2 Neris    hist_gb    PR=1.000
+s22 W=5 esc 2 Neris    xgboost    PR=1.000
+s22 W=5 esc 2 Neris    LR+RF+HGB  PR=1.000
+s22 W=5 esc 3 Rbot     logreg     PR=0.999
+s22 W=5 esc 3 Rbot     random_forest PR=1.000
+s22 W=5 esc 3 Rbot     hist_gb    PR=1.000
+s22 W=5 esc 3 Rbot     xgboost    PR=1.000
+s22 W=5 esc 3 Rbot     LR+RF+HGB  PR=1.000
+s22 W=5 esc 4 Rbot     logreg     PR=0.867
+s22 W=5 esc 4 Rbot     random_forest PR=0.958
+s22 W=5 esc 4 Rbot     hist_gb    PR=0.913
+s22 W=5 esc 4 Rbot     xgboost    PR=0.896
+s22 W=5 esc 4 Rbot     LR+RF+HGB  PR=0.934
+s22 W=5 esc 5 Virut    logreg     PR=1.000
+s22 W=5 esc 5 Virut    random_forest PR=1.000
+s22 W=5 esc 5 Virut    hist_gb    PR=1.000
+s22 W=5 esc 5 Virut    xgboost    PR=1.000
+s22 W=5 esc 5 Virut    LR+RF+HGB  PR=1.000
+s22 W=5 esc 6 Menti    logreg     PR=1.000
+s22 W=5 esc 6 Menti    random_forest PR=1.000
+s22 W=5 esc 6 Menti    hist_gb    PR=1.000
+s22 W=5 esc 6 Menti    xgboost    PR=1.000
+s22 W=5 esc 6 Menti    LR+RF+HGB  PR=1.000
+s22 W=5 esc 7 Sogou    logreg     PR=0.094
+s22 W=5 esc 7 Sogou    random_forest PR=0.938
+s22 W=5 esc 7 Sogou    hist_gb    PR=0.997
+s22 W=5 esc 7 Sogou    xgboost    PR=0.992
+s22 W=5 esc 7 Sogou    LR+RF+HGB  PR=0.999
+s22 W=5 esc 8 Murlo    logreg     PR=0.870
+s22 W=5 esc 8 Murlo    random_forest PR=0.912
+s22 W=5 esc 8 Murlo    hist_gb    PR=0.355
+s22 W=5 esc 8 Murlo    xgboost    PR=0.658
+s22 W=5 esc 8 Murlo    LR+RF+HGB  PR=0.912
+s22 W=5 esc 9 Neris    logreg     PR=1.000
+s22 W=5 esc 9 Neris    random_forest PR=1.000
+s22 W=5 esc 9 Neris    hist_gb    PR=1.000
+s22 W=5 esc 9 Neris    xgboost    PR=1.000
+s22 W=5 esc 9 Neris    LR+RF+HGB  PR=1.000
+s22 W=5 esc11 Rbot     logreg     PR=0.664
+s22 W=5 esc11 Rbot     random_forest PR=0.996
+s22 W=5 esc11 Rbot     hist_gb    PR=1.000
+s22 W=5 esc11 Rbot     xgboost    PR=0.996
+s22 W=5 esc11 Rbot     LR+RF+HGB  PR=0.972
+s22 W=5 esc12 NSIS.ay  logreg     PR=0.498
+s22 W=5 esc12 NSIS.ay  random_forest PR=0.997
+s22 W=5 esc12 NSIS.ay  hist_gb    PR=0.988
+s22 W=5 esc12 NSIS.ay  xgboost    PR=0.981
+s22 W=5 esc12 NSIS.ay  LR+RF+HGB  PR=0.995
+s22 W=5 esc13 Virut    logreg     PR=1.000
+s22 W=5 esc13 Virut    random_forest PR=1.000
+s22 W=5 esc13 Virut    hist_gb    PR=1.000
+s22 W=5 esc13 Virut    xgboost    PR=1.000
+s22 W=5 esc13 Virut    LR+RF+HGB  PR=1.000

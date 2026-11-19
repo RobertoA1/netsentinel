@@ -1,0 +1,43 @@
+{
+ "muestras": 6564,
+ "error_pct": 10.66,
+ "rps": 61.0,
+ "media_ms": 8507,
+ "p50": 5616,
+ "p90": 30015,
+ "p95": 30030,
+ "p99": 30031,
+ "max_ms": 30032,
+ "prueba": "carga_0700",
+ "usuarios": 700,
+ "errores": {
+  "Non HTTP response code: java.net.SocketTimeoutException": 700
+ },
+ "sesion": {
+  "muestras": 259,
+  "error_pct": 44.79,
+  "rps": 2.7,
+  "media_ms": 64629,
+  "p50": 54321,
+  "p90": 79588,
+  "p95": 79794,
+  "p99": 80414,
+  "max_ms": 80803
+ },
+ "total_gui": {
+  "muestras": 6823,
+  "error_pct": 11.96,
+  "rps": 63.4,
+  "media_ms": 10637,
+  "p50": 5653,
+  "p90": 30030,
+  "p95": 30031,
+  "p99": 79072,
+  "max_ms": 80803
+ },
+ "peor_endpoint": "GET /logs",
+ "peor_p95": 30031,
+ "login_p95": 11302,
+ "peor_endpoint_sin_login": "GET /logs",
+ "peor_p95_sin_login": 30031
+}

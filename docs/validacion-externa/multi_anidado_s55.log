@@ -1,0 +1,84 @@
+Esc. 1 (Neris): 71335 flujos, Botnet 57.4%
+Esc. 2 (Neris): 30052 flujos, Botnet 69.7%
+Esc. 3 (Rbot): 143553 flujos, Botnet 18.7%
+Esc. 4 (Rbot): 27837 flujos, Botnet 9.3%
+Esc. 5 (Virut): 5577 flujos, Botnet 16.2%
+Esc. 6 (Menti): 12119 flujos, Botnet 38.2%
+Esc. 7 (Sogou): 1739 flujos, Botnet 3.6%
+Esc. 8 (Murlo): 78903 flujos, Botnet 7.8%
+Esc. 9 (Neris): 214943 flujos, Botnet 86.1%
+Esc. 11 (Rbot): 10882 flujos, Botnet 75.0%
+Esc. 12 (NSIS.ay): 9793 flujos, Botnet 22.1%
+Esc. 13 (Virut): 71903 flujos, Botnet 55.6%
+s55 crudas esc 1 Neris    dummy         PR=0.574 ROC=0.500 0s
+s55 crudas esc 1 Neris    logreg        PR=0.946 ROC=0.924 36s
+s55 crudas esc 1 Neris    random_forest PR=0.960 ROC=0.949 283s
+s55 crudas esc 1 Neris    hist_gb       PR=0.954 ROC=0.941 246s
+s55 crudas esc 1 Neris    xgboost       PR=0.957 ROC=0.943 79s
+s55 crudas esc 2 Neris    dummy         PR=0.697 ROC=0.500 0s
+s55 crudas esc 2 Neris    logreg        PR=0.988 ROC=0.970 57s
+s55 crudas esc 2 Neris    random_forest PR=0.998 ROC=0.995 308s
+Esc. 1 (Neris): 71335 flujos, Botnet 57.4%
+Esc. 2 (Neris): 30052 flujos, Botnet 69.7%
+Esc. 3 (Rbot): 143553 flujos, Botnet 18.7%
+Esc. 4 (Rbot): 27837 flujos, Botnet 9.3%
+Esc. 5 (Virut): 5577 flujos, Botnet 16.2%
+Esc. 6 (Menti): 12119 flujos, Botnet 38.2%
+Esc. 7 (Sogou): 1739 flujos, Botnet 3.6%
+Esc. 8 (Murlo): 78903 flujos, Botnet 7.8%
+Esc. 9 (Neris): 214943 flujos, Botnet 86.1%
+Esc. 11 (Rbot): 10882 flujos, Botnet 75.0%
+Esc. 12 (NSIS.ay): 9793 flujos, Botnet 22.1%
+Esc. 13 (Virut): 71903 flujos, Botnet 55.6%
+s55 crudas esc 2 Neris    hist_gb       PR=0.996 ROC=0.992 193s
+s55 crudas esc 2 Neris    xgboost       PR=0.996 ROC=0.992 44s
+s55 crudas esc 3 Rbot     dummy         PR=0.187 ROC=0.500 0s
+s55 crudas esc 3 Rbot     logreg        PR=0.998 ROC=0.999 32s
+s55 crudas esc 3 Rbot     random_forest PR=1.000 ROC=1.000 231s
+s55 crudas esc 3 Rbot     hist_gb       PR=0.999 ROC=1.000 201s
+s55 crudas esc 3 Rbot     xgboost       PR=1.000 ROC=1.000 52s
+s55 crudas esc 4 Rbot     dummy         PR=0.093 ROC=0.500 0s
+s55 crudas esc 4 Rbot     logreg        PR=0.969 ROC=0.989 45s
+s55 crudas esc 4 Rbot     random_forest PR=0.946 ROC=0.994 286s
+s55 crudas esc 4 Rbot     hist_gb       PR=0.980 ROC=0.995 217s
+s55 crudas esc 4 Rbot     xgboost       PR=0.983 ROC=0.996 56s
+s55 crudas esc 5 Virut    dummy         PR=0.162 ROC=0.500 0s
+s55 crudas esc 5 Virut    logreg        PR=0.888 ROC=0.969 52s
+s55 crudas esc 5 Virut    random_forest PR=0.958 ROC=0.990 268s
+s55 crudas esc 5 Virut    hist_gb       PR=0.959 ROC=0.989 181s
+s55 crudas esc 5 Virut    xgboost       PR=0.952 ROC=0.988 42s
+s55 crudas esc 6 Menti    dummy         PR=0.382 ROC=0.500 0s
+s55 crudas esc 6 Menti    logreg        PR=0.997 ROC=0.998 38s
+s55 crudas esc 6 Menti    random_forest PR=0.999 ROC=1.000 248s
+s55 crudas esc 6 Menti    hist_gb       PR=0.999 ROC=1.000 198s
+s55 crudas esc 6 Menti    xgboost       PR=1.000 ROC=1.000 57s
+s55 crudas esc 7 Sogou    dummy         PR=0.036 ROC=0.500 0s
+s55 crudas esc 7 Sogou    logreg        PR=0.376 ROC=0.859 42s
+s55 crudas esc 7 Sogou    random_forest PR=0.457 ROC=0.938 234s
+s55 crudas esc 7 Sogou    hist_gb       PR=0.726 ROC=0.952 202s
+s55 crudas esc 7 Sogou    xgboost       PR=0.424 ROC=0.930 60s
+s55 crudas esc 8 Murlo    dummy         PR=0.078 ROC=0.500 0s
+s55 crudas esc 8 Murlo    logreg        PR=0.529 ROC=0.941 37s
+s55 crudas esc 8 Murlo    random_forest PR=0.879 ROC=0.982 244s
+s55 crudas esc 8 Murlo    hist_gb       PR=0.844 ROC=0.980 189s
+s55 crudas esc 8 Murlo    xgboost       PR=0.745 ROC=0.971 56s
+s55 crudas esc 9 Neris    dummy         PR=0.861 ROC=0.500 0s
+s55 crudas esc 9 Neris    logreg        PR=0.983 ROC=0.908 45s
+s55 crudas esc 9 Neris    random_forest PR=0.994 ROC=0.970 231s
+s55 crudas esc 9 Neris    hist_gb       PR=0.992 ROC=0.958 157s
+s55 crudas esc 9 Neris    xgboost       PR=0.994 ROC=0.969 59s
+s55 crudas esc11 Rbot     dummy         PR=0.750 ROC=0.500 0s
+s55 crudas esc11 Rbot     logreg        PR=0.999 ROC=0.998 98s
+s55 crudas esc11 Rbot     random_forest PR=1.000 ROC=0.999 268s
+s55 crudas esc11 Rbot     hist_gb       PR=0.998 ROC=0.994 207s
+s55 crudas esc11 Rbot     xgboost       PR=1.000 ROC=0.998 56s
+s55 crudas esc12 NSIS.ay  dummy         PR=0.221 ROC=0.500 0s
+s55 crudas esc12 NSIS.ay  logreg        PR=0.768 ROC=0.853 46s
+s55 crudas esc12 NSIS.ay  random_forest PR=0.688 ROC=0.921 238s
+s55 crudas esc12 NSIS.ay  hist_gb       PR=0.632 ROC=0.843 140s
+s55 crudas esc12 NSIS.ay  xgboost       PR=0.737 ROC=0.921 39s
+s55 crudas esc13 Virut    dummy         PR=0.556 ROC=0.500 0s
+s55 crudas esc13 Virut    logreg        PR=0.984 ROC=0.977 35s
+s55 crudas esc13 Virut    random_forest PR=0.999 ROC=0.999 230s
+s55 crudas esc13 Virut    hist_gb       PR=0.998 ROC=0.998 163s
+s55 crudas esc13 Virut    xgboost       PR=0.999 ROC=0.998 41s

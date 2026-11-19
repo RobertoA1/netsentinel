@@ -1,0 +1,701 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1795019406166,30054,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,21
+1795019406166,30054,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,21
+1795019406166,30054,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,21
+1795019406166,30034,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,21
+1795019406166,30034,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-11,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,21
+1795019406166,30034,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,21
+1795019406166,30054,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,21
+1795019406166,30030,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,21
+1795019406166,30030,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,21
+1795019406262,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-16,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019406262,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019406323,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019406474,30024,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-18,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019406511,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-15,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019406668,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-14,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019406742,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-12,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019406773,30013,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-21,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019406788,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-20,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019406882,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-13,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019406957,30030,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-17,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019407105,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-23,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019407230,30032,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-25,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019407353,30030,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-19,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019407357,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-24,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019407418,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-22,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019407806,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-26,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019407849,30030,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-27,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019407915,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-29,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019408138,30029,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-30,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019408203,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-32,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019408376,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-28,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019408390,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-34,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019408550,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-31,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019408577,30023,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-37,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019408736,30029,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-38,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019408743,30030,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-33,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019408909,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-36,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019409000,30023,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-35,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019409048,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-41,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019409170,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-42,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019409225,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-40,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019409340,30025,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-46,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019409522,30030,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-39,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019409655,30010,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-43,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019409660,30030,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-48,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019409759,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-47,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019409975,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-45,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019409997,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-44,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019410034,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-50,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,1
+1795019410077,30031,POST /auth/login,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-49,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/auth/login,0,0,0
+1795019437302,30001,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,50,50,http://localhost:5173/api/v1/health,0,0,0
+1795019437294,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,49,49,http://localhost:5173/api/v1/health,0,0,1
+1795019437368,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,48,48,http://localhost:5173/api/v1/health,0,0,1
+1795019437506,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-11,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,47,47,http://localhost:5173/api/v1/health,0,0,0
+1795019437684,30009,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,46,46,http://localhost:5173/api/v1/health,0,0,0
+1795019437665,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,45,45,http://localhost:5173/api/v1/health,0,0,0
+1795019437731,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,44,44,http://localhost:5173/api/v1/health,0,0,0
+1795019437845,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,43,43,http://localhost:5173/api/v1/health,0,0,0
+1795019437852,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-16,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,42,42,http://localhost:5173/api/v1/health,0,0,0
+1795019437910,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-15,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,41,41,http://localhost:5173/api/v1/health,0,0,1
+1795019437918,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-18,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,40,40,http://localhost:5173/api/v1/health,0,0,1
+1795019438116,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,39,39,http://localhost:5173/api/v1/health,0,0,1
+1795019438154,30007,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,38,38,http://localhost:5173/api/v1/health,0,0,1
+1795019438137,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-14,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,37,37,http://localhost:5173/api/v1/health,0,0,1
+1795019438203,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-20,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,36,36,http://localhost:5173/api/v1/health,0,0,1
+1795019438353,30027,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,35,35,http://localhost:5173/api/v1/health,0,0,1
+1795019438389,30018,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-21,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,34,34,http://localhost:5173/api/v1/health,0,0,0
+1795019438403,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-12,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,33,33,http://localhost:5173/api/v1/health,0,0,0
+1795019438524,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-23,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,32,32,http://localhost:5173/api/v1/health,0,0,0
+1795019438550,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-25,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,31,31,http://localhost:5173/api/v1/health,0,0,0
+1795019438855,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-13,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,30,30,http://localhost:5173/api/v1/health,0,0,1
+1795019438886,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-19,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,29,29,http://localhost:5173/api/v1/health,0,0,0
+1795019438936,30013,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-17,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,28,28,http://localhost:5173/api/v1/health,0,0,0
+1795019438930,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-24,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,27,27,http://localhost:5173/api/v1/health,0,0,0
+1795019439016,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-26,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,26,26,http://localhost:5173/api/v1/health,0,0,0
+1795019439120,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-22,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,25,25,http://localhost:5173/api/v1/health,0,0,0
+1795019439208,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-30,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,24,24,http://localhost:5173/api/v1/health,0,0,0
+1795019439578,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-29,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,23,23,http://localhost:5173/api/v1/health,0,0,0
+1795019439822,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-27,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,22,22,http://localhost:5173/api/v1/health,0,0,1
+1795019439853,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-28,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,21,21,http://localhost:5173/api/v1/health,0,0,0
+1795019439966,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-34,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,20,20,http://localhost:5173/api/v1/health,0,0,0
+1795019440005,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-32,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,19,19,http://localhost:5173/api/v1/health,0,0,1
+1795019440189,30019,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-31,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,18,18,http://localhost:5173/api/v1/health,0,0,0
+1795019440250,30001,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-37,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,17,17,http://localhost:5173/api/v1/health,0,0,0
+1795019440433,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-35,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,16,16,http://localhost:5173/api/v1/health,0,0,1
+1795019440439,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-46,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,15,15,http://localhost:5173/api/v1/health,0,0,0
+1795019440451,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-33,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,14,14,http://localhost:5173/api/v1/health,0,0,1
+1795019440500,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-38,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,13,13,http://localhost:5173/api/v1/health,0,0,0
+1795019440550,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-36,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,12,12,http://localhost:5173/api/v1/health,0,0,0
+1795019440647,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-41,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,11,11,http://localhost:5173/api/v1/health,0,0,0
+1795019440745,30019,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-43,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,10,10,http://localhost:5173/api/v1/health,0,0,1
+1795019440799,30020,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-40,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,9,9,http://localhost:5173/api/v1/health,0,0,0
+1795019441070,30028,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-48,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,8,8,http://localhost:5173/api/v1/health,0,0,0
+1795019441102,30023,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-42,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,7,7,http://localhost:5173/api/v1/health,0,0,1
+1795019441249,30017,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-39,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,6,6,http://localhost:5173/api/v1/health,0,0,1
+1795019441374,30031,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-47,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,5,5,http://localhost:5173/api/v1/health,0,0,0
+1795019441459,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-50,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,4,4,http://localhost:5173/api/v1/health,0,0,0
+1795019441672,30003,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-45,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,3,3,http://localhost:5173/api/v1/health,0,0,0
+1795019441825,30030,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-44,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,2,2,http://localhost:5173/api/v1/health,0,0,0
+1795019442031,30013,GET /health,Non HTTP response code: java.net.SocketTimeoutException,Non HTTP response message: Read timed out,Usuarios virtuales 1-49,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.SocketTimeoutException]]]
+
+****** comparison: [[[200                                                    ]]]
+
+/",2752,0,1,1,http://localhost:5173/api/v1/health,0,0,0

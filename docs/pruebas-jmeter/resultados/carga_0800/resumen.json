@@ -1,0 +1,43 @@
+{
+ "muestras": 6291,
+ "error_pct": 0.43,
+ "rps": 64.1,
+ "media_ms": 9186,
+ "p50": 7764,
+ "p90": 18165,
+ "p95": 23647,
+ "p99": 27747,
+ "max_ms": 30035,
+ "prueba": "carga_0800",
+ "usuarios": 800,
+ "errores": {
+  "Non HTTP response code: java.net.SocketTimeoutException": 27
+ },
+ "sesion": {
+  "muestras": 18,
+  "error_pct": 44.44,
+  "rps": 0.2,
+  "media_ms": 76543,
+  "p50": 75300,
+  "p90": 82683,
+  "p95": 82719,
+  "p99": 82719,
+  "max_ms": 83113
+ },
+ "total_gui": {
+  "muestras": 6309,
+  "error_pct": 0.55,
+  "rps": 64.3,
+  "media_ms": 9378,
+  "p50": 7772,
+  "p90": 18243,
+  "p95": 23902,
+  "p99": 29470,
+  "max_ms": 83113
+ },
+ "peor_endpoint": "GET /auth/me",
+ "peor_p95": 29611,
+ "login_p95": 27431,
+ "peor_endpoint_sin_login": "GET /auth/me",
+ "peor_p95_sin_login": 29611
+}

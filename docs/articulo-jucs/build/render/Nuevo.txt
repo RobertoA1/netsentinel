@@ -1,0 +1,967 @@
+           Journal of Universal Computer Science, vol. 27, no. 1 (2021), 2987-2987232989!
+                                           Syntaxfehler, {
+               submitted: 1/1/2021, accepted: 2/2/2021, appeared: 3/3/2021 CC BY 4.0
+
+ Validación entre escenarios para la detección de tráfico
+botnet en CTU-13: protocolo anidado, contexto del host y
+                límites de generalización
+                          Roberto Enrique Quezada-Rodríguez
+                                (School of Systems Engineering,
+                 Universidad Nacional de Trujillo, Trujillo, La Libertad, Peru
+             https://orcid.org/0009-0004-0869-3881, requezadaro@unitru.edu.pe)
+
+                               Melanie Celeste Tello Fuentes
+                                (School of Systems Engineering,
+                 Universidad Nacional de Trujillo, Trujillo, La Libertad, Peru
+              https://orcid.org/0009-0007-4728-138X, mctellofu@unitru.edu.pe)
+
+                               Juan Pedro Santos Fernández
+                              (Department of Systems Engineering,
+                 Universidad Nacional de Trujillo, Trujillo, La Libertad, Peru
+                https://orcid.org/0000-0002-8882-9256, jsantos@unitru.edu.pe)
+
+                                Robert Jerry Sanchez Ticona
+                              (Department of Systems Engineering,
+                  Universidad Nacional de Trujillo, Trujillo, La Libertad, Peru
+               https://orcid.org/0000-0001-9387-1945, rsanchezt@unitru.edu.pe)
+
+
+Resumen: Es habitual evaluar detectores de botnets con particiones que mezclan flujos de una
+misma captura. Esa práctica no indica si el detector funcionará con otra captura o con otra familia
+de botnet. Este trabajo toma el escenario completo como unidad de partición y aplica un protocolo
+que lo deja fuera: la búsqueda de hiperparámetros es anidada y agrupada por escenario, el umbral
+se fija solo con datos internos y el análisis estadístico se hace entre escenarios. El protocolo se
+ejecuta sobre 12 escenarios de CTU-13 (678 636 flujos etiquetados) con cuatro clasificadores,
+ensambles por voto suave, variables de contexto del host y cinco semillas, y se documentan sus
+pasos de entrenamiento, su parametrización, sus condiciones iniciales y sus condiciones de
+parada. La PR-AUC media entre escenarios va de 0,886 a 0,918 (referencia trivial: 0,383), pero
+ninguna diferencia por pares entre modelos resiste la corrección de Holm. El contexto del host
+eleva la media a 0,985 con una ventana de 5 minutos que incluye flujos posteriores al evaluado,
+de modo que no sirve en línea. Dos pruebas de realismo moderan ese optimismo. Si el tráfico
+Background se trata como normal, se marca como botnet entre el 25 % y el 41 % de él, y un
+detector entrenado con CTU-13 no se transfiere a CIC-IDS2017 (PR-AUC de 0,02 a 0,08 frente
+a 0,010 del azar). Lo que se aporta es el protocolo y la medición de sus límites; un detector listo
+para operar queda fuera del alcance.
+
+Palabras clave: detección de botnets, CTU-13, validación por escenarios, validación cruzada
+anidada, fuga de información, ensambles, contexto del host
+Categorías: I.2.6, I.5.2, C.2.0, C.2.3, K.6.5
+DOI: 10.3897/jucs.<SubmissionNumber>
+2987229882987229882988
+       Quezada-Rodríguez R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…   298722988298722989
+
+1     Introducción
+Los firewalls y los sistemas de detección de intrusiones (IDS) generan más eventos de
+los que un analista puede revisar, y las reglas fijas pasan por alto comportamientos
+como el beaconing de las botnets. Una respuesta frecuente es aplicar aprendizaje
+automático a los flujos de red [García, 14], [Shinan, 21], [Velasco-Mata, 21]. CTU-13
+[García, 14] es uno de los conjuntos públicos más usados para ello. Reúne 13 capturas,
+llamadas escenarios, con tráfico de siete familias de botnet mezclado con tráfico normal
+y de fondo, y con una etiqueta por flujo.
+     Queda por saber si un detector entrenado con unas capturas funcionará en otras. La
+literatura señala sesgos de muestreo y ajuste con datos de prueba en el aprendizaje
+automático aplicado a seguridad [Sommer, 10], [Arp, 22], y presenta la fuga de
+información entre entrenamiento y evaluación como un problema general [Kapoor, 23].
+Cuando los datos tienen estructura, la validación debe dividir por bloques que la
+respeten [Roberts, 17]. En los flujos de red esa estructura es, ante todo, el escenario:
+sus flujos comparten hosts, infraestructura, familia de botnet y periodo de captura. Una
+partición aleatoria por flujos, o por bloques de tiempo dentro de un escenario, tampoco
+mide la generalización a otro escenario. No revisamos de forma sistemática cuántos
+estudios sobre CTU-13 siguen esa práctica; su efecto se documenta con datos propios
+en la Sección 4.1.
+     Este trabajo toma el escenario como unidad de partición y hace cuatro
+contribuciones. (C1) Un protocolo que deja fuera un escenario completo, con búsqueda
+de hiperparámetros anidada y agrupada por escenario y con el umbral de decisión fijado
+solo con datos internos. Se ejecuta sobre 12 escenarios de CTU-13, cuatro
+clasificadores, ensambles por voto suave y cinco semillas, y se describe con sus pasos
+de entrenamiento, su parametrización, sus condiciones iniciales y sus condiciones de
+parada. (C2) Una cuantificación de la incertidumbre con intervalos de confianza por
+bootstrap sobre escenarios y pruebas con corrección de Holm; con 12 escenarios,
+ninguna diferencia por pares entre modelos resulta significativa. (C3) Un estudio de
+variables de contexto del host, con la salvedad de que la versión evaluada usa
+información posterior al flujo. (C4) Dos pruebas de realismo, una evaluación con el
+tráfico Background tratado como normal y una validación externa en CIC-IDS2017,
+cuyos resultados negativos delimitan lo que puede afirmarse.
+     No se propone un detector que supere el estado del arte ni se afirma utilidad
+operativa. El alcance es solo CTU-13, de modo que toda conclusión vale dentro de
+CTU-13 y entre escenarios, y el resultado negativo en CIC-IDS2017 se presenta como
+la principal limitación de generalización. La Sección 2 resume el trabajo relacionado;
+la Sección 3 describe los datos, el entrenamiento y el análisis; la Sección 4 presenta los
+resultados; la Sección 5 los discute junto con las amenazas a la validez, y la Sección 6
+concluye y plantea el trabajo futuro.
+
+
+2     Trabajo relacionado
+2.1     Detección de botnets con aprendizaje automático sobre flujos
+García et al. [García, 14] presentaron CTU-13 y compararon métodos de detección de
+botnets sobre sus escenarios, con una metodología y un error de evaluación propios.
+2987329882987329882988
+       Quezada-Rodríguez R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…   298732988298732989
+Estudios posteriores aplican selección de variables y árboles de decisión [Velasco-
+Mata, 21], ensambles con selección híbrida de variables [Hossain, 23] y análisis en
+ventanas de un segundo [Velasco-Mata, 23]. Shinan et al. [Shinan, 21] revisan la
+detección de botnets con aprendizaje automático en redes definidas por software, y
+Oškera et al. [Oškera, 25] aprovechan los patrones periódicos del tráfico de mando y
+control, una idea cercana a las variables de regularidad temporal de la Sección 3.10. No
+se compara con estos métodos porque sus métricas y protocolos difieren de los de este
+trabajo, cuyo propósito es el protocolo de validación.
+
+2.2     Evaluación sin fuga y desplazamiento de distribución
+Sommer y Paxson [Sommer, 10] explican por qué evaluar la detección de intrusiones
+con aprendizaje automático es más difícil que en otras aplicaciones, y Arp et al. [Arp,
+22] catalogan errores recurrentes, entre ellos el sesgo de muestreo y el espionaje de
+datos. Kapoor y Narayanan [Kapoor, 23] documentan la fuga de información como
+causa de irreproducibilidad en numerosos campos. Para datos con estructura, Roberts
+et al. [Roberts, 17] recomiendan dividir por bloques que respeten la dependencia.
+Cawley y Talbot [Cawley, 10] muestran el sesgo que aparece al seleccionar modelos
+con la misma validación con la que se informa su rendimiento, lo que motiva la
+validación anidada, y Bates et al. [Bates, 24] estudian qué estima realmente la
+validación cruzada y con qué incertidumbre. Sobre la generalización en IDS, Cantone
+et al. [Cantone, 24] hacen un estudio entre conjuntos de datos y Verkerken et al.
+[Verkerken, 22] la abordan con técnicas no supervisadas. Engelen et al. [Engelen, 21]
+documentan errores de construcción de flujos y de etiquetado en CIC-IDS2017
+[Sharafaldin, 18], y Sarhan et al. [Sarhan, 22] proponen un conjunto estándar de
+variables para homogeneizar conjuntos de datos. El desplazamiento de distribución
+entre el entrenamiento y el uso es un problema general [Quiñonero-Candela, 08].
+
+2.3     Comparación estadística entre clasificadores
+Demšar [Demšar, 06] recomienda comparar clasificadores sobre varios conjuntos de
+datos con la prueba de Friedman [Friedman, 37] y la prueba de rangos con signo de
+Wilcoxon [Wilcoxon, 45], con la corrección de Holm [Holm, 79] para comparaciones
+múltiples. Aquí los escenarios cumplen la función de los conjuntos de datos, y los
+intervalos de confianza se obtienen por bootstrap [Efron, 79] remuestreando escenarios.
+
+
+3     Materiales y métodos
+3.1     Datos
+Se usan 12 de los 13 escenarios de CTU-13 [García, 14] en formato binetflow: flujos
+bidireccionales exportados con Argus y etiquetados como Background, Normal o
+Botnet. Se omite el escenario 10 (Rbot) porque la copia disponible solo publica capturas
+de paquetes y NetFlow unidireccional, sin binetflow etiquetado. Los flujos Background,
+millones de registros sin etiqueta fiable, quedan fuera del entrenamiento y de la
+evaluación principal; solo se usan en la evaluación de la Sección 3.11. La Tabla 1
+resume los escenarios: 678 636 flujos etiquetados y una prevalencia de Botnet entre 3,6
+% y 86,1 %, es decir, un factor de 24 entre el escenario más desbalanceado y el menos.
+Las familias se reparten de forma desigual. Neris (escenarios 1, 2 y 9), Rbot (3, 4 y 11)
+2987429882987429882988
+       Quezada-Rodríguez R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…    298742988298742989
+y Virut (5 y 13) tienen varios escenarios; Menti, Sogou, Murlo y NSIS.ay tienen uno
+cada una. El escenario 7 reúne solo 1 739 flujos, 63 de ellos Botnet.
+      Esc.            Familia                Flujos etiquetados               Botnet (%)
+       1               Neris                       71 335                        57,4
+       2               Neris                       30 052                        69,7
+       3                Rbot                      143 553                        18,7
+       4                Rbot                       27 837                         9,3
+       5               Virut                        5 577                        16,2
+       6               Menti                       12 119                        38,2
+       7               Sogou                        1 739                         3,6
+       8               Murlo                       78 903                         7,8
+       9               Neris                      214 943                        86,1
+       11               Rbot                       10 882                        75,0
+       12             NSIS.ay                       9 793                        22,1
+       13              Virut                       71 903                        55,6
+      Total                                       678 636
+
+   Tabla 1: Escenarios de CTU-13 usados. Flujos con etiqueta Botnet o Normal; el
+tráfico Background no se cuenta. Prevalencia = porcentaje de Botnet entre los flujos
+etiquetados, que es también la PR-AUC de la referencia Dummy. Elaboración propia
+                         a partir de los archivos binetflow.
+
+    Para que ningún escenario domine el entrenamiento (el 9 aporta 214 943 flujos,
+unas 124 veces los del 7), cada escenario se submuestrea de forma estratificada a un
+máximo de 2 500 flujos por semilla, y el 7 conserva todos los suyos. El submuestreo
+mantiene la prevalencia de cada escenario y también se aplica al escenario de prueba,
+de modo que cada experimento usa 29 239 flujos. La evaluación sin submuestreo se
+describe en la Sección 3.11.
+
+3.2     Variables y preprocesamiento
+Cada flujo se describe con 16 variables (versión 1.0.0 de la especificación del
+Laboratorio ML de NetSentinel): diez numéricas (duración, bytes enviados y recibidos,
+bytes totales, paquetes, bytes por paquete, proporción de bytes salientes, bytes y
+paquetes por segundo y puerto de destino) y seis categóricas (protocolo, estado de la
+conexión, sentido del flujo, dirección de red y clase de puerto de destino y de origen).
+Quedan prohibidas como variables las direcciones IP, la marca de tiempo absoluta, los
+identificadores, el escenario y la etiqueta. El preprocesamiento forma parte del pipeline
+y se ajusta solo con el entrenamiento de cada pliegue: imputación por mediana; para la
+regresión logística, logaritmo log(1+x) y estandarización de las ocho variables de
+volumen y ritmo; y codificación one-hot de las categóricas, con las categorías de menos
+de 20 apariciones agrupadas.
+2987529882987529882988
+       Quezada-Rodríguez R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…   298752988298752989
+3.3      Modelos
+Se comparan cinco modelos. Dummy predice la prevalencia del entrenamiento; su PR-
+AUC en un escenario coincide con la prevalencia de ese escenario y sirve de referencia.
+Los otros cuatro son la regresión logística (RL, solver liblinear), el random forest (RF)
+[Breiman, 01], el gradient boosting de histogramas (HGB), ambos de scikit-learn
+[Pedregosa, 11], y XGBoost (XGB) [Chen, 16]. HGB se entrena sin parada temprana y
+XGB con 300 árboles fijos. El desbalance de clases se trata con pesos (class_weight o
+scale_pos_weight), cuya elección entra en la búsqueda y usa solo datos de
+entrenamiento. Los hiperparámetros buscados y sus rangos se describen en la Sección
+3.5.
+
+3.4      Flujo de entrenamiento y validación
+El entrenamiento sigue una validación dejando un escenario fuera (leave-one-scenario-
+out) con búsqueda de hiperparámetros anidada. La Figura 1 muestra un ejemplo de
+partición y la Figura 2 resume los pasos. Para cada semilla, cada modelo y cada uno de
+los 12 escenarios se procede así. (i) Se submuestrea cada escenario (Sección 3.1) y se
+aparta el escenario excluido como prueba; no participa en ningún ajuste. (ii) Los 11
+escenarios restantes se reparten al azar en 4 grupos de escenarios (de 3, 3, 3 y 2). (iii)
+Optuna [Akiba, 19] evalúa 10 combinaciones de hiperparámetros. Cada una se valora
+con validación interna agrupada: se entrena con tres grupos, se predice cada escenario
+del cuarto y se rota; el objetivo es la PR-AUC media por escenario predicho. (iv) Con
+la mejor combinación se reconstruyen las predicciones internas y con ellas se fija el
+umbral (Sección 3.8). (v) El modelo se reentrena con los 11 escenarios y se evalúa una
+sola vez en el escenario de prueba. (vi) El procedimiento se repite para los 12
+escenarios, los cinco modelos y las cinco semillas.
+
+
+
+
+      Figura 1: Ejemplo de partición con la semilla 11 y el escenario 7 excluido; los
+                   grupos G1 a G4 son los que resultan de esa semilla.
+2987629882987629882988
+       Quezada-Rodríguez R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…   298762988298762989
+
+
+
+
+   Figura 2: Flujo de entrenamiento y validación de un modelo para un escenario
+  excluido k y una semilla. Los recuadros laterales resumen la parametrización, las
+   condiciones iniciales y las condiciones de parada, que detallan las Tablas 3 a 5.
+
+    La agrupación interna también es por escenario. Por eso ni la búsqueda ni el umbral
+ven flujos del escenario evaluado, y ningún escenario aparece a la vez en el
+entrenamiento y en la validación. El resultado de un escenario es la media de sus cinco
+semillas. En total hay 5 × 12 × 5 = 300 evaluaciones, incluido Dummy.
+
+3.5     Parametrización
+La Tabla 2 recoge los hiperparámetros buscados y sus rangos, que son los valores por
+defecto del Laboratorio ML de NetSentinel. Lo que no se busca queda fijo: la regresión
+2987729882987729882988
+       Quezada-Rodríguez R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…         298772988298772989
+logística usa el solver liblinear con 2 000 iteraciones como máximo, XGBoost usa 300
+árboles con tree_method hist y HGB no usa parada temprana. La Tabla 3 reúne el resto
+de los parámetros del protocolo.
+Modelo                                        Parámetros y rangos
+RL            C: 10-3 a 102 (log); penalty: {L2, L1}; class_weight: {ninguno, balanced}
+              n_estimators: 200 a 800 (paso 100); max_depth: 4 a 30; min_samples_leaf: 1 a
+RF            20 (log); max_features: {sqrt, log2, 0,5}; class_weight: {ninguno, balanced,
+              balanced_subsample}
+              learning_rate: 0,01 a 0,3 (log); max_iter: 100 a 500; max_leaf_nodes: 8 a 64;
+HGB           l2_regularization: 10-6 a 10 (log); min_samples_leaf: 5 a 100; class_weight:
+              {ninguno, balanced}
+              eta: 0,01 a 0,3 (log); max_depth: 2 a 10; subsample: 0,5 a 1; colsample_bytree:
+XGB           0,4 a 1; min_child_weight: 1 a 20 (log); gamma: 0 a 5; reg_lambda: 0,01 a 20
+              (log); scale_pos_weight: 1 a 50 (log)
+
+Tabla 2: Hiperparámetros buscados por modelo (rango por defecto del Laboratorio
+   ML; «log» = escala logarítmica). Parámetros fijos: regresión logística, solver
+ liblinear y 2 000 iteraciones como máximo; XGBoost, 300 árboles y tree_method
+                         hist; HistGB sin parada temprana.
+
+
+Parámetro                       Valor
+Escenarios                      12 (1 a 9, 11, 12 y 13); el 10 no se usa
+                                máximo 2 500, submuestreo estratificado; el escenario 7
+Flujos por escenario
+                                conserva sus 1 739
+Flujos por experimento          29 239 (los 12 escenarios ya submuestreados)
+                                16 de flujo; 23 más de contexto del host; 13 comunes con
+Variables
+                                CIC-IDS2017
+Partición externa               un escenario excluido por vez (12 particiones)
+Partición interna               4 grupos de escenarios (3, 3, 3 y 2) con rotación completa
+Modelos                         Dummy, RL, RF, HGB y XGB; 4 ensambles por voto suave
+Muestreador                     TPE de Optuna 5.0.0 con n_startup_trials = 10
+                                MedianPruner por defecto (n_startup_trials = 5,
+Podador
+                                n_warmup_steps = 0)
+Intentos de búsqueda            10 por modelo, escenario excluido y semilla
+Objetivo de la búsqueda         maximizar la PR-AUC media por escenario predicho
+                                199 cuantiles (del 1 % al 99 %) de las puntuaciones internas;
+Umbral
+                                el de máxima exactitud balanceada
+Semillas                        11, 22, 33, 44 y 55
+Evaluaciones                    5 modelos × 12 escenarios × 5 semillas = 300
+
+            Tabla 3: Parámetros del protocolo de entrenamiento y validación.
+2987829882987829882988
+       Quezada-Rodríguez R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…       298782988298782989
+3.6     Condiciones iniciales
+Cada experimento arranca de un estado que la semilla determina por completo (Tabla
+4). La semilla (11, 22, 33, 44 o 55) controla el submuestreo, el sorteo de grupos, el
+muestreador de Optuna y los modelos. El estudio de Optuna empieza vacío, sin historial
+ni hiperparámetros previos. El muestreador TPE [Bergstra, 11] de Optuna 5.0.0
+comienza con 10 puntos de arranque (n_startup_trials = 10) muestreados al azar; con
+10 intentos en total, el modelo bayesiano nunca interviene y la búsqueda equivale a una
+búsqueda aleatoria de 10 puntos [Bergstra, 12]. Lo detectamos al preparar este
+manuscrito. Los resultados siguen siendo una evaluación válida entre escenarios, pero
+el espacio de hiperparámetros se exploró de forma muy ligera (Sección 5.2).
+Elemento                  Estado inicial
+                          Escenarios en formato binetflow con flujos Botnet y Normal; el
+Datos                     preprocesamiento aún no está ajustado (se ajusta dentro de cada
+                          pliegue)
+                          Generador de NumPy inicializado con la semilla y aplicado a los
+Submuestreo
+                          escenarios en orden; al menos un flujo por clase
+                          Apartado antes de cualquier ajuste; no interviene en la búsqueda, en
+Escenario de prueba
+                          el umbral ni en el reentrenamiento
+                          Permutación de los 11 escenarios de entrenamiento con un generador
+Grupos internos
+                          inicializado con la semilla; reparto cíclico en 4 grupos
+                          Nuevo, sin historial ni arranque en caliente; muestreador TPE con la
+Estudio de Optuna
+                          semilla; dirección de maximización
+                          Los 10 primeros intentos se muestrean al azar del espacio de la Tabla
+Primeros intentos
+                          2; no se parte de hiperparámetros por defecto
+                          random_state igual a la semilla; los hiperparámetros que no se
+Modelos
+                          buscan toman los valores fijos de la Tabla 2
+Umbral                    No existe hasta terminar la búsqueda (Dummy usa 0,5)
+                          Un archivo JSON por semilla; al reanudar se omiten las
+Registro
+                          combinaciones ya completadas
+
+  Tabla 4: Condiciones iniciales de cada experimento (una combinación de semilla,
+                           escenario excluido y modelo).
+
+
+3.7     Condiciones de parada
+Ningún componente del entrenamiento se detiene por falta de mejora (Tabla 5). La
+búsqueda termina al completar 10 intentos y no tiene tiempo límite. Se configuró el
+podador MedianPruner por defecto, pero el objetivo no informaba resultados
+intermedios y por eso nunca podó un intento. Cada modelo se detiene por un límite fijo:
+la regresión logística, por convergencia de liblinear (tolerancia 0,0001) o por sus 2 000
+iteraciones; RF, por el número de árboles de cada intento; HGB, por max_iter sin parada
+temprana; y XGB, por sus 300 rondas. El protocolo completo termina al agotar las 300
+evaluaciones. No se completó una comparación con 30 intentos por búsqueda; queda
+como trabajo futuro (Sección 6).
+2987929882987929882988
+       Quezada-Rodríguez R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…           298792988298792989
+
+Componente         Criterio de parada                              Valor
+                   Se agotan las combinaciones pendientes          300 evaluaciones;
+Protocolo completo
+                   (semilla, escenario, modelo)                    reanudable
+Búsqueda de                                                        10; sin tiempo límite
+                   Número de intentos
+Optuna                                                             (timeout = None)
+                                                                   Sin efecto: el objetivo no
+Poda de intentos      MedianPruner
+                                                                   informa valores intermedios
+Validación interna    Rotación completa de los grupos              4 ajustes por intento
+                                                                   tol = 0,0001 (por defecto) o
+RL (liblinear)        Convergencia o límite de iteraciones
+                                                                   2 000 iteraciones
+                      Número fijo de árboles; cada árbol crece
+                                                                   n_estimators: 200 a 800
+RF                    hasta max_depth, min_samples_leaf o
+                                                                   (buscado)
+                      nodos puros
+                                                                 max_iter: 100 a 500
+HGB                   Límite de iteraciones, sin parada temprana (buscado); early_stopping =
+                                                                 False
+                      Número fijo de rondas, sin parada          300 rondas; sin
+XGB
+                      temprana                                   early_stopping_rounds
+Umbral                Recorrido completo de los candidatos       199 cuantiles
+Dummy                 No hay entrenamiento iterativo             Umbral 0,5
+
+  Tabla 5: Condiciones de parada por componente. Ningún componente usa parada
+     temprana: todos terminan por un límite fijo o por convergencia numérica.
+
+
+3.8     Umbral y métricas
+El umbral de decisión se obtiene de las predicciones internas fuera de grupo de los 11
+escenarios de entrenamiento. Entre 199 cuantiles de las puntuaciones (del 1 % al 99 %)
+se elige el que maximiza la exactitud balanceada; el escenario de prueba no interviene.
+La métrica principal es la PR-AUC (precisión promedio), más informativa que la ROC-
+AUC cuando la clase positiva es minoritaria [Saito, 15]. La PR-AUC de un clasificador
+sin información es igual a la prevalencia, que aquí va de 0,036 a 0,861; por eso toda
+cifra se acompaña de la referencia Dummy del mismo escenario. Se informan además
+la ROC-AUC y, con el umbral fijado, la sensibilidad, la precisión y la exactitud
+balanceada. Los promedios entre escenarios son macropromedios, en los que cada
+escenario pesa igual.
+
+3.9     Ensambles
+Se evalúan cuatro ensambles por voto suave, es decir, promedios de las probabilidades
+de sus miembros [Dietterich, 00]: RF+HGB, RL+RF+HGB, RF+HGB+XGB y los
+cuatro modelos juntos. Cada miembro usa los mejores hiperparámetros de su búsqueda
+individual para ese escenario excluido y esa semilla, sin repetir la búsqueda, de modo
+que los hiperparámetros se eligieron por modelo y ninguno se ajustó para el ensamble.
+El umbral se elige con las predicciones internas promediadas.
+298710298829871029882988
+       Quezada-Rodríguez                                        2987102988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987102989
+3.10    Variables de contexto del host
+Para medir si el comportamiento del host aporta información que el flujo aislado no
+tiene, a cada flujo se le añaden agregados de su IP de origen en una ventana temporal
+de W minutos (W = 1 y 5). Se calculan sin etiquetas e incluyen el número de
+conexiones, de destinos y de puertos distintos, las entropías de puertos y de destinos,
+las proporciones de TCP, UDP e ICMP, las proporciones de intentos sin respuesta y de
+reinicios, estadísticos del intervalo entre conexiones y medidas de regularidad tipo
+beaconing (23 variables en total). La versión evaluada con CTU-13 usa ventanas fijas
+que contienen flujos posteriores al evaluado, por lo que no es causal: una alerta solo
+podría emitirse al cerrar la ventana. Los hiperparámetros se reutilizan de la búsqueda
+con flujos, sin reajuste. Los archivos de trabajo contienen solo flujos Botnet y Normal,
+de modo que las ventanas son «puras»; para acotar ese efecto se recalcularon las
+ventanas con todo el tráfico, Background incluido, en los escenarios 5, 7 y 12 (semilla
+11, W = 1). También se implementó una versión causal (20 variables acumuladas hasta
+el flujo actual, verificada sin discrepancias contra un cálculo directo en 150 flujos al
+azar); su evaluación completa en CTU-13 no llegó a terminarse y no se informa.
+
+3.11    Evaluación con tráfico Background
+Para los escenarios excluidos 1, 2 y 3 (semilla 11) se evaluó el modelo sobre todo el
+tráfico del escenario, sin submuestreo y con el Background tratado como Normal,
+usando el umbral de la validación interna. Se informan la PR-AUC realista, la
+sensibilidad, la fracción de Background marcada y la precisión. Los tres escenarios
+tienen 2 824 132, 1 807 765 y 4 705 297 flujos; la corrida se detuvo tras ellos por su
+costo de cómputo.
+
+3.12    Validación externa en CIC-IDS2017
+Se entrena con los 12 escenarios de CTU-13 (tope de 2 500 flujos) y se prueba en el
+viernes por la mañana de CIC-IDS2017 [Sharafaldin, 18]: 191 033 flujos, de los cuales
+1 966 son de la clase Bot (1,03 %). Solo se usan las 13 variables comunes a ambos
+formatos (duración, bytes enviados, recibidos y totales, paquetes, bytes por paquete,
+proporción de salida, bytes y paquetes por segundo, puerto de destino, protocolo y
+clases de puerto); se excluyen el estado, el sentido y la dirección, propios de Argus. La
+búsqueda (10 puntos, validación interna por grupos de escenarios de CTU-13) y el
+umbral se obtienen solo con CTU-13, sin recalibrar para CIC. Una segunda variante
+añade 8 variables causales del host (ventana de 5 minutos). Las variables no significan
+lo mismo en ambos formatos (CIC mide longitudes de carga útil y Argus bytes totales),
+CIC tiene marca de tiempo con resolución de minuto y sus errores de construcción de
+flujos y de etiquetado están documentados [Engelen, 21].
+
+3.13    Análisis estadístico
+Se promedian las cinco semillas por escenario y los escenarios se tratan como bloques.
+Entre modelos se aplica la prueba de Friedman; por pares, la prueba de rangos con signo
+de Wilcoxon (exacta, bilateral) con la corrección de Holm sobre cada familia de
+comparaciones. Los intervalos de confianza del 95 % son percentiles de 10 000
+remuestreos de los 12 escenarios. Las comparaciones que incluyen ensambles son
+298711298829871129882988
+       Quezada-Rodríguez                                        2987112988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987112989
+dependientes porque comparten miembros, y sus pruebas son orientativas. Con 12
+escenarios, el p mínimo alcanzable del Wilcoxon exacto es 0,0005, pero con efectos
+pequeños y variabilidad entre escenarios la potencia es baja.
+
+3.14    Implementación y reproducibilidad
+El código está en Python 3.11 con scikit-learn 1.9.1, XGBoost 3.2.0, Optuna 5.0.0,
+SciPy 1.17.1, NumPy 2.4.6 y pandas 3.1.1, sobre el backend del Laboratorio ML de
+NetSentinel, ejecutado con Docker Compose en una CPU Intel Core i5-12450H (12
+hilos), 15 GB de RAM y sin GPU. Cada ejecución escribe sus resultados por semilla
+en archivos JSON de forma incremental y puede reanudarse. Las 300 evaluaciones del
+protocolo principal sumaron unas 10 horas de tiempo de reloj acumulado. Una
+sobresuscripción de hilos (el paralelismo OpenMP de HGB multiplicado por el de RF
+y XGB) ralentizó en torno a siete veces las ejecuciones iniciales de HGB y obligó a
+fijar los hilos por proceso, algo que conviene hacer al reproducir el trabajo. Los scripts,
+los resultados crudos y el recálculo de todas las tablas y figuras de este artículo están
+disponibles (Sección «Declaraciones»).
+
+3.15    Uso de herramientas de inteligencia artificial
+Siguiendo la posición del Committee on Publication Ethics [COPE, 23], se declara el
+uso de herramientas de inteligencia artificial. Se usó Claude Sonnet 5.5 (identificador
+de modelo claude-sonnet-5-5; Anthropic) a través del agente de programación Claude
+Code (versión 2.1.319) con estos fines: (a) escribir y modificar los scripts de
+experimentación en Python y el código del Laboratorio ML; (b) lanzar y supervisar las
+ejecuciones; (c) recalcular tablas, intervalos y figuras a partir de los resultados crudos;
+(d) redactar el manuscrito en español, reordenarlo, parafrasearlo, revisar su estilo y
+darle formato con la plantilla de J.UCS; y (e) consultar metadatos bibliográficos en
+Crossref para verificar las referencias. La herramienta no generó datos ni resultados:
+todas las cifras proceden de ejecuciones registradas en archivos JSON y se recalcularon
+por script. Los autores revisaron el contenido, verificaron las cifras contra los archivos
+de resultados y asumen la plena responsabilidad por la integridad, la exactitud y la
+originalidad del manuscrito. La herramienta no figura entre los autores.
+
+
+4      Resultados
+4.1     De un escenario a varios
+Como punto de partida se evaluó cada modelo dentro del escenario 11 con una CV
+anidada 5×3 agrupada por bloques de 10 s y una partición de prueba reservada (tres
+semillas). En esa partición la PR-AUC fue de 0,995 a 0,996 en los cuatro modelos,
+frente a 0,733 del Dummy (Tabla 6). Al entrenar con el escenario 11 y probar en el 12,
+la PR-AUC del mejor modelo (RF) cae a 0,776 (referencia 0,221), con una sensibilidad
+de solo 0,249 al umbral 0,5. Al entrenar con el 12 y probar en el 11, los tres modelos
+de árboles quedan en la referencia o por debajo (PR-AUC de 0,691 a 0,769 frente a
+0,750; ROC-AUC de 0,18 a 0,32, peor que el azar) y solo la regresión logística acierta
+(0,988). La validación por bloques de tiempo dentro de un escenario sobreestima, por
+tanto, el rendimiento ante otro escenario.
+298712298829871229882988
+       Quezada-Rodríguez                                        2987122988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987122989
+
+      Situación                               Referencia    RL      RF       HGB      XGB
+      Dentro del esc. 11 (bloques de 10 s)      0,733      0,995   0,996     0,995    0,996
+      Entrena 11, prueba 12                     0,221      0,647   0,776     0,694    0,686
+      Entrena 12, prueba 11                     0,750      0,988   0,746     0,697    0,769
+      Prueba 11; entrena 9, 12, 13 (sin Rbot)   0,750      1,000   0,768     0,691    0,747
+      Prueba 11; entrena los otros 11 (con
+                                                0,750      0,999   1,000     0,999    1,000
+      Rbot 3 y 4)
+
+ Tabla 6: PR-AUC al pasar de un escenario a varios (umbral independiente). Fila 1:
+  partición de prueba del escenario 11 con CV anidada 5×3 por bloques de 10 s (3
+semillas). Filas 2 y 3: entrenamiento en un escenario y prueba en otro. Fila 4: diseño
+ previo con 4 escenarios (9, 11, 12, 13; 6 puntos de búsqueda, tope de 4 000 flujos, 3
+       semillas). Fila 5: 11 escenarios de entrenamiento, 5 semillas (Tabla 7).
+
+     Con cuatro escenarios, la exclusión del 11 (Rbot) tampoco se predijo bien con
+modelos de árboles: la ROC-AUC fue de 0,13 a 0,32 con tres escenarios de
+entrenamiento y ninguno de la misma familia, mientras que la regresión logística
+alcanzó 1,000. Con los otros 11 escenarios, entre los que hay dos Rbot más (3 y 4), el
+escenario 11 se predice con una PR-AUC de 0,999 a 1,000 en todos los modelos. El
+fallo se debía a que la familia no estaba representada en el entrenamiento; la cobertura
+de familias es, por tanto, un factor dominante del rendimiento.
+
+4.2     Resultados entre 12 escenarios
+La Tabla 7 y la Figura 3 muestran la PR-AUC por escenario excluido, y la Tabla 8 el
+resumen. Todos los modelos superan al Dummy en los 12 escenarios. En nueve
+escenarios (1 a 6, 9, 11 y 13) los tres modelos de árboles superan 0,93 de PR-AUC y la
+regresión logística supera 0,88. Cuando la prevalencia es alta (escenarios 2, 9 y 11), el
+Dummy ya alcanza de 0,70 a 0,86, así que la ganancia es pequeña por construcción.
+Los escenarios débiles son el 7 (Sogou; PR-AUC de 0,399 a 0,640), el 8 (Murlo; de
+0,677 a 0,893) y el 12 (NSIS.ay, la única botnet P2P; de 0,629 a 0,766), con
+desviaciones entre semillas de hasta 0,157.
+298713298829871329882988
+       Quezada-Rodríguez                                        2987132988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987132989
+
+ Esc.    Familia     Dummy           RL               RF              HGB                 XGB
+   1       Neris      0,574     0,940 ± 0,005    0,961 ± 0,004    0,954 ± 0,006    0,956 ± 0,004
+   2       Neris      0,697     0,986 ± 0,001    0,997 ± 0,001    0,996 ± 0,001    0,996 ± 0,001
+   3       Rbot       0,187     0,992 ± 0,006    0,999 ± 0,002    0,998 ± 0,001    0,998 ± 0,002
+   4       Rbot       0,093     0,978 ± 0,008    0,956 ± 0,013    0,988 ± 0,005    0,990 ± 0,005
+   5       Virut      0,162     0,888 ± 0,002    0,951 ± 0,006    0,949 ± 0,010    0,939 ± 0,014
+   6      Menti       0,382     0,998 ± 0,001    1,000 ± 0,000    0,999 ± 0,000    0,999 ± 0,000
+   7      Sogou       0,036     0,435 ± 0,044    0,434 ± 0,079    0,640 ± 0,157    0,399 ± 0,134
+   8      Murlo       0,078     0,677 ± 0,136    0,893 ± 0,015    0,786 ± 0,125    0,813 ± 0,080
+   9       Neris      0,861     0,985 ± 0,002    0,995 ± 0,001    0,995 ± 0,002    0,995 ± 0,001
+  11       Rbot       0,750     0,999 ± 0,001    1,000 ± 0,000    0,999 ± 0,002    1,000 ± 0,000
+  12     NSIS.ay      0,221     0,766 ± 0,025    0,690 ± 0,035    0,629 ± 0,023    0,677 ± 0,056
+  13       Virut      0,556     0,985 ± 0,001    0,999 ± 0,000    0,998 ± 0,001    0,998 ± 0,001
+
+  Tabla 7: PR-AUC en el escenario excluido (media ± desviación entre 5 semillas).
+            Dummy = prevalencia. Negrita: mejor media del escenario.
+
+
+
+
+Figura 3: PR-AUC por escenario excluido (media de 5 semillas; barras = desviación
+entre semillas). Las rayas negras son la prevalencia (referencia Dummy). Ensamble
+                      RL+RF+HGB descrito en la Sección 4.3.
+
+    Ningún modelo gana en todo. HGB tiene la mejor media (0,911 ± 0,022), en buena
+parte por el escenario 7, y XGB la mejor mediana (0,992). RF tiene el mejor rango
+298714298829871429882988
+       Quezada-Rodríguez                                        2987142988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987142989
+medio (1,50 entre cuatro modelos) y la menor variación entre semillas de la media
+global (0,007), y la regresión logística obtiene el mejor resultado en el escenario 12. La
+prueba de Friedman entre los cuatro modelos rechaza la equivalencia (χ2 = 13,3; 3 g. l.;
+p = 0,004), con la regresión logística en último rango (3,42). Las comparaciones por
+pares, en cambio, no resisten la corrección: el menor p de Wilcoxon, 0,021 (RF frente
+a XGB), pasa a 0,126 con Holm sobre las 6 comparaciones entre los cuatro modelos y
+a 0,189 sobre las 10 de la Tabla 10. Los intervalos del 95 % de la PR-AUC media se
+solapan ampliamente (por ejemplo, RF 0,906 [0,801], [0,982] y HGB 0,911 [0,829],
+[0,980]). No se declara un modelo ganador.
+
+4.3     Ensambles
+La Tabla 8 incluye los cuatro ensambles. Elevan la PR-AUC media entre 0,6 y 1,2
+puntos respecto a RF y entre 0,1 y 0,7 respecto a HGB, una mejora que no es
+significativa (Wilcoxon sin corregir: p de 0,42 a 0,85 frente a RF y de 0,15 a 0,57 frente
+a HGB). Lo más claro es la estabilidad: RL+RF+HGB y el ensamble de los cuatro
+modelos tienen la menor desviación entre semillas de la media global (0,006 y 0,005)
+y la menor desviación máxima en un escenario (0,057 y 0,058, frente a 0,079 a 0,157
+en los modelos individuales). RL+RF+HGB logra además la mejor exactitud
+balanceada (0,915; el resto de modelos y ensambles, de 0,886 a 0,907), la mejor
+precisión (0,761) y una sensibilidad (0,930) igual o mayor que la de cualquier otro (RF,
+0,928). Los ensambles no resuelven los escenarios difíciles: en el 7 el HGB solo (0,640)
+supera a todos ellos (0,476 a 0,537), y en el 12 la regresión logística sola (0,766) supera
+a todos (0,674 a 0,739). Como los miembros reciben las mismas variables, el ensamble
+solo promedia sus errores.
+                                                          ROC-                        Ex.
+Modelo               PR-AUC        Mediana Peor esc.      AUC      Sens.    Prec.     bal.   Rango
+Dummy                  0,383        0,302   0,036 (7)     0,500     n. a.    n. a.   0,500    n. a.
+RL                 0,886 ± 0,013    0,982   0,435 (7)     0,951    0,881    0,741    0,886    7,08
+RF                 0,906 ± 0,007    0,978   0,434 (7)     0,979    0,928    0,740    0,894    3,25
+HGB                0,911 ± 0,022    0,991  0,629 (12)     0,970    0,906    0,733    0,894    5,50
+XGB                0,897 ± 0,008    0,992   0,399 (7)     0,972    0,918    0,723    0,893    5,83
+RF+HGB             0,917 ± 0,010    0,987     0,537 (7)   0,979    0,928    0,726    0,891    2,50
+RL+RF+HGB          0,918 ± 0,006    0,992     0,507 (7)   0,977    0,930    0,761    0,915    4,25
+RF+HGB+XGB         0,912 ± 0,008    0,990     0,490 (7)   0,977    0,923    0,728    0,898    3,75
+Los cuatro         0,914 ± 0,005    0,992     0,476 (7)   0,977    0,922    0,748    0,907    3,83
+
+   Tabla 8: Resumen entre los 12 escenarios (macropromedio). PR-AUC: media ±
+     desviación entre las 5 medias por semilla; mediana y peor escenario (entre
+    paréntesis) sobre las medias por escenario. Sensibilidad, precisión y exactitud
+  balanceada con el umbral interno. Rango medio entre los 8 modelos (1 = mejor).
+
+
+4.4     Variables de contexto del host
+El contexto del host eleva de forma marcada la PR-AUC media (Tabla 9 y Figura 4).
+El ensamble RL+RF+HGB pasa de 0,918 ± 0,006 con solo flujo a 0,960 ± 0,023 con
+298715298829871529882988
+       Quezada-Rodríguez                                        2987152988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987152989
+W = 1 y a 0,985 ± 0,004 con W = 5, y su peor escenario sube de 0,507 a 0,608 y a
+0,895. La mejora se concentra en los escenarios que fallaban con solo flujo: el 7 (Sogou)
+pasa de 0,507 a 0,999 (W = 1) y 0,993 (W = 5), y el 12 (NSIS.ay) de 0,739 a 0,985 y
+0,990. No todo mejora: el escenario 8 (Murlo) empeora con W = 1 (de 0,892 a 0,608,
+con gran variación entre semillas), y dos de los tres escenarios Rbot bajan algo con W
+= 5 (el 11, de 1,000 a 0,976; el 4, de 0,989 a 0,969). La regresión logística no se
+beneficia con W = 5 (0,857 frente a 0,886).
+                                   Flujo + host, W   Flujo + host, W
+Modelo               Solo flujo        = 1 min           = 5 min             Peor escenario
+RL                 0,886 ± 0,013    0,957 ± 0,013     0,857 ± 0,049       0,435 / 0,676 / 0,193
+RF                 0,906 ± 0,007    0,954 ± 0,023     0,980 ± 0,008       0,434 / 0,642 / 0,889
+HGB                0,911 ± 0,022    0,960 ± 0,012     0,965 ± 0,019       0,629 / 0,752 / 0,689
+XGB                0,897 ± 0,008    0,968 ± 0,008     0,970 ± 0,009       0,399 / 0,830 / 0,780
+RL+RF+HGB          0,918 ± 0,006    0,960 ± 0,023     0,985 ± 0,004       0,507 / 0,608 / 0,895
+
+ Tabla 9: PR-AUC media entre escenarios con variables de flujo y con contexto del
+host no causal (ventana W; media ± desviación entre 5 semillas) y PR-AUC del peor
+escenario (solo flujo / W = 1 / W = 5). Hiperparámetros reutilizados de la búsqueda
+                                     con flujos.
+
+
+
+
+ Figura 4: PR-AUC del ensamble RL+RF+HGB por escenario con solo variables de
+    flujo y con contexto del host no causal (W = 1 y 5 min). Media de 5 semillas.
+
+    Los contrastes pareados (Tabla 10) dan las mayores diferencias con W = 5: RF
++0,074 (IC 95 % [+0,003], [+0,173]; p = 0,052) y RL+RF+HGB +0,067 ([+0,002],
+298716298829871629882988
+       Quezada-Rodríguez                                        2987162988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987162989
+[+0,160]; p = 0,064). Con la corrección de Holm, ningún contraste del contexto del host
+tiene un p ajustado menor que 0,425, y los dos intervalos que excluyen el cero lo hacen
+por poco y no resisten la corrección. La mejora es grande, pero depende de pocos
+escenarios. Además, el tamaño de ventana y el ensamble se compararon con los mismos
+resultados con los que se informan, lo que sesga la selección hacia el optimismo; por
+eso se informan ambas ventanas y todos los modelos.
+Comparación                               Diferencia [IC 95 %]              p             p Holm
+Solo flujo: RL menos
+                                         -0,032 [-0,072], [-0,005]        0,016           0,161
+RL+RF+HGB
+Solo flujo: RF menos XGB                +0,010 [-0,003], [+0,026]         0,021           0,189
+Solo flujo: RL menos HGB                -0,025 [-0,070], [+0,016]         0,034           0,273
+W = 5 menos solo flujo: RF              +0,074 [+0,003], [+0,173]         0,052           0,470
+W = 5 menos solo flujo:
+                                        +0,067 [+0,002], [+0,160]         0,064           0,512
+RL+RF+HGB
+W = 1 menos solo flujo: RF              +0,048 [-0,041], [+0,157]         0,042           0,425
+W = 1 menos solo flujo: XGB             +0,071 [-0,015], [+0,184]         0,077           0,540
+W = 5 menos solo flujo: RL              -0,029 [-0,089], [+0,023]         0,791           1,000
+
+ Tabla 10: Comparaciones pareadas entre escenarios (diferencia de PR-AUC media
+   por escenario, IC 95 % por bootstrap sobre escenarios, p de Wilcoxon exacto
+    bilateral y p ajustado por Holm). Cada bloque pertenece a una familia de 10
+     comparaciones. Se muestran las de menor p ajustado y algunas de interés.
+
+    Para comprobar la pureza de las ventanas se recalcularon con todo el tráfico
+(Background incluido) en los escenarios 5, 7 y 12. Respecto a la ventana pura, la PR-
+AUC cambió entre 0,000 y 0,007 en los cuatro modelos (por ejemplo, escenario 7, RF:
+0,996 frente a 0,993). La mejora no depende de esa pureza en la evaluación; el
+entrenamiento sí se hizo con ventanas puras y los demás escenarios no se comprobaron.
+Esta variante responde a otra pregunta: cada flujo se clasifica por lo que hizo su host de
+origen en la ventana. Sirve para señalar equipos comprometidos y no puede operar en
+línea. Sigue sin demostrarse que la ventaja se mantenga sin usar flujos futuros.
+
+4.5     Evaluación con tráfico Background
+La Tabla 11 y la Figura 5 contrastan la evaluación sobre flujos etiquetados con la
+realista. Con el umbral de la validación interna, entre una cuarta parte y dos quintas
+partes del tráfico Background se marca como botnet (25 000 a 41 000 alertas por
+100 000 flujos) y la precisión queda entre 1,7 % y 4,2 %, aunque la sensibilidad se
+mantiene alta (0,76 a 0,997). La PR-AUC realista (0,06 a 0,95) es mucho menor que la
+calculada solo con flujos etiquetados (0,94 a 0,999) y varía entre modelos: en el
+escenario 3 llega a 0,949 con HGB y es de 0,161 con la regresión logística. El orden de
+las puntuaciones puede ser bueno aunque el umbral no se transfiera, porque se fijó con
+otra prevalencia (0,6 % a 1,5 % en estos escenarios completos, frente a 3,6 % a 86,1 %
+tras etiquetar). Estos datos piden cautela: el Background no es verdad conocida y puede
+298717298829871729882988
+       Quezada-Rodríguez                                        2987172988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987172989
+contener tráfico malicioso sin etiquetar o tráfico legítimo atípico, y la prueba cubre tres
+escenarios y una semilla.
+                                    PR-AUC        PR-AUC                      Background     Prec.
+Esc.          Flujos (% Botnet)       etiq.        realista       Sens.       marcado (%)    (%)
+                                                                                             3,4 a
+1 Neris        2 824 132 (1,45 %)   0,94 a 0,96   0,06 a 0,26   0,76 a 0,87    27,7 a 36,4
+                                                                                              4,2
+                                                                                             2,5 a
+2 Neris        1 807 765 (1,16 %)   0,99 a 1,00   0,18 a 0,51   0,81 a 0,93    32,8 a 41,1
+                                                                                              2,9
+                                                                                             1,7 a
+3 Rbot         4 705 297 (0,57 %)   0,99 a 1,00   0,16 a 0,95   0,99 a 1,00    25,4 a 34,0
+                                                                                              2,2
+
+ Tabla 11: Evaluación con todo el tráfico del escenario excluido (sin submuestreo),
+con el Background tratado como Normal (semilla 11; rango entre los cinco modelos).
+   PR-AUC etiq. = calculada solo con los flujos etiquetados. Umbral fijado en la
+                               validación interna.
+
+
+
+
+Figura 5: Arriba, PR-AUC calculada solo con flujos etiquetados y con todo el tráfico
+ (Background = Normal). Abajo, porcentaje del tráfico Background marcado como
+botnet. Escenarios 1, 2 y 3, semilla 11. RL: regresión logística; Ens.: RL+RF+HGB.
+
+
+4.6       Validación externa en CIC-IDS2017
+El detector entrenado con CTU-13 no se transfiere a CIC-IDS2017 (Tabla 12 y Figura
+6). Con variables de flujo, la PR-AUC va de 0,019 a 0,080 (el azar da 0,010) y la ROC-
+298718298829871829882988
+       Quezada-Rodríguez                                        2987182988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987182989
+AUC de 0,717 a 0,861: hay señal por encima del azar, pero insuficiente. Con el umbral
+heredado se marca entre el 20 % y el 58 % del tráfico benigno y la precisión es de 1,7
+% a 3,8 %. Los modelos de árboles, los mejores dentro de CTU-13, son los que peor se
+transfieren, y la regresión logística (con logaritmo y escalado) es la menos mala. El
+contexto causal del host empeora la transferencia: la ROC-AUC baja a entre 0,477 y
+0,665, y la regresión logística queda por debajo del azar. Con ese contexto, los umbrales
+heredados marcan entre el 86 % y el 97 % del tráfico benigno en los modelos de árboles
+(el de HGB es degenerado, 2,6·10-8). Una explicación plausible, aunque no probada, es
+que en CIC los equipos infectados también generan tráfico benigno, hay NAT interno
+y la actividad típica de un host difiere de la de las capturas de CTU-13.
+
+                                 Solo variables de flujo                Flujo + host (causal)
+                        PR-      ROC-                                  PR-     ROC-
+ Modelo                AUC       AUC      Sens.      FP     Prec.     AUC      AUC          FP
+ Referencia (azar)     0,010     0,500    n. a.     n. a.    n. a.    0,010    0,500       n. a.
+ RL                    0,080     0,861    0,76     19,8 %   0,038     0,010    0,477      29,6 %
+ RF                    0,019     0,717    1,00     58,5 %   0,017     0,014    0,650      96,7 %
+ HGB                   0,029     0,773    1,00     45,7 %   0,022     0,030    0,665      86,1 %
+ XGB                   0,023     0,751    0,76     31,4 %   0,024     0,013    0,599      86,0 %
+ RL+RF+HGB             0,045     0,811    0,77     27,4 %   0,028     0,013    0,602      96,7 %
+
+   Tabla 12: Entrenamiento con los 12 escenarios de CTU-13 y prueba en CIC-
+IDS2017 (viernes por la mañana: 191 033 flujos, 1 966 Bot, 1,03 %; semilla 11). FP
+  = porcentaje de flujos benignos marcados como Bot con el umbral heredado de
+                                    CTU-13.
+
+
+
+
+ Figura 6: PR-AUC y ROC-AUC en CIC-IDS2017 de los modelos entrenados con
+CTU-13, con solo variables de flujo y con contexto causal del host. La línea punteada
+     es el azar (PR-AUC = prevalencia, 0,010; ROC-AUC = 0,5). Semilla 11.
+298719298829871929882988
+       Quezada-Rodríguez                                        2987192988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987192989
+5     Discusión
+5.1     Lo que se sostiene y lo que no
+El escenario es la unidad de partición adecuada: la misma familia de modelos que
+obtiene una PR-AUC de 0,995 a 0,996 dentro de un escenario (Tabla 6) cae por debajo
+de la referencia al cambiar de escenario, y la cobertura de familias explica buena parte
+de la diferencia. Con 11 escenarios de entrenamiento, el rendimiento entre escenarios
+es alto en la mayoría (PR-AUC de 0,88 a 1,00 en nueve de los doce), pero la media
+(0,886 a 0,918) esconde tres escenarios difíciles, donde la elección del modelo importa
+y la variabilidad entre semillas es grande. Esa elección no puede fundamentarse con 12
+escenarios: ninguna diferencia por pares resiste Holm, y los ensambles aportan sobre
+todo estabilidad, con una ganancia de PR-AUC que no puede demostrarse. El contexto
+del host es prometedor (0,985 en la mejor configuración, con un peor escenario de
+0,895), pero no está establecido: la versión evaluada no es causal, la selección de W y
+del modelo es optimista y la ventaja no se trasladó a CIC-IDS2017. Por último, las
+métricas sobre flujos etiquetados sobreestiman el rendimiento operativo y el detector
+no se transfiere a otra red.
+     La contribución defendible es el protocolo y la medición de sus límites. Los
+resultados de CTU-13 no deben leerse como evidencia de que el detector sirva en otra
+red, y la cifra de 0,985 con contexto del host no debe citarse sin su salvedad de
+causalidad.
+
+5.2     Amenazas a la validez
+Validez interna. La búsqueda de hiperparámetros fue aleatoria, de 10 puntos, sin
+componente bayesiano ni poda (Sección 3.7); con presupuestos mayores el orden entre
+modelos podría cambiar, en especial entre los modelos de boosting, más sensibles a sus
+hiperparámetros. Tampoco se reajustó la búsqueda para las variables de contexto del
+host, y el número de iteraciones de RL (2 000) y de árboles de XGB (300) se fijó sin
+estudiar su efecto. El análisis exploratorio usó los 12 escenarios para comparar
+modelos, ventanas y ensambles, así que no existe una prueba sellada sobre escenarios
+nunca vistos. Con cinco semillas, la variabilidad en los escenarios débiles sigue siendo
+alta (hasta 0,157).
+     Validez de constructo. Las etiquetas de CTU-13 proceden de sus autores y el
+Background carece de verdad conocida; la evaluación realista lo trata como normal, lo
+que penaliza posibles falsos positivos que en realidad son detecciones. El submuestreo
+a 2 500 flujos altera la prevalencia respecto a los datos completos. La PR-AUC depende
+de la prevalencia, por lo que solo es interpretable junto con la referencia Dummy. Las
+ventanas de host se calcularon con archivos que solo contienen flujos etiquetados.
+     Validez externa. CTU-13 es tráfico de laboratorio de 2011, con pocas IP infectadas
+por escenario y sin registros reales de firewall. La única validación externa es CIC-
+IDS2017, con una familia (Bot), una semilla y variables que no significan lo mismo en
+ambos formatos; con estos datos no se puede separar la diferencia de medición del
+comportamiento de las botnets. No se recalibró el umbral para CIC y falta el escenario
+10.
+     Validez de conclusión estadística. Con 12 escenarios la potencia es baja. Las
+semillas no son réplicas independientes de los escenarios y las comparaciones con
+298720298829872029882988
+       Quezada-Rodríguez                                        2987202988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987202989
+ensambles son dependientes. Se corrigió por comparaciones múltiples dentro de cada
+familia, pero no entre todos los experimentos del trabajo, así que cualquier resultado
+nominalmente significativo debe leerse con cautela.
+
+
+6     Conclusiones y trabajo futuro
+Se presentó y ejecutó un protocolo de validación que deja fuera escenarios completos
+de CTU-13, con búsqueda de hiperparámetros anidada y umbral interno, sobre 12
+escenarios, cuatro clasificadores, ensambles y cinco semillas. Sus pasos de
+entrenamiento, su parametrización, sus condiciones iniciales y sus condiciones de
+parada quedaron documentados para poder repetirlo. Entre escenarios, los modelos
+superan con claridad a la referencia trivial (PR-AUC media de 0,886 a 0,918 frente a
+0,383), sin diferencias significativas entre ellos tras la corrección de Holm y con tres
+escenarios difíciles. En su versión no causal, el contexto del host mejora los escenarios
+débiles, aunque su ventaja en línea no está demostrada. Las evaluaciones con tráfico
+Background y en CIC-IDS2017 muestran que los resultados sobre flujos etiquetados de
+CTU-13 no equivalen a utilidad operativa. A quien evalúe detectores sobre CTU-13 se
+le recomienda particionar por escenario, informar la referencia Dummy, acompañar
+toda cifra con intervalos entre escenarios y declarar la limitación de generalización.
+     Como trabajo futuro se plantean seis líneas. (i) Una partición 70/15/15 por
+escenarios completos (8 de desarrollo, 2 de validación y 2 de prueba, con la prueba
+sellada y repetida con varias semillas) para fijar umbral, calibración y elección del
+modelo sin contaminar la prueba. (ii) Una búsqueda con al menos 30 intentos, con TPE
+de arranque menor que el presupuesto, poda real y parada temprana en los modelos de
+boosting. (iii) La evaluación completa de la versión causal del contexto del host. (iv)
+Una evaluación realista en los 12 escenarios y con varias semillas, con el umbral
+calibrado para una tasa de falsos positivos objetivo. (v) La calibración de
+probabilidades y las explicaciones por alerta (SHAP) con severidad configurable, ya
+previstas en el Laboratorio ML. (vi) La validación en más conjuntos de datos y con
+registros reales de firewall.
+
+
+Declaraciones
+Ética. El estudio usa conjuntos de datos públicos de tráfico de red y no involucra
+personas ni animales, por lo que no requirió la aprobación de un comité de ética.
+     Disponibilidad de datos y código. CTU-13 [García, 14] y CIC-IDS2017
+[Sharafaldin, 18] son públicos. Los scripts, los resultados crudos por semilla (JSON) y
+el código del Laboratorio ML de NetSentinel están disponibles en [URL del repositorio:
+por completar por los autores].
+     Financiamiento. Este trabajo no recibió financiamiento.
+     Conflicto de intereses. Los autores declaran no tener conflictos de intereses.
+     Autor     de     correspondencia.      Roberto      Enrique    Quezada-Rodríguez
+(requezadaro@unitru.edu.pe).
+     Uso de inteligencia artificial. Véase la Sección 3.15.
+298721298829872129882988
+       Quezada-Rodríguez                                        2987212988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987212989
+Referencias
+[Akiba, 19] Akiba, T., Sano, S., Yanase, T., Ohta, T., Koyama, M.: Optuna: A Next-generation
+Hyperparameter Optimization Framework, Proc. 25th ACM SIGKDD Int. Conf. on Knowledge
+Discovery & Data Mining, 2623-2631, 2019. https://doi.org/10.1145/3292500.3330701
+[Arp, 22] Arp, D., Quiring, E., Pendlebury, F., Warnecke, A., Pierazzi, F., Wressnegger, C.,
+Cavallaro, L., Rieck, K.: Dos and Don'ts of Machine Learning in Computer Security, Proc. 31st
+USENIX Security Symposium, 3971-3988, 2022. https://www.usenix.org/system/files/sec22-
+arp.pdf
+[Bates, 24] Bates, S., Hastie, T., Tibshirani, R.: Cross-Validation: What Does It Estimate and
+How Well Does It Do It?, Journal of the American Statistical Association, 119(546), 1434-
+1445, 2024. https://doi.org/10.1080/01621459.2023.2197686
+[Bergstra, 11] Bergstra, J., Bardenet, R., Bengio, Y., Kégl, B.: Algorithms for Hyper-Parameter
+Optimization, Advances in Neural Information Processing Systems 24 (NIPS 2011), 2546-
+2554, Granada, Spain, 2011. https://inria.hal.science/hal-00642998
+[Bergstra, 12] Bergstra, J., Bengio, Y.: Random Search for Hyper-Parameter Optimization,
+Journal of Machine Learning Research, 13, 281-305, 2012.
+https://dl.acm.org/doi/10.5555/2503308.2188395
+[Breiman, 01] Breiman, L.: Random Forests, Machine Learning, 45(1), 5-32, 2001.
+https://doi.org/10.1023/a:1010933404324
+[Cantone, 24] Cantone, M., Marrocco, C., Bria, A.: Machine Learning in Network Intrusion
+Detection: A Cross-Dataset Generalization Study, IEEE Access, 12, 144489-144508, 2024.
+https://doi.org/10.1109/access.2024.3472907
+[Cawley, 10] Cawley, G.C., Talbot, N.L.C.: On Over-fitting in Model Selection and
+Subsequent Selection Bias in Performance Evaluation, Journal of Machine Learning Research,
+11, 2079-2107, 2010. https://www.jmlr.org/papers/volume11/cawley10a/cawley10a.pdf
+[Chen, 16] Chen, T., Guestrin, C.: XGBoost: A Scalable Tree Boosting System, Proc. 22nd
+ACM SIGKDD Int. Conf. on Knowledge Discovery & Data Mining, 785-794, 2016.
+https://doi.org/10.1145/2939672.2939785
+[COPE, 23] Committee on Publication Ethics (COPE): Authorship and AI tools, COPE
+position statement, 13 February 2023.
+https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools
+[Demšar, 06] Demšar, J.: Statistical Comparisons of Classifiers over Multiple Data Sets,
+Journal of Machine Learning Research, 7, 1-30, 2006.
+https://www.jmlr.org/papers/volume7/demsar06a/demsar06a.pdf
+[Dietterich, 00] Dietterich, T. G.: Ensemble Methods in Machine Learning, Multiple Classifier
+Systems (MCS 2000), Lecture Notes in Computer Science 1857, Springer, 1-15, 2000.
+https://doi.org/10.1007/3-540-45014-9_1
+[Efron, 79] Efron, B.: Bootstrap Methods: Another Look at the Jackknife, The Annals of
+Statistics, 7(1), 1-26, 1979. https://doi.org/10.1214/aos/1176344552
+[Engelen, 21] Engelen, G., Rimmer, V., Joosen, W.: Troubleshooting an Intrusion Detection
+Dataset: the CICIDS2017 Case Study, Proc. 2021 IEEE Security and Privacy Workshops
+(SPW), 7-12, 2021. https://doi.org/10.1109/spw53761.2021.00009
+298722298829872229882988
+       Quezada-Rodríguez                                        2987222988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987222989
+[Friedman, 37] Friedman, M.: The Use of Ranks to Avoid the Assumption of Normality
+Implicit in the Analysis of Variance, Journal of the American Statistical Association, 32(200),
+675-701, 1937. https://doi.org/10.1080/01621459.1937.10503522
+[García, 14] García, S., Grill, M., Stiborek, J., Zunino, A.: An empirical comparison of botnet
+detection methods, Computers & Security, 45, 100-123, 2014.
+https://doi.org/10.1016/j.cose.2014.05.011
+[Holm, 79] Holm, S.: A Simple Sequentially Rejective Multiple Test Procedure, Scandinavian
+Journal of Statistics, 6(2), 65-70, 1979.
+[Hossain, 23] Hossain, M. A., Islam, M. S.: A novel hybrid feature selection and ensemble-
+based machine learning approach for botnet detection, Scientific Reports, 13(1), 21207, 2023.
+https://doi.org/10.1038/s41598-023-48230-1
+[Kapoor, 23] Kapoor, S., Narayanan, A.: Leakage and the reproducibility crisis in machine-
+learning-based science, Patterns, 4(9), 100804, 2023.
+https://doi.org/10.1016/j.patter.2023.100804
+[Oškera, 25] Oškera, D., Koumar, J., Pokorná, A., Jeřábek, K., Čejka, T.: Botnet Detection
+Through Periodic Patterns in Command-and-Control Network Traffic, Proc. 21st Int. Conf. on
+Network and Service Management (CNSM), 1-6, 2025.
+https://doi.org/10.23919/cnsm67658.2025.11297465
+[Pedregosa, 11] Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
+O., et al.: Scikit-learn: Machine Learning in Python, Journal of Machine Learning Research, 12,
+2825-2830, 2011.
+[Quiñonero-Candela, 08] Quiñonero-Candela, J., Sugiyama, M., Schwaighofer, A., Lawrence,
+N.D. (eds.): Dataset Shift in Machine Learning, The MIT Press, 2008.
+https://direct.mit.edu/books/edited-volume/3841/Dataset-Shift-in-Machine-Learning
+[Roberts, 17] Roberts, D. R., Bahn, V., Ciuti, S., Boyce, M. S., Elith, J., Guillera-Arroita, G., et
+al.: Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic
+structure, Ecography, 40(8), 913-929, 2017. https://doi.org/10.1111/ecog.02881
+[Saito, 15] Saito, T., Rehmsmeier, M.: The Precision-Recall Plot Is More Informative than the
+ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets, PLOS ONE, 10(3),
+e0118432, 2015. https://doi.org/10.1371/journal.pone.0118432
+[Sarhan, 22] Sarhan, M., Layeghy, S., Portmann, M.: Towards a Standard Feature Set for
+Network Intrusion Detection System Datasets, Mobile Networks and Applications, 27(1), 357-
+370, 2022. https://doi.org/10.1007/s11036-021-01843-0
+[Sharafaldin, 18] Sharafaldin, I., Habibi Lashkari, A., Ghorbani, A. A.: Toward Generating a
+New Intrusion Detection Dataset and Intrusion Traffic Characterization, Proc. 4th Int. Conf. on
+Information Systems Security and Privacy (ICISSP), 108-116, 2018.
+https://doi.org/10.5220/0006639801080116
+[Shinan, 21] Shinan, K., Alsubhi, K., Alzahrani, A., Ashraf, M. U.: Machine Learning-Based
+Botnet Detection in Software-Defined Network: A Systematic Review, Symmetry, 13(5), 866,
+2021. https://doi.org/10.3390/sym13050866
+[Sommer, 10] Sommer, R., Paxson, V.: Outside the Closed World: On Using Machine Learning
+for Network Intrusion Detection, Proc. 2010 IEEE Symposium on Security and Privacy, 305-
+316, 2010. https://doi.org/10.1109/sp.2010.25
+298723298829872329882988
+       Quezada-Rodríguez                                        2987232988
+                         R.E., Tello Fuentes M.C., et al.: Validación entre escenarios…
+2987232989
+[Velasco-Mata, 21] Velasco-Mata, J., Gonzalez-Castro, V., Fernandez, E. F., Alegre, E.:
+Efficient Detection of Botnet Traffic by Features Selection and Decision Trees, IEEE Access,
+9, 120567-120579, 2021. https://doi.org/10.1109/access.2021.3108222
+[Velasco-Mata, 23] Velasco-Mata, J., González-Castro, V., Fidalgo, E., Alegre, E.: Real-time
+botnet detection on large network bandwidths using machine learning, Scientific Reports,
+13(1), 4282, 2023. https://doi.org/10.1038/s41598-023-31260-0
+[Verkerken, 22] Verkerken, M., D’hooge, L., Wauters, T., Volckaert, B., De Turck, F.:
+Towards Model Generalization for Intrusion Detection: Unsupervised Machine Learning
+Techniques, Journal of Network and Systems Management, 30(1), 12, 2022.
+https://doi.org/10.1007/s10922-021-09615-7
+[Wilcoxon, 45] Wilcoxon, F.: Individual Comparisons by Ranking Methods, Biometrics
+Bulletin, 1(6), 80-83, 1945. https://doi.org/10.2307/3001968
+

@@ -1,0 +1,27 @@
+Esc. 1 (Neris): 71335 flujos, Botnet 57.4%
+Esc. 2 (Neris): 30052 flujos, Botnet 69.7%
+Esc. 3 (Rbot): 143553 flujos, Botnet 18.7%
+Esc. 4 (Rbot): 27837 flujos, Botnet 9.3%
+Esc. 5 (Virut): 5577 flujos, Botnet 16.2%
+Esc. 6 (Menti): 12119 flujos, Botnet 38.2%
+Esc. 7 (Sogou): 1739 flujos, Botnet 3.6%
+Esc. 8 (Murlo): 78903 flujos, Botnet 7.8%
+Esc. 9 (Neris): 214943 flujos, Botnet 86.1%
+Esc. 11 (Rbot): 10882 flujos, Botnet 75.0%
+Esc. 12 (NSIS.ay): 9793 flujos, Botnet 22.1%
+Esc. 13 (Virut): 71903 flujos, Botnet 55.6%
+s11 esc 1 Neris    logreg     n=2824132 bot=40961 PRreal=0.062 PRetiq=0.941 rec=0.838 fpr_bg=0.32806705325528907 prec=0.03649718884216035
+s11 esc 1 Neris    random_forest n=2824132 bot=40961 PRreal=0.165 PRetiq=0.965 rec=0.757 fpr_bg=0.30405583847991696 prec=0.035636359456010666
+s11 esc 1 Neris    hist_gb    n=2824132 bot=40961 PRreal=0.248 PRetiq=0.957 rec=0.830 fpr_bg=0.33752180055412734 prec=0.03517611330169514
+s11 esc 1 Neris    xgboost    n=2824132 bot=40961 PRreal=0.255 PRetiq=0.961 rec=0.816 fpr_bg=0.2768649486322457 prec=0.0418573879135461
+s11 esc 1 Neris    LR+RF+HGB  n=2824132 bot=40961 PRreal=0.260 PRetiq=0.964 rec=0.873 fpr_bg=0.3638920705013846 prec=0.0343768859094456
+s11 esc 2 Neris    logreg     n=1807765 bot=20941 PRreal=0.179 PRetiq=0.986 rec=0.809 fpr_bg=0.32796520023198344 prec=0.028233651834379456
+s11 esc 2 Neris    random_forest n=1807765 bot=20941 PRreal=0.508 PRetiq=0.998 rec=0.880 fpr_bg=0.3755358710883028 prec=0.02685971188947748
+s11 esc 2 Neris    hist_gb    n=1807765 bot=20941 PRreal=0.185 PRetiq=0.997 rec=0.909 fpr_bg=0.36245164433179033 prec=0.0286937430401625
+s11 esc 2 Neris    xgboost    n=1807765 bot=20941 PRreal=0.462 PRetiq=0.997 rec=0.929 fpr_bg=0.3707128203483914 prec=0.02864816208913842
+s11 esc 2 Neris    LR+RF+HGB  n=1807765 bot=20941 PRreal=0.444 PRetiq=0.997 rec=0.910 fpr_bg=0.411143418538313 prec=0.02539253860068437
+s11 esc 3 Rbot     logreg     n=4705297 bot=26822 PRreal=0.161 PRetiq=0.995 rec=0.985 fpr_bg=0.25411180460806215 prec=0.02225241744161182
+s11 esc 3 Rbot     random_forest n=4705297 bot=26822 PRreal=0.609 PRetiq=0.999 rec=0.997 fpr_bg=0.3089706480679319 prec=0.018601470027524748
+s11 esc 3 Rbot     hist_gb    n=4705297 bot=26822 PRreal=0.949 PRetiq=0.998 rec=0.990 fpr_bg=0.25704796235825594 prec=0.022129368488145874
+s11 esc 3 Rbot     xgboost    n=4705297 bot=26822 PRreal=0.930 PRetiq=0.999 rec=0.997 fpr_bg=0.3401111504722755 prec=0.016920335608916235
+s11 esc 3 Rbot     LR+RF+HGB  n=4705297 bot=26822 PRreal=0.490 PRetiq=0.998 rec=0.996 fpr_bg=0.30149171018803333 prec=0.019034026537763798

@@ -1,0 +1,5 @@
+{"timestamp": "2026-11-11T10:00:01.123456+0000", "event_type": "alert", "src_ip": "192.168.1.30", "src_port": 49822, "dest_ip": "45.9.148.10", "dest_port": 80, "proto": "TCP", "alert": {"action": "allowed", "signature_id": 2024897, "signature": "ET MALWARE Possible Beacon Activity", "category": "A Network Trojan was detected", "severity": 1}, "flow": {"bytes_toserver": 512, "bytes_toclient": 1024}, "http": {"hostname": "evil.example"}}
+{"timestamp": "2026-11-11T10:00:02.000000+0000", "event_type": "flow", "src_ip": "192.168.1.10", "src_port": 40000, "dest_ip": "93.184.216.34", "dest_port": 443, "proto": "TCP", "flow": {"pkts_toserver": 10, "pkts_toclient": 12, "bytes_toserver": 1200, "bytes_toclient": 5400, "age": 3, "state": "closed"}}
+{"timestamp": "2026-11-11T10:00:03.000000+0000", "event_type": "dns", "src_ip": "192.168.1.10", "dest_ip": "8.8.8.8"}
+{esto no es json
+{"timestamp": "mal", "event_type": "alert", "src_ip": "1.1.1.1", "dest_ip": "2.2.2.2", "alert": {"signature": "x"}}

@@ -1,0 +1,4 @@
+id|ts|model_id|input_kind|finding_id|probability|interval_low|interval_high|predicted_class|severity|narrative_source|ood|nout|n_scored|ambiguous
+1|2026-11-12 05:21:57.929838+00|5|finding|2|0|0|0|Normal|low|template|false|2|32|false
+2|2026-11-12 05:21:58.234947+00|5|finding|50|0.1373358648492733|0.1373358648492733|0.1373358648492733|Normal|low|llm|true|4|400|true
+(2 rows)
